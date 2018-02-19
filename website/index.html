@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<title>Course Website</title>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="brand">Web Tech</div>	
+		<nav>
+			<button onclick="myFunction()" class="dropbtn">Topics</button>
+			<div id="dropdown" class="dropdown-content">
+				<div class="container">
+					<header><a class="topic one" href="#" >Topic 1</a></header>
+					<ul class="subtopic1"> 
+					<li><a href="#">topic11</a></li>
+					<li><a href="#">topic12</a></li>
+					<li><a href="#">topic13</a></li>
+					</ul>
+					<header><a class="topic two" href="#">Topic 2</a></header>
+					<ul class="subtopic2">
+					<li><a href="#">topic21</a></li>
+					<li><a href="#">topic23</a></li>
+					<li><a href="#">topic23</a></li>
+					</ul>
+					<header><a class="topic three" href="#">Topic 3</a></header>
+					<ul class="subtopic3">
+					<li><a href="#">topic31</a></li>
+					<li><a href="#">topic32</a></li>
+					<li><a href="#">topic33</a></li>
+					</ul>
+				</div>
+			</ul>
+		</div>
+	</nav>
+
+	<main>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </main>
+
+		<footer>Under Construction</footer>
+	</div>
+</body>
+
+<script>
+	var toggleStatus = 1;
+	function myFunction() {
+		document.getElementById("dropdown").classList.toggle("show");
+	}
+</script>
+</html>

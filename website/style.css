@@ -1,0 +1,71 @@
+body{
+	height: 100%;
+}
+.wrapper{
+	display: grid;
+	grid-row-gap:30px;
+	grid-template-columns: 5fr 1fr;
+	grid-template-rows: 1fr, 1fr, 1fr;
+	grid-template-areas:
+	"nav brand"
+	"main main"
+	"footer footer";
+}
+.brand{
+	grid-area: brand;
+}
+nav{
+	grid-area: nav;
+	width: 100%;
+}
+main{
+	grid-area: main;
+}
+footer{
+	grid-area: footer;
+}
+
+/*grid layout dropdown menu*/
+.dropdown-content{
+	display: none;
+}
+
+.show {
+	display:inline;
+
+}
+.container{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows:: 30px, auto;
+	grid-template-areas:
+	"topic1 topic2 topic3"
+	"subtopic1 subtopic2 subtopic3";
+}
+.topic{
+	height: 100px;
+	min-width: 100px;
+	flex-grow: 1;
+}
+.one{
+	grid-area: topic1;
+}
+.two{
+	grid-area: topic2;
+}
+.three{
+	grid-area: topic3;
+}
+.subtopic1{
+	grid-area: subtopic1;
+}
+.subtopic2{
+	grid-area: subtopic2;
+}.subtopic3{
+	grid-area: subtopic3;
+}
+
+nav ul{
+	list-style-type: none;
+	padding: 0;
+}
