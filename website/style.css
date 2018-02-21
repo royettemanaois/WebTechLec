@@ -1,3 +1,4 @@
+/*
 body{
 	height: 100%;
 }
@@ -26,6 +27,7 @@ footer{
 }
 
 /*grid layout dropdown menu*/
+/*
 .dropdown-content{
 	display: none;
 }
@@ -68,4 +70,61 @@ footer{
 nav ul{
 	list-style-type: none;
 	padding: 0;
+}
+*/
+
+
+body {
+    font-family: Tahoma;
+}
+
+nav {
+    overflow: hidden;
+    position: fixed;
+    width: 110%;
+    background-color: #ADD8E6;
+    top: 0;
+    margin-left: -10px;
+    padding: 0;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+ul li {
+    float: left;
+    height: 10%;
+    width: 12%;
+    text-align: center;
+    font-size: 1.3em;
+    line-height: 40px;
+    background-color: #ADD8E6;
+}
+
+ul li a {
+    text-decoration: none;
+    display: block;
+}
+
+ul li a:hover {
+    background-color: #7997a1;
+}
+
+ul li ul li {
+    display: none;
+    height: 10%;
+    width: 100%;
+}
+
+ul li:hover ul li {
+    display: block;
+}
+
+#sidebar {
+    width: 20%;
+    height: 100%;
+    background-color: gray;
 }
