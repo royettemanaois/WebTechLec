@@ -1,0 +1,60 @@
+INTRODUCTION
+
+
+The World Wide Web
+It is a collection of webpages.
+It is invented by Sir Tim Berners-Lee who is a british scientist in CERN to spread scientific discovery to other researchers worldwide.
+It is considered to be the greatest information system.
+
+The World Wide Web was based in these three (3) core technologies:
+HTTP
+HTML
+URL
+
+Hypermedia
+one document that contain link to other documents.
+
+2 Kinds of Resource:
+Static Resource – The resources already exist in the web server.
+Dynamic Resource – Resource that is produced on the fly.
+(ex. Google image search)
+
+    WWW plays one of two roles. Either server which provides functionalities / server application.
+
+Application
+web servers (hosting or storing)
+wait connection of clients
+web client (browser)
+
+Webservers
+Hosting or storing of web resources
+Waits for clients to request those resources.
+
+Web crawler (a.k.a Web Spider)
+This application crawls the web and harvests information
+
+Inter-Network
+    Internet - global network
+    inter - across boundaries
+    network - establishing a connection (interconnection)
+
+HTTP
+Hypertext Transfer Protocol
+
+an application layer communications protocol used to access resources (hypertext / hypermedia) on the world wide web
+
+invented by TimBerners-Lee at CERN 1989
+
+jointly developed by W3c and IETF(Internet Research Task Force)
+
+is stateless
+
+Physical Layer
+Highest Layer (application layer)
+    E.g: browsers (chrome) / webserver (apache)
+
+Bandwidth Hog
+sending large chunk of data
+Solution: chunk it up to “packets”
+
+
