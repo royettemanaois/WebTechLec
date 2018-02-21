@@ -35,16 +35,46 @@ nav a.active {
 
 .bg { 
     /* The image used */
-    background-image: url("../img/headTree.jpg");
+    background-image: url("../img/IMG_0058.jpg");
 
     /* Full height */
     height: 100%; 
-
+    position: relative;
     /* Center and scale the image nicely */
+    background-attachment: fixed
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.bg2 {
+   /* The image used */
+    background-image: url("../img/IMG_0046.jpg");
+
+    /* Full height */
+    height: 100%; 
+   
+    /* Center and scale the image nicely */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg3 {
+   /* The image used */
+    background-image: url("../img/IMG_0031.png");
+
+    /* Full height */
+    height: 100%; 
+   
+    /* Center and scale the image nicely */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 
 .center {
     position: absolute;
