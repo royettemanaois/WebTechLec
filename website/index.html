@@ -7,7 +7,7 @@
 
 	<title>Course Website</title>
 </head>
-<body>
+<!--body>
 	<div class="wrapper">
 		<div class="brand">Web Tech</div>	
 		<nav>
@@ -53,5 +53,48 @@
 	function myFunction() {
 		document.getElementById("dropdown").classList.toggle("show");
 	}
-</script>
+</script-->
+<body>
+	<nav id="navbar">
+		<ul>
+			<li><a>Web Tech</a></li>
+			<li><a>Prelims</a>
+				<ul class="topic-container">
+					<li class="topics"><a href="#sidebar">The Internet</a></li>
+					<li class="topics"><a>The WWW</a></li>
+					<li class="topics"><a>The HTTP</a></li>
+				</ul>
+			</li>
+			<li><a>Midterms</a>
+				<ul class="topic-container">
+					<li class="topics"><a>Topic 1</a></li>
+					<li class="topics"><a>Topic 2</a></li>
+					<li class="topics"><a>Topic 3</a></li>
+				</ul>
+			</li>
+			<li><a>Finals</a>
+				<ul class="topic-container">
+					<li class="topics"><a>Topic 1</a></li>
+					<li class="topics"><a>Topic 2</a></li>
+					<li class="topics"><a>Topic 3</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+
+	<section id="sidebar">
+		<ul>
+			<li>Sub Topic 1</li>
+			<li>Sub Topic 2</li>
+			<li>Sub Topic 3</li>
+		</ul>
+	</section>
+
+	<section id="content">
+		<p>Sub Topic 1 Content</p>
+		<p>Sub Topic 2 Content</p>
+		<p>Sub Topic 3 Content</p>
+	</section>
+
+</body>
 </html>
