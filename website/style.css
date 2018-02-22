@@ -78,14 +78,14 @@ body {
     font-family: Tahoma;
 }
 
-nav {
-    overflow: hidden;
-    position: fixed;
-    width: 110%;
-    background-color: #ADD8E6;
-    top: 0;
-    margin-left: -10px;
-    padding: 0;
+.tab {
+	height: 10%;
+    width: 10%;
+    
+}
+
+#space-tab {
+	width: 52%;
 }
 
 ul {
@@ -113,7 +113,7 @@ ul li a:hover {
     background-color: #7997a1;
 }
 
-ul li ul li {
+.topics {
     display: none;
     height: 10%;
     width: 100%;
@@ -125,6 +125,20 @@ ul li:hover ul li {
 
 #sidebar {
     width: 20%;
+    height: 90%;
+}
+
+.subtopic-container {
+	display: none;
+}
+
+.subtopics {
     height: 100%;
-    background-color: gray;
+    width: 100%;
+}
+
+.subtopic-content {
+    display: none;
+    height: 100%;
+    width: 100%;
 }

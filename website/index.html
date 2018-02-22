@@ -57,44 +57,84 @@
 <body>
 	<nav id="navbar">
 		<ul>
-			<li><a>Web Tech</a></li>
-			<li><a>Prelims</a>
+			<li class="tabs"><a href="#Home">Web Tech</a></li>
+			<li class="tabs"><a>Prelims</a>
 				<ul class="topic-container">
-					<li class="topics"><a href="#sidebar">The Internet</a></li>
-					<li class="topics"><a>The WWW</a></li>
-					<li class="topics"><a>The HTTP</a></li>
+					<li class="topics"><a onclick="myFunction1()">The Internet</a> </li>
+					<li class="topics"><a onclick="myFunction2()">The WWW</a></li>
+					<li class="topics"><a onclick="myFunction3()">The HTTP</a></li>
 				</ul>
 			</li>
-			<li><a>Midterms</a>
-				<ul class="topic-container">
-					<li class="topics"><a>Topic 1</a></li>
-					<li class="topics"><a>Topic 2</a></li>
-					<li class="topics"><a>Topic 3</a></li>
-				</ul>
-			</li>
-			<li><a>Finals</a>
+			<li class="tabs"><a>Midterms</a>
 				<ul class="topic-container">
 					<li class="topics"><a>Topic 1</a></li>
 					<li class="topics"><a>Topic 2</a></li>
 					<li class="topics"><a>Topic 3</a></li>
 				</ul>
 			</li>
+			<li class="tabs"><a>Finals</a>
+				<ul class="topic-container">
+					<li class="topics"><a>Topic 1</a></li>
+					<li class="topics"><a>Topic 2</a></li>
+					<li class="topics"><a>Topic 3</a></li>
+				</ul>
+			</li>
+			<li id="space-tab"><a>.</a></li>
 		</ul>
 	</nav>
 
 	<section id="sidebar">
-		<ul>
-			<li>Sub Topic 1</li>
-			<li>Sub Topic 2</li>
-			<li>Sub Topic 3</li>
+		<ul id="prelim-topic1" class="subtopic-container">
+			<li class="subtopics"><a href="#prelim-subtopic1">Sub Topic 1</li>
+			<li class="subtopics"><a href="#prelim-subtopic1">Sub Topic 2</li>
+			<li class="subtopics"><a href="#prelim-subtopic1">Sub Topic 3</li>
 		</ul>
-	</section>
+		<ul id="prelim-topic2" class="subtopic-container">
+			<li class="subtopics"><a>Sub Topic 1</li>
+			<li class="subtopics"><a>Sub Topic 2</li>
+			<li class="subtopics"><a>Sub Topic 3</li>
+		</ul>
+		<ul id="prelim-topic3" class="subtopic-container">
+			<li class="subtopics"><a>Sub Topic 1</li>
+			<li class="subtopics"><a>Sub Topic 2</li>
+			<li class="subtopics"><a>Sub Topic 3</li>
+		</ul>
+	</div>
 
 	<section id="content">
-		<p>Sub Topic 1 Content</p>
-		<p>Sub Topic 2 Content</p>
-		<p>Sub Topic 3 Content</p>
+		<article id="prelim-topic1-content">
+			<p id="prelim-subtopic1" class="subtopic-content">Sub Topic 1 Content</p>
+			<p id="prelim-subtopic2" class="subtopic-content">Sub Topic 2 Content</p>
+			<p id="prelim-subtopic3" class="subtopic-content">Sub Topic 3 Content</p>
+		</article>
 	</section>
+
+<script type="text/javascript">
+	function myFunction1() {
+	    var x = document.getElementById("prelim-topic1");
+	    if (x.style.display === "none") {
+	        x.style.display = "block";
+	    } else {
+	        x.style.display = "none";
+	    }
+	}
+	function myFunction2() {
+	    var x = document.getElementById("prelim-topic2");
+	    if (x.style.display === "none") {
+	        x.style.display = "block";
+	    } else {
+	        x.style.display = "none";
+	    }
+	} 
+	function myFunction3() {
+	    var x = document.getElementById("prelim-topic2");
+	    if (x.style.display === "none") {
+	        x.style.display = "block";
+	    } else {
+	        x.style.display = "none";
+	    }
+	} 
+</script>
 
 </body>
 </html>
