@@ -192,3 +192,29 @@ Only part not sent to the server
 HTTP Request
 
 
+TTP Request Message
+Request line
+Message Headers
+Empty Line(CRLF - Carriage Return, Line Feed)
+Message Body aka payload
+
+HTTP Response Message
+Status Line - protocol version, status code, reason phrase
+Message headers
+Empty Line(CRLF)
+Message Body(optional)
+
+
+HTTP Request Methods
+GET - request a representation of the resource that would retrieve data 
+HEAD - asks for a copy similar to GET request but have no response body
+POST - submit entity to the specified resource and often change the state of the server
+PUT - create or replace the state of the targeted resource
+DELETE - removes the connection between the target resource and its functionality
+OPTIONS - ask information in the communication options that is available
+TRACE - request/remote, application level(loopback message that is used to tesing of the request/response drain
+CONNECT - request the establishment tunnel to the destination origin server
+*SAFE METHOD
+Idempotent - intended effect on the server of multiple identical requests
+*Cacheable METHOD
+
