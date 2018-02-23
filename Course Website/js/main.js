@@ -1,11 +1,5 @@
-window.onscroll = function() {myFunction()};
-var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop;
+var toggleStatus = 1;
 function myFunction() {
-	
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky");
-  } else {
+    document.getElementById("dropdown").classList.toggle("show");
     navbar.classList.remove("sticky");
-  }
 }
