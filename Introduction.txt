@@ -97,6 +97,30 @@ Inter-Network
 	Internet - global network
 	inter - across boundaries
 	network - establishing a connection (interconnection)
+	
+How the Web Works
+
+	PCs associated with the web are called clients and servers. This is a simple diagram on how they interact:
+
+*****IMAGE TO BE PLACED*****
+
+
+
+Clients
+The typical devices that use the web. (mobile phone, computers)
+
+Servers
+Computers that stores webpages and websites.
+
+ When we type a URL in our browsers:
+
+The browser will first go to the DNS server and it will find the address of the server.
+The browser now sends an HTTP request message to the server asking for a copy of the website to the client.
+If the server approves the client’s requests, the server now sends an “OK” message (200 OK) and it will now start sending data packets of the website’s files.
+*NOTE*
+Data Packets - data that is chopped into smaller pieces.
+The browsers assemble the received data packets into a complete website and displays it to the client.
+
 
 HTTP
 Hypertext Transfer Protocol
