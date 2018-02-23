@@ -1,0 +1,216 @@
+INTRODUCTION
+
+
+The World Wide Web
+It is a collection of webpages.
+It is invented by Sir Tim Berners-Lee who is a british scientist in CERN to spread scientific discovery to other researchers worldwide.
+It is considered to be the greatest information system.
+
+The World Wide Web was based in these three (3) core technologies:
+HTTP
+HTML
+URL
+
+Hypermedia
+one document that contain link to other documents.
+
+2 Kinds of Resource:
+Static Resource – The resources already exist in the web server.
+Dynamic Resource – Resource that is produced on the fly.
+(ex. Google image search)
+
+    WWW plays one of two roles. Either server which provides functionalities / server application.
+
+Application
+web servers (hosting or storing)
+wait connection of clients
+web client (browser)
+
+Webservers
+Hosting or storing of web resources
+Waits for clients to request those resources.
+
+Web crawler (a.k.a Web Spider)
+This application crawls the web and harvests information
+
+Inter-Network
+    Internet - global network
+    inter - across boundaries
+    network - establishing a connection (interconnection)
+
+
+
+
+
+
+
+How the Web Works
+
+    PCs associated with the web are called clients and servers. This is a simple diagram on how they interact:
+
+*****IMAGE TO BE REPLACED*****
+
+
+
+Clients
+The typical devices that use the web. (mobile phone, computers)
+
+Servers
+Computers that stores webpages and websites.
+
+ What happens when we type a URL in our browsers:
+
+The browser will first go to the DNS server and it will find the address of the server.
+
+The browser now sends an HTTP request message to the server asking for a copy of the website to the client.
+
+If the server approves the client’s requests, the server now sends an “OK” message (200 OK) and it will now start sending data packets of the website’s files.
+*NOTE*
+Data Packets - data that is chopped into smaller pieces.
+
+The browsers assemble the received data packets into a complete website and displays it to the client.
+
+HTTP
+Hypertext Transfer Protocol
+
+an application layer communications protocol used to access resources (hypertext / hypermedia) on the world wide web
+
+invented by TimBerners-Lee at CERN 1989
+
+jointly developed by W3C and IETF(Internet Engineering Task Force)
+
+is stateless
+
+HTTP was based on a client-server architecture
+Servers
+Origin servers - resides actual resource
+Proxy servers, gateways, tunnels
+*NOTE:
+Gateways - connection across networks
+Tunnels - more on encryption
+Clients / UA (User Agents)
+web browsers, web crawlers / spiders, other end user tools and applications
+
+HTTP uses a request-response standard protocol
+the clients send on HTTP request message to the server
+the server processes the request and replies with an HTTP response message
+
+
+Physical Layer
+Highest Layer (application layer)
+    E.g: browsers (chrome) / webserver (apache)
+
+Bandwidth Hog
+sending large chunk of data
+Solution: chunk it up to “packets”
+
+
+HTTP support for other functionality
+Cache controls
+Content media type (MIME - Multipurpose Internet Mail Extensions) spec
+What resource is sending
+Language and character set specification
+Specify the language English in ASCII
+content/transfer codings compression
+Content negotiation
+Client - Server protocol negotiation
+Switch protocol for specific transfer
+Persistent connection (ex. 400 transfer in one page)
+Request pipelining
+Authentication or authorization
+
+OSI Model (7 layers)
+retrieve web resources
+Send http request message to the server
+
+HTTP Versions:
+
+HTTP 0.9(1991)
+port 80 was used
+request: “GET + URL” response: assumed to be HTML
+
+HTTP 1.0 (RFC 1996)
+methods GET, HEAD, and POST was added
+status code definitions were introduced and header field definitions
+
+HTTP 1.1 (1999 -2014)
+provision of persistent connections (greatest contribution)
+*NOTE:
+Persistent connections (HTTP keep-alive) - allows both the
+client and the server to use the same TCP connection. This
+allows them to send and receive multiple HTTP requests and
+responses. 
+
+
+HTTP 2
+-comes from GOOGLE SPDY-
+-Heading compression
+-Server push to lessen the page
+-pipelining request - allows the requests responses to be split into chunks and be returned in an intermingled fashion so avoiding head of line blocking.
+-transfer of data(optimized)
+
+FUNDAMENTAL
+- HTTP typically runs on top of TCP/IP using TCP port by default or TCP port 443 for HTTPS (HTTP over SSL/TLS)
+
+IANA is a department for ICANN
+IANA – a department responsible for coordinating key elements to keep the internet run smoothly
+    - allocate and maintain codes and numbering system that are used in technical standards that drive the internet
+-Domain Names
+-Number Resources
+-Protocol Assginment
+
+SERVERS
+-origin servers
+-proxy servers, gateways, tunnels
+
+CLIENTS
+-aka user agents (UA)
+-web browsers, web crawlers/spiders, other user tools and application
+
+HTTP resource are identified using URL
+
+Components of URL for HTTP(or HTTPS)
+Scheme
+
+
+Host
+A domain name (resolved to an IP address using DNS) of the server where the resource reside or will be created
+Path
+Resolved relative to the document root on the server
+May refer to a static or dynamic resource
+Query
+Start with ? (ex ?id=12234)
+Typically provided as key=value pairs, with (&) separates between key/value pairs (ex.?size=M&color=red)
+It maybe URL-encoded
+Fragment Identifier
+Refer to a bookmark
+Only part not sent to the server
+
+
+HTTP Request Message
+Request line
+Message Headers
+Empty Line(CRLF - Carriage Return, Line Feed)
+Message Body aka payload
+
+HTTP Response Message
+Status Line - protocol version, status code, reason phrase
+Message headers
+Empty Line(CRLF)
+Message Body(optional)
+
+
+HTTP Request Methods
+GET - request a representation of the resource that would retrieve data 
+HEAD - asks for a copy similar to GET request but have no response body
+POST - submit entity to the specified resource and often change the state of the server
+PUT - create or replace the state of the targeted resource
+DELETE - removes the connection between the target resource and its functionality
+OPTIONS - ask information in the communication options that is available
+TRACE - request/remote, application level(loopback message that is used to tesing of the request/response drain
+CONNECT - request the establishment tunnel to the destination origin server
+*SAFE METHOD
+Idempotent - intended effect on the server of multiple identical requests
+*Cacheable METHOD
+
+
