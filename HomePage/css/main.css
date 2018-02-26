@@ -9,6 +9,7 @@ header {
 }
 
 nav {
+  
 	overflow: hidden;
   font-family: 'Palatino';
   box-shadow: inset 0 0 10px rgba(255,255,255,0.1);
@@ -32,8 +33,23 @@ nav a:hover {
   border-bottom-color:#19B5FE;
   border-bottom-style:solid;
   color: #F5D76E;
+  transition: .25s all;
 }
 
+.centerTitle{
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: rgba(0,0,0,.8);
+    letter-spacing: 5px;
+    padding: 20px;
+    font-family: "Lato", sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+}
 .logoweb {
     display: block;
     max-height: 100%;
@@ -57,6 +73,7 @@ nav a:hover {
   
     background-image: url("../img/IMG_0058.jpg");
     height: 100%; 
+    position: relative;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -65,7 +82,7 @@ nav a:hover {
 
 .bg2 {
     background-image: url("../img/IMG_0046.jpg");
-    height: 60%; 
+    height: 80%; 
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -75,7 +92,7 @@ nav a:hover {
 .bg3 {
 
     background-image: url("../img/IMG_0031.png");
-    height: 60%; 
+    height: 100%; 
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -166,7 +183,7 @@ nav a:hover {
 }
 
 .botCenterBox {
-  padding: -5px;
+
   font-size: 30px;
   font-weight: 500;
   color: #E4F1FE;
@@ -195,8 +212,8 @@ nav a:hover {
     margin-bottom: 40px;
 }
 .ps{
+    position: static;
     margin-bottom: 40px;
-
 }
 
 .ps a{
@@ -208,10 +225,10 @@ nav a:hover {
     border-radius: 50%;
 }
 .ps a img{
-  
+    position: relative;
     width: 100%;
     filter: grayscale(100%);
-    transition: 0.4 all;
+    transition: 0.4s all;
 }
 
 .ps a:hover > img{
@@ -241,4 +258,136 @@ nav a:hover {
 }
 
 
+
+.footcontainer {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 17px;
+    position: relative;
+    text-align: center;
+    color: white;
+    top: 50%;
+    margin-left: 75%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(34, 49, 63, 0.8);
+    padding: 30px;
+}
+
+.button-one {
+    background: #F5D76E;
+    color: #1d1d1d;
+    font-family: "Lato", sans-serif;
+    font-size: 25px;
+    align-content: center;
+}
+.button-two {
+    background: #D24D57;
+    color: #1d1d1d;
+    font-family: "Lato", sans-serif;
+    font-size: 25px;
+    align-content: center;
+}
+.button-three {
+    background: #22A7F0;
+    color: #1d1d1d;
+    font-family:"Lato", sans-serif;
+    font-size: 25px;
+    text-align: center;
+}
+.button-one{
+    display: inline-block;
+    border-radius: 0;
+    padding: 10px 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: all 0.2s;
+    margin:2px;
+}
+
+.button-two{
+    display: inline-block;
+    border-radius: 0;
+    padding: 10px 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: all 0.2s;
+    margin:2px;
+}
+.button-three {
+    display: inline-block;
+    border-radius: 0;
+    padding: 10px 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: all 0.2s;
+    margin:2px;
+}
  
+.start{
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    letter-spacing: 10px;
+    padding: 12px 24px;
+    margin-top: 90px;
+
+}
+
+ .start a{
+    position:relative;
+    text-decoration:none;
+    border: 2px solid white;
+    width: 125px;
+    height: 44px;
+    text-align:center;
+    line-height: 50px;
+    display:inline-block;
+    font-size: 24px;
+    color: #262626;
+}
+.start a:before{
+    content: '';
+    position:absolute;
+    top: -2px;
+    left:-2px;
+    width: 100%;
+    height:100%;
+    background: transparent;
+    border: 2px solid #262626;
+}
+.start a:hover:before{
+    animation: animate 1s linear forwards;
+}
+
+@keyframes animate{
+    0%{
+        width: 0;
+        height: 0;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+    50%{
+        width: 100%;
+        height: 0;
+        border-top-color: #262626;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+    100%{
+        width: 100%;
+        height: 100%0;
+        border-top-color: #262626;
+        border-right-color: #262626;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+}
+
+
