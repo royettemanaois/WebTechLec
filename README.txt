@@ -1,0 +1,9 @@
+To open our course website, go to index.html. This file contains our homepage. After opening the homepage, just scroll down and you can
+see our Course Overview. This overview contains the topics for our course website. Scroll down a little more and you can see our team.
+Click the image to view the name of that person.
+
+***Clicking a topic in the Course Overview***
+
+In the Course Overview you can choose what term you want to read to either Prelims, Midterms, or Finals. But for the meantime, the only
+available term is Prelims. The default page upon clicking a top is the introduction of the World Wide Web and How Does the World Wide
+Web Work. To switch to a particular topic, go to the TOPICS tab and there will be a list of topics you can go to.
