@@ -16,6 +16,7 @@ nav {
   background-color: #373737;
   padding: 0;
   height:  65px;
+  z-index: 1000;
 }
 
 nav a {
@@ -391,3 +392,26 @@ nav a:hover {
 }
 
 
+.buttonStart{  
+  position: initial;
+  text-align: center;
+  margin-left: 50%;
+  margin-top: 25%;
+  transform: translate(-50%, -50%);
+  text-shadow: 6px 0px 3px #666666;
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 60px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.buttonStart:hover {
+  text-decoration: none;
+  color: #19B5FE ;
+}
