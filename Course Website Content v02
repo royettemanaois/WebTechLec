@@ -214,3 +214,166 @@ Idempotent - intended effect on the server of multiple identical requests
 *Cacheable METHOD
 
 
+HTTP Message Headers
+1.	General Header Fields - can be used by both clients and servers
+Can be seen both in request and response
+2.	Request Header Field - can only be seen in the request message(client side)
+3.	Response Header Field - can only be seen in the response message(server side)
+4.	Entity Header - cantainsinformation that is in the payload
+
+
+HTTP status code 
+1.	Informational(1xx)
+		100 Continue
+		101 Switching Protocols
+		102 Processing
+2.	 Success(2xx)
+		200 OK
+		201 Created
+		202 Accepted
+		203 Non-authoritative Information
+		204 No Content
+		205 Reset Content
+		206 Partial Content
+		207 Multi-Status
+		208 Already Reported
+		226 IM Used
+3.	 Redirection(3xx)
+		300 Multiple Choices
+		301 Moved Permanently
+		302 Found
+		303 See Other
+		304 Not Modified
+		305 Use Proxy
+		307 Temporary Redirect
+		308 Permanent Redirect
+4.	 Client Error(4xx)
+		400 Bad Request
+		401 Unauthorized
+		402 Payment Required
+		403 Forbidden
+		404 Not Found
+		405 Method Not Allowed
+		406 Not Acceptable
+		407 Proxy Authentication Required
+		408 Request Timeout
+		409 Conflict
+		410 Gone
+		411 Length Required
+		412 Precondition Failed
+		413 Payload Too Large
+		414 Request-URI Too Long
+		415 Unsupported Media Type
+		416 Requested Range Not Satisfiable
+		417 Expectation Failed
+		418 I'm a teapot
+		421 Misdirected Request
+		422 Unprocessable Entity
+		423 Locked
+		424 Failed Dependency
+		426 Upgrade Required
+		428 Precondition Required
+		429 Too Many Requests
+		431 Request Header Fields Too Large
+		444 Connection Closed Without Response
+		451 Unavailable For Legal Reasons
+		499 Client Closed Request
+
+
+5.	 Server Error(5xx)
+		500 Internal Server Error
+		501 Not Implemented
+		502 Bad Gateway
+		503 Service Unavailable
+		504 Gateway Timeout
+		505 HTTP Version Not Supported
+		506 Variant Also Negotiates
+		507 Insufficient Storage
+		508 Loop Detected
+		510 Not Extended
+		511 Network Authentication Required
+		599 Network Connect Timeout Error
+
+
+HTTP Extensions *WevDAV (Distributes Authority Version
+*HTTP can be extended by defining new request methods, message headers and/or status codes, and then implementing servers and/or clients that make us of the new functionality*
+
+
+
+HTML(Hypertext Markup Language)
+Language us to mark up document
+Application of SGML(Standard Generalized Markup Language)
+modern web developerpractice solelyfor semantic specification of web page structure and the contentwith the presentation aspect delegates to stylesheet
+Html before was used to specify the structure and content together with the presentation of the web page
+Developed at CERN followed by IETF then the W3C and also WHATWG
+
+Version History
+	HTML Tags Tim-Berners Lee, late 1991
+HTML 2.0 (RFC 1866)
+	Form -based File Upload
+	HTML table
+	Client - Side Image Maps
+	i18n(Internationalization
+HTML 3.2 (W3C Recommendation, Jan 1997)
+HTML 4.0 (W3C Recommendation, Dec 1997)
+HTML 4.1 (W3C Recommendation, Dec 1999)
+- introduced depreciation of presentation elements and attributes in favor of style sheets
+	- Strict, Transitional, Frameset DTDs(Document Type Definition)
+XHTML
+	-The updated version of HTML in XML that made in writing the codes stricter
+	- It is intended to make make the programmers follow the norm in coding, provide interopability in HTML and XML 
+
+HTML 5.0
+Not all developers wanted the XHTML and Ian Hickson is one of them. He oppose in continuing the XHTML and says it is better to modernized HTML5 instead of XHTML
+The WHATWG undertake in HTML 5 and W3C joins in
+HTML 5 is now updated HTML 4 and XHTML and it depends on the user what they want to use
+
+HTML 5 (W3C Recommendation, Oct 2014)
+HTML 5.1 (W3C Recommendation, Nov 2016)
+HTML 5.2 (W3c Recommendation, Dec 2017)
+HTML Living Standard (WHATWG)
+
+
+HTML Document Structure
+Versions information(ex DOCTYPE)
+Root element(html)
+Header section that contains document metadata,
+HTML 5 <DOCTYPE html> 
+Case insensitive
+Standard mode
+Quirks mode - deals with older browser with nesting rendering
+HTML 4 DOCTYPE
+Strict
+Traditional
+Frameset
+Elements (HTML 4.01, XHTML 1.0, HTML 5)
+		Ex. <a href = “____”> Trial </a>
+Tags
+
+
+Content 
+Content Models 
+Void Elements (ex br, hr, img)
+
+
+
+
+Attributes and Attribute values
+Global attribute
+Apply across the board (ex class, id)
+Custom Non-Visible
+Apply own attribute (data-*)
+WAI-ARIA Attributes (WCAG)
+Elements-Specific Attributes
+Attributes to specific elements
+MathML, SVG(Scalable Vector Graphics)
+bitmapped
+vector(not to loose quality)
+Character Reference
+Representation to a character for a special symbol (ex > = &gt)
+Comments
+<!--	→
+
+HTML Preprocessor
+Tools in making the codes easier
+
