@@ -1,0 +1,124 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+header {
+  padding: 30px;
+  text-align: center;
+}
+
+nav {
+	overflow: hidden;
+  font-family: 'Palatino';
+  box-shadow: inset 0 0 10px rgba(255,255,255,0.1);
+  background-color: #373737;
+  padding: 0;
+  height:  65px;
+}
+
+nav a {
+    font-size: 25px;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    float: right;
+    padding: 15px 50px;
+}
+nav a:hover {
+  background-color: rgba(0,0,0,0.1);
+  padding-bottom:15px;
+  border-bottom:5px;
+  border-bottom-color:#19B5FE;
+  border-bottom-style:solid;
+  transition: all 0.25s linear;
+  color: #F5D76E;
+}
+
+.logoweb {
+    display: block;
+    max-height: 100%;
+    height: auto;
+}
+.logonav {
+    float: left;
+    height: 50px;
+    padding: 7px 20px;
+}
+
+.logonav:hover{
+    padding-bottom: 2px;
+    border-bottom:5px;
+    border-bottom-color:#19B5FE;
+    border-bottom-style:solid;
+    transition: all 0.25s linear;
+}
+
+.bg { 
+  
+    background-image: url("../img/IMG_0058.jpg");
+    height: 100%; 
+    background-attachment: fixed
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg2 {
+    background-image: url("../img/IMG_0046.jpg");
+    height: 100%; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg3 {
+
+    background-image: url("../img/IMG_0031.png");
+    height: 100%; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.bg4 {
+  
+    background-image: url("../img/IMG_0064.jpg");
+    height: 100%; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.center {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: rgba(0,0,0,.8);
+    letter-spacing: 10px;
+    padding: 12px 24px;
+    font-family: "Lato", sans-serif;
+    font-size: 24px;
+}
+.content {
+  padding: 16px;
+  background-color: #282E34;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
