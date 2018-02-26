@@ -9,3 +9,8 @@ function myFunction() {
     navbar.classList.remove("sticky");
   }
 }
+
+function showLearning() {
+	 document.documentElement.scrollTop = 0;
+	 document.getElementById('start1').style.display = "block";
+}
