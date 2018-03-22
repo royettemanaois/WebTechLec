@@ -377,3 +377,47 @@ Comments
 HTML Preprocessor
 Tools in making the codes easier
 
+*****MIDTERMS*****
+CSS
+What is CSS?
+
+    Cascading Style Sheets or CSS is a language that is independent of HTML that allows developers to edit the presentation of attributes, layouts, and other HTML elements in a Web page. CSS can also be used in XML-based markup language. It is independent with HTML so that it is easier to maintain web pages and easier to share these stylesheets with other HTML files. This is referred as separation of structure (or content) from a presentation. 
+    
+History of CSS
+
+    In 1994, the Web is starting to be used as an electronic publishing platform. But at the time, HTML does not have a way to style documents which is an important part of a publishing platform. And then Hakun Wium Lie and Bert Bros developed CSS. 
+
+CSS Versions
+
+    CSS does not have a particular versions unlike HTML. Instead, it has versions, which means that every level of CSS is built upon the previous versions with some definitions being redefined and more features are being added. 
+
+CSS Level 1  or CSS1 (December 1996)
+    The CSS1 specification is considered by the CSS Working Group (CSS WG) to be obsolete. 
+CSS Level 2 or CSS2 (May 1998)
+        
+CSS Level 2 Revision 1 (June 2011)
+This version contains a definitive definition to prevent any conflict between between CSS2 and CSS2 Revision 1.
+CSS Level 3 
+    This level was built on CSS2 module by module. It replaces some part of CSS2 Revision 1 and also, modules add functionalities from to CSS 2 Revision 1.
+
+
+
+
+
+
+
+Three Types of CSS
+
+Inline Styles
+These styles are written directly in the HTML file. It only affects the specified tag that they are applied to.
+
+Embedded Styles
+    These styles are still written directly in the HTML file but its difference from inline style is that it is embedded in the head of the document. It affects the HTML file that it was embedded on.
+
+External Style Sheets
+    These styles are written in a separate document and then it was attached to different web documents. Most of the websites today use this type.
+
+
+
+HTML Stylesheets
+    The sources of styles for HTML language.
