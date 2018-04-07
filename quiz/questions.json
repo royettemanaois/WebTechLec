@@ -1,0 +1,174 @@
+
+//Limit nalang natin sa 4 na type ng question tapos yung bilang ng question kaw na bahala basta
+			// yung mga pinkaimportante parang yung mga lumabas sa exam ni sir Montes 
+			//diskarte mo na kung anong type ng question gagamitin hindi kailangang 4 na may choices 4 na may acronym
+			//ikaw na bahala dun. kung mas marami identification or acro oks lng.
+{
+
+	"Prelim Questions":[
+        
+        //  Indentification (10 items)
+        /* 
+            Answer the following questions.
+        */
+        
+			{
+				"question":"It is considered to be the greatest information system.",
+				"ans":"World Wide Web"
+			},
+            {
+                "question":"The ability to open new Web pages by clicking text links on a Web browser.",
+                "ans":"Hypermedia"
+            },
+            {
+                "question":"A type of Web resource that is produced on the fly.",
+                "ans":"Dynamic Resource"
+            },
+            {
+                "question":"A type of Web resource that already exists in a Web server.",
+                "ans":"Static Resource"
+            },
+            {
+                "question":"A program that uses HTTP  to serve the files that form Web pages to users, in response to their requests, which are forwarded by their computers' HTTP clients.",
+                "ans":"Web server"
+            },
+            {
+                "question":"This application crawls the web and harvests information.",
+                "ans":"Web spiders" //or web crawlers
+            },
+            {
+                "question":"They are the typical devices that uses the Web.",
+                "ans":"Clients"
+            },
+            {
+                "question":"Data that is chopped into smaller pieces",
+                "ans":"Data Packets"
+            },
+            {
+                "question":"Computers that store web pages and websites.",
+                "ans":"Servers"
+            },
+            {
+                "question":"He was the one who invented The World Wide Web.",
+                "ans":"Tim Berners-Lee"
+            },
+        
+        //  Multiple Choice
+        /*
+            Identify what version did the description below belong to. Choose the best answer among the given choices. Enter only the letter of your answer.
+        */
+        
+			{
+				"question":"Methods GET, HEAD, and POST are now supported. Content-Type Header was added. <br> a. HTTP 0.9 <br> b. HTTP 1.0 <br> c. HTTP 1.1 <br> d. HTTP 2.0",
+				"ans":"b"
+			},
+			{
+				"question":"The Upgrade header was introduced. Also, HTTP pipelining was implemented.",
+				"ans":"c"
+			},
+			{
+				"question":"It only supports GET method and its response type is only hypertext. <br> a. HTTP 0.9 <br> b. HTTP 1.0 <br> c. HTTP 1.1 <br> d. HTTP 2.0",
+				"ans":"a"
+			},
+            {
+				"question":"Aside from the methods GET, HEAD, and POST, the methods PUT, DELETE, TRACE, and OPTIONS are now supported. The Keep-Alive header first used. <br> a. HTTP 0.9 <br> b. HTTP 1.0 <br> c. HTTP 1.1 <br> d. HTTP 2.0",
+				"ans":"c"
+			},
+            {
+				"question":"This version supports Query Multiplexing and Headers Compression. <br> a. HTTP 0.9 <br> b. HTTP 1.0 <br> c. HTTP 1.1 <br> d. HTTP 2.0",
+				"ans":"d"
+			},
+        
+        //  True or False
+        /*
+            Read the given situation. Identify if the given status was true. Input true if the given statement is true and false if otherwise.
+        */
+        
+            {
+				"question":"Continue <br> HTTP Status: Informational",
+				"ans":"true"
+			},
+            {
+				"question":"OK <br> HTTP Status: Success",
+				"ans":"true"
+			},
+            {
+				"question":"Found <br> HTTP Status: Success",
+				"ans":"false"
+			},
+            {
+				"question":"Created <br> HTTP Status: Informational",
+				"ans":"false"
+			},
+            {
+				"question":"Processing <br> HTTP Status: Redirection",
+				"ans":"false"
+			},
+            {
+				"question":"Internal Server Error <br> HTTP Status: Server Error",
+				"ans":"true"
+			},
+            {
+				"question":"Misdirected Request <br> HTTP Status: Client Error",
+				"ans":"true"
+			},
+            {
+				"question":"Already Reported <br> HTTP Status: Informational",
+				"ans":"false"
+			},
+            {
+				"question":"Use Proxy <br> HTTP Status: Redirection",
+				"ans":"true"
+			},
+            {
+				"question":"Forbidden <br> HTTP Status: Server Error",
+				"ans":"false"
+			},
+        
+        //  Fill in the blanks.
+        
+            {
+				"question":"HTML means Hypertext _____ Language",
+				"ans":"Markup"
+			},
+            {
+				"question":"The X in XHTML means _____",
+				"ans":"Extensible"
+			},
+            {
+				"question":"WHATWG means Web Hypertext Application _____ Working Group",
+				"ans":"Technology"
+			},
+            {
+				"question":"_____ opposed in continuing the XHTML.",
+				"ans":"Ian Hickson"
+			},
+            {
+				"question":"HTML _____ is a language that allows you to write in HTML and converts that into another language.",
+				"ans":"Preprocessor"
+			},
+        
+	],
+	//same lng sa midterm.
+	"Midterm Questions":[
+			{
+				"question":"Kapag yung question fill in the _______. Ganito nalng format",
+				"ans":"blanks"
+			},
+			{
+				"question":"Kapag yung question identification basta matanong lng. eg(who invented html?)",
+				"ans":"Tim Berners-Lee"
+			},
+			{
+				"question":"Kapag yung question is acronym. eg. Define HTML or HTML stands for? or etc.",
+				"ans":"Hypertext Markup Language"
+			},
+			{
+				"question":"Kapag yung question is may choices. What year did Tim Berners-Lee invented the html? <br> a. year1 <br> b. year2 <br> c. year3 <br> d. year4",
+				"ans":"a"
+			}
+
+			
+	]
+
+}
