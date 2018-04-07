@@ -92,3 +92,59 @@ nav a.active {
   margin:auto;
   overflow:hidden;
 }
+.center1 {
+    padding: 10px;
+    margin: auto;
+    width: 60%;
+    height: 50%;
+    border: 3px solid;
+
+}
+.question {
+    margin: auto;
+    width: 60%;
+    height: 50%;
+    border: 3px solid;
+    padding: 10px;
+}
+.center2 {
+    margin: auto;
+    width: 60%;
+    height: 50%;
+    border: 3px transparent;
+    padding: 10px;
+}
+
+#bckBtn{
+    width: 100px;
+    height: 50px;
+    -webkit-transition: all .2s;
+    background: #e3e3e3;
+    line-height: 50px;
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px rgba(0,0,0,.5), 1px 1px 1px rgba(0,0,0,.3);
+}
+#bckBtn:hover{
+    background: #333;
+    color: #e3e3e3;
+}
+
+#nxtBtn{
+    width: 100px;
+    height: 50px;
+    -webkit-transition: all .2s;
+    background: #e3e3e3;
+    line-height: 50px;
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px rgba(0,0,0,.5), 1px 1px 1px rgba(0,0,0,.3);
+}
+#nxtBtn:hover{
+    background: #333;
+    color: #e3e3e3;
+}
