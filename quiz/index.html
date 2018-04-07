@@ -3,23 +3,26 @@
 <head>
 	<title></title>
 	<script type="text/javascript" src="main.js"></script>
-	<link rel = "stylesheet" href = "main.css">
+	<link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
 
-
-	<div class = "center1">
-	<p class="question"> </p>
-
+	<div id="qNav"> </div>
 
 	
-	   <div class = "center2">
-		<button id ="bckBtn" onclick="previousQuestion(0); "> Back </button>
-		<label for='answer'>Answer</label>
-    	<input id='answer' value="" type='text' >
+	<div id="idk">
+		
+		<p id="question"> </p>	
+
+		<button id ="bckBtn" onclick="previousQuestion(0);" > Back </button>
+	
+    	<input id='answer' value="" type='text' placeholder="Answer">
+    	
     	<button id ="nxtBtn" onclick="nextQuestion(1); submitAnswer(0); ">Next</button>
-        </div>
-    </div>
+
+	</div>
+
+
 
 
 </body>
