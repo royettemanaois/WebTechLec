@@ -1,8 +1,3 @@
-
-//Limit nalang natin sa 4 na type ng question tapos yung bilang ng question kaw na bahala basta
-			// yung mga pinkaimportante parang yung mga lumabas sa exam ni sir Montes 
-			//diskarte mo na kung anong type ng question gagamitin hindi kailangang 4 na may choices 4 na may acronym
-			//ikaw na bahala dun. kung mas marami identification or acro oks lng.
 {
 
 	"Prelim Questions":[
@@ -55,11 +50,11 @@
         
         //  Multiple Choice
         /*
-            Identify what version did the description below belong to. Choose the best answer among the given choices. Enter only the letter of your answer.
+            Identify what version did the description belong to. Choose the best answer among the given choices. Enter only the letter of your answer.
         */
         
 			{
-				"question":"Methods GET, HEAD, and POST are now supported. Content-Type Header was added. <br> a. HTTP 0.9 <br> b. HTTP 1.0 <br> c. HTTP 1.1 <br> d. HTTP 2.0",
+				"question":"Methods GET, HEAD, and POST are now supported. Content-Type Header was added. -- a. HTTP 0.9 -- b. HTTP 1.0 -- c. HTTP 1.1 -- d. HTTP 2.0",
 				"ans":"b"
 			},
 			{
@@ -67,15 +62,15 @@
 				"ans":"c"
 			},
 			{
-				"question":"It only supports GET method and its response type is only hypertext. <br> a. HTTP 0.9 <br> b. HTTP 1.0 <br> c. HTTP 1.1 <br> d. HTTP 2.0",
+				"question":"It only supports GET method and its response type is only hypertext. -- a. HTTP 0.9 -- b. HTTP 1.0 -- c. HTTP 1.1 -- d. HTTP 2.0",
 				"ans":"a"
 			},
             {
-				"question":"Aside from the methods GET, HEAD, and POST, the methods PUT, DELETE, TRACE, and OPTIONS are now supported. The Keep-Alive header first used. <br> a. HTTP 0.9 <br> b. HTTP 1.0 <br> c. HTTP 1.1 <br> d. HTTP 2.0",
+				"question":"Aside from the methods GET, HEAD, and POST, the methods PUT, DELETE, TRACE, and OPTIONS are now supported. The Keep-Alive header first used. -- a. HTTP 0.9 -- b. HTTP 1.0 -- c. HTTP 1.1 -- d. HTTP 2.0",
 				"ans":"c"
 			},
             {
-				"question":"This version supports Query Multiplexing and Headers Compression. <br> a. HTTP 0.9 <br> b. HTTP 1.0 <br> c. HTTP 1.1 <br> d. HTTP 2.0",
+				"question":"This version supports Query Multiplexing and Headers Compression. -- a. HTTP 0.9 -- b. HTTP 1.0 -- c. HTTP 1.1 -- d. HTTP 2.0",
 				"ans":"d"
 			},
         
@@ -85,43 +80,43 @@
         */
         
             {
-				"question":"Continue <br> HTTP Status: Informational",
+				"question":"True or False: Continue -- HTTP Status: Informational",
 				"ans":"true"
 			},
             {
-				"question":"OK <br> HTTP Status: Success",
+				"question":"True or False: OK -- HTTP Status: Success",
 				"ans":"true"
 			},
             {
-				"question":"Found <br> HTTP Status: Success",
+				"question":"True or False: Found -- HTTP Status: Success",
 				"ans":"false"
 			},
             {
-				"question":"Created <br> HTTP Status: Informational",
+				"question":"True or False: Created -- HTTP Status: Informational",
 				"ans":"false"
 			},
             {
-				"question":"Processing <br> HTTP Status: Redirection",
+				"question":"True or False: Processing -- HTTP Status: Redirection",
 				"ans":"false"
 			},
             {
-				"question":"Internal Server Error <br> HTTP Status: Server Error",
+				"question":"True or False: Internal Server Error -- HTTP Status: Server Error",
 				"ans":"true"
 			},
             {
-				"question":"Misdirected Request <br> HTTP Status: Client Error",
+				"question":"True or False: Misdirected Request -- HTTP Status: Client Error",
 				"ans":"true"
 			},
             {
-				"question":"Already Reported <br> HTTP Status: Informational",
+				"question":"True or False: Already Reported -- HTTP Status: Informational",
 				"ans":"false"
 			},
             {
-				"question":"Use Proxy <br> HTTP Status: Redirection",
+				"question":"True or False: Use Proxy -- HTTP Status: Redirection",
 				"ans":"true"
 			},
             {
-				"question":"Forbidden <br> HTTP Status: Server Error",
+				"question":"True or False: Forbidden -- HTTP Status: Server Error",
 				"ans":"false"
 			},
         
@@ -149,26 +144,149 @@
 			},
         
 	],
-	//same lng sa midterm.
 	"Midterm Questions":[
+        
+        //  Identification
+        /*
+            Answer the following questions
+        */
+        
 			{
-				"question":"Kapag yung question fill in the _______. Ganito nalng format",
-				"ans":"blanks"
+				"question":"Generates CSS using a custom language syntax that typically includes features that dont exist in pure CSS.",
+				"ans":"CSS Preprocessors"
 			},
-			{
-				"question":"Kapag yung question identification basta matanong lng. eg(who invented html?)",
-				"ans":"Tim Berners-Lee"
+            {
+				"question":"Provides pre-defined CSS design functionality that can be reused, excluded, or customized.",
+				"ans":"CSS Frameworks"
 			},
-			{
-				"question":"Kapag yung question is acronym. eg. Define HTML or HTML stands for? or etc.",
-				"ans":"Hypertext Markup Language"
+            {
+				"question":"Provide features that developers expect browsers to provide natively.",
+				"ans":"Polyfills"
 			},
-			{
-				"question":"Kapag yung question is may choices. What year did Tim Berners-Lee invented the html? <br> a. year1 <br> b. year2 <br> c. year3 <br> d. year4",
+            {
+				"question":"A language that is independent of HTML that allows developers to edit the presentation of attributes, layouts, and other HTML elements in a Web page.",
+				"ans":"CSS"
+			},
+            {
+				"question":"Who developed CSS along with Bert Bros?",
+				"ans":"Hakun Wium Lie"
+			},
+            {
+				"question":"A type of CSS style that is written directly in the HTML file.",
+				"ans":"Inline Styles"
+			},
+            {
+				"question":"It is the source of styles for HTML language",
+				"ans":"HTML Stylesheets"
+			},
+            {
+				"question":"A type of CSS style that is written directly in the HTML file but it is embedded in the head of the document.",
+				"ans":"Embedded Styles"
+			},
+            {
+				"question":"A weight that is applied to a given CSS declaration, determined by the number of each selector type in the matching selector.",
+				"ans":"Specificity"
+			},
+            {
+				"question":"A type of CSS style that is written in a separate document and then it was attached to different web documents.",
+				"ans":"External Style Sheets"
+			},
+        
+        //  Fill in the blanks
+        /*
+            Fill the blanks with appropriate CSS propertiy to achieve the style of the text displayed.
+        */
+            {
+				"question":"<p style="color:green;">I checked to make sure that he was still alive.</p> -- _____: green;",
+				"ans":"color"
+			},
+            {
+				"question":"<p style="font-size:20px;">This sentence is 20 px large.</p>? -- _____:20px;",
+				"ans":"font-size"
+			},
+            {
+				"question":"<p style="border-style: dotted">They got there early, and they got really good seats.</p> -- _____: dotted;",
+				"ans":"border-style"
+			},   
+            {
+				"question":"<p style="text-decoration: line-through">Abstraction is often one floor above you.</p> -- _____: line-through;",
+				"ans":"text-decoration"
+			},
+            {
+				"question":"<p style="text-shadow: 2px 2px red">Winter is coming.</p> -- _____: 2px 2px red;",
+				"ans":"text-shadow"
+			},
+        
+        //  Multiple Choice
+        /*
+            Identify what CSS level did the description belong to. Choose the best answer among the given choices. Enter only the letter of your answer.
+        */
+        
+            {
+				"question":"This CSS level added properties for positioning that allowed CSS to be used for page layout. -- a. CSS Level 1 -- b. CSS Level 2 -- CSS Level 3",
+				"ans":"b"
+			},
+            {
+				"question":"This level allows you to effectively build presentations from Web documents. -- a. CSS Level 1 -- b. CSS Level 2 -- CSS Level 3",
+				"ans":"c"
+			},
+            {
+				"question":"This level of CSS specifications is considered by the CSS WG to be obsolete. -- a. CSS Level 1 -- b. CSS Level 2 -- CSS Level 3",
 				"ans":"a"
-			}
-
-			
+			},
+            {
+				"question":"This level is divided into several modules. -- a. CSS Level 1 -- b. CSS Level 2 -- CSS Level 3",
+				"ans":"c"
+			},
+            {
+				"question":"The CSS level that lacks dependable web browser support. -- a. CSS Level 1 -- b. CSS Level 2 -- CSS Level 3",
+				"ans":"a"
+			},
+        
+        //  True or False
+        /*
+            Read the statements that are shown. If the statement is true, type true. Type false if otherwise.
+        */
+            {
+				"question":"True or False: JavaScript is a program that runs on a browser environment.",
+				"ans":"true"
+			},
+            {
+				"question":"True or False: In the past, JavaScript will execute first on the bottom.",
+				"ans":"false"
+			},
+            {
+				"question":"True or False: To fetch a JS, href is used instead of src",
+				"ans":"false"
+			},
+            {
+				"question":"True or False: A top-level code is executed as the script is loaded.",
+				"ans":"true"
+			},
+            {
+				"question":"True or False: JS code that are inside functions are executed when the function is invoked.",
+				"ans":"true"
+			},
+            {
+				"question":"True or False: Ekma Script is the standardized version of JavaScript.",
+				"ans":"false"
+			},
+            {
+				"question":"True or False: In JavaScript, BOM stands for Browser Object Modifier.",
+				"ans":"false"
+			},
+            {
+				"question":"True or False: DOM is the most important API",
+				"ans":"true"
+			},
+            {
+				"question":"True or False: In JavaScript, DOM stands for Document Object Model.",
+				"ans":"true"
+			},
+            {
+				"question":"True or False: Object and properties are created on the fly.",
+				"ans":"true"
+			},
 	]
 
 }
