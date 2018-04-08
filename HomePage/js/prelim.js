@@ -11,27 +11,118 @@ function scrolls() {
 }
 var toggleStatus = 1;
 function drop() {
-    document.getElementById("dropdown").classList.toggle("show");
+    document.getElementById("dropdown1").classList.toggle("show");
 }
 
-function showwww(){
+
+function resetdisplay(){
+    document.getElementById("www1").style.display = 'none';
+    document.getElementById("www2").style.display = 'none';
+    document.getElementById("www3").style.display = 'none';
+    document.getElementById("html1").style.display = 'none';
+    document.getElementById("html2").style.display = 'none';
+    document.getElementById("html3").style.display = 'none';
+    document.getElementById("html4").style.display = 'none';
+    document.getElementById("http1").style.display = 'none';
+    document.getElementById("http2").style.display = 'none';
+    document.getElementById("http3").style.display = 'none';
+}
+
+function showwww1(){
+    resetdisplay();
+    document.getElementById("html").style.display = 'none';
     document.getElementById("www").style.display = "block";
-    document.getElementById("http").style.display = "none";
-    document.getElementById("html").style.display = "none";
-    document.getElementById("dropdown").classList.toggle("show");    
+    document.getElementById("http").style.display = 'none';
+    document.getElementById("www1").style.display = 'block';
+    document.getElementById("dropdown1").classList.toggle("show");
 }
-function showhttp(){
+
+function showwww2(){
+    resetdisplay();
+    document.getElementById("html").style.display = 'none';
+    document.getElementById("www").style.display = "block";
+    document.getElementById("http").style.display = 'none';
+    document.getElementById("www2").style.display = 'block';
+    document.getElementById("dropdown1").classList.toggle("show");
+}
+
+function showwww3(){
+    resetdisplay();
+    document.getElementById("html").style.display = 'none';
+    document.getElementById("www").style.display = "block";
+    document.getElementById("http").style.display = 'none';
+    document.getElementById("www3").style.display = 'block';
+    document.getElementById("dropdown1").classList.toggle("show");
+}
+function showhttp1(){
+    resetdisplay();
+    document.getElementById("html").style.display = 'none';
     document.getElementById("www").style.display = "none";
-    document.getElementById("http").style.display = "block";
-    document.getElementById("html").style.display = "none";
-    document.getElementById("dropdown").classList.toggle("show");
+    document.getElementById("http").style.display = 'block';
+    document.getElementById("http1").style.display = 'block';
+    document.getElementById("dropdown1").classList.toggle("show");
 }
-function showhtml(){
+function showhttp2(){
+    resetdisplay();
+    document.getElementById("html").style.display = 'none';
     document.getElementById("www").style.display = "none";
-    document.getElementById("http").style.display = "none";
-    document.getElementById("html").style.display = "block";
-    document.getElementById("dropdown").classList.toggle("show");
+    document.getElementById("http").style.display = 'block';
+    document.getElementById("http2").style.display = 'block';
+    document.getElementById("dropdown1").classList.toggle("show");
 }
+function showhttp3(){
+    resetdisplay();
+    document.getElementById("html").style.display = 'none';
+    document.getElementById("www").style.display = "none";
+    document.getElementById("http").style.display = 'block';
+    document.getElementById("http3").style.display = 'block';
+    document.getElementById("dropdown1").classList.toggle("show");
+}
+function showhtml1(){
+    resetdisplay();
+    document.getElementById("html").style.display = 'block';
+    document.getElementById("www").style.display = "none";
+    document.getElementById("http").style.display = 'none';
+    document.getElementById("html1").style.display = 'block';
+    document.getElementById("dropdown1").classList.toggle("show");
+}
+
+function showhtmlw(){
+    resetdisplay();
+    document.getElementById("html").style.display = 'block';
+    document.getElementById("www").style.display = "none";
+    document.getElementById("http").style.display = 'none';
+    document.getElementById("html2").style.display = 'block';
+    document.getElementById("dropdown1").classList.toggle("show");
+}
+
+function showhtml3(){
+    resetdisplay();
+    document.getElementById("html").style.display = 'block';
+    document.getElementById("www").style.display = "none";
+    document.getElementById("http").style.display = 'none';
+    document.getElementById("html3").style.display = 'block';
+    document.getElementById("dropdown1").classList.toggle("show");
+}
+
+function showhtml4(){
+    resetdisplay();
+    document.getElementById("html").style.display = 'block';
+    document.getElementById("www").style.display = "none";
+    document.getElementById("http").style.display = 'none';
+    document.getElementById("html4").style.display = 'block';
+    document.getElementById("dropdown1").classList.toggle("show");
+}
+function showhtml5(){
+    resetdisplay();
+    document.getElementById("html").style.display = 'block';
+    document.getElementById("www").style.display = "none";
+    document.getElementById("http").style.display = 'none';
+    document.getElementById("html5").style.display = 'block';
+    document.getElementById("dropdown1").classList.toggle("show");
+}
+
+
 function showInformational(div) {
     var x = document.getElementById("informational");
     if (x.style.display === "none") {
@@ -40,6 +131,7 @@ function showInformational(div) {
         x.style.display = "none";
     }
 }
+
 function showSuccess(div) {
     var x = document.getElementById("Success");
     if (x.style.display === "none") {
