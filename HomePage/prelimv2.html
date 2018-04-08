@@ -4,7 +4,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="UTF-8">
         <title>WebTechLec</title>
-        <link rel="stylesheet" type="text/css" href="css/prelim.css">
         <link rel="stylesheet" type="text/css" href="css/prelimv2.css">
         <script src="js/prelimv2.js"></script>
     </head>
@@ -25,39 +24,6 @@
             <div id="navbar" class="navbar">
                 <div class="homecontainer">
                     <a class="home" href="index.html">HOME</a>
-                </div>
-                <div class=navcontainer>
-                    <nav id="nav"> 
-                        <button onclick="drop()" class="dropbtn">TOPICS
-                            <svg version="1.1" id="down" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="451.847px" height="451.847px" viewBox="0 0 451.847 451.847" style="enable-background:new 0 0 451.847 451.847;" xml:space="preserve"> <g>
-                                <path d="M225.923,354.706c-8.098,0-16.195-3.092-22.369-9.263L9.27,151.157c-12.359-12.359-12.359-32.397,0-44.751
-                                         c12.354-12.354,32.388-12.354,44.748,0l171.905,171.915l171.906-171.909c12.359-12.354,32.391-12.354,44.744,0
-                                         c12.365,12.354,12.365,32.392,0,44.751L248.292,345.449C242.115,351.621,234.018,354.706,225.923,354.706z"/>
-                                </g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
-                        </button>
-                        <div id="dropdown" class="dropdown-content">
-                            <div class="container">
-                                <header><a class="nav topic one" href="#topicwww" onclick="showwww()">WWW</a></header>
-                                <ul class="subtopic1"> 
-                                    <li><a href="#topicwww" onclick="showwww()">The World Wide Web</a></li>
-                                    <li><a href="#howwww" onclick="showwww()">How the Web Works</a></li>
-                                    <li><a href="#whatwww" onclick="showwww()"> What happens when we type a URL in our browsers</a></li>
-                                </ul>
-                                <header><a class="nav topic two" href="#topichttp"  onclick="showhttp()">HTTP</a></header>
-                                <ul class="subtopic2">
-                                    <li><a href="#topichttp" onclick="showhttp()">What is HTTP</a></li>
-                                    <li><a href="#httpver" onclick="showhttp()">HTTP Versions</a></li>
-                                    <li><a href="#httpfund" onclick="showhttp()">FUNDAMENTAL</a></li>
-                                </ul>
-                                <header><a class="nav topic three" href="#html" onclick="showhtml()">HTML</a></header>
-                                <ul class="subtopic3">
-                                    <li><a href="#htmlhist" onclick="showhtml()">History</a></li>
-                                    <li><a href="#html5" onclick="showhtml()">HTML5</a></li>
-                                    <li><a href="#htmldocstruc" onclick="showhtml()">HTML document Structure</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </nav>
                 </div>
             </div>
         </div>
@@ -86,7 +52,8 @@
             				<button class="topic-button" onclick="show_http_content_page()">HTTP</button>
             				<div id="http-topic" class="topic-box-dropdown-content">
             					<button id="http1-link" class="sub-topic-button" onclick="showhttp1()">Hypertext Transfer Protocol</button><br/>
-            					<button id="http2-link" class="sub-topic-button" onclick="showhttp2()">HTTP Fundamentals</button><br/>
+            					<button id="http2-link" class="sub-topic-button" onclick="showhttp2()">HTTP Versions</button><br/>
+            					<button id="http3-link" class="sub-topic-button" onclick="showhttp3()">HTTP Fundamentals</button><br/>
             				</div>
             			</div>
             		</div>
@@ -158,7 +125,7 @@
 			                    <li>The browser now sends an HTTP request message to the server asking for a copy of the website to the client.</li>
 
 			                    <li>If the server approves the client’s requests, the server now sends an <q>OK</q> message (200 OK) and it will now start sending data packets of the website’s files.</li>
-			                    <li><div class="notes"><p><i>*NOTE*</i>
+			                    <li class="hasChild"><div class="notes"><p><i>*NOTE*</i>
 			                        Data Packets - data that is chopped into smaller pieces.</p>
 			                    </div></li>
 			                    <li>The browsers assemble the received data packets into a complete website and displays it to the client.</li>
@@ -367,7 +334,10 @@
 			                    <li>retrieve web resources</li>
 			                    <li>Send http request message to the server</li>
 			                </ul>
-			                <h2 id=httpver>HTTP Versions:</h2>
+			                
+	                	</div>
+	                	<div id="http2" class="subtopic-content">
+	                		<h2>HTTP Versions:</h2>
 
 			                <h3>HTTP 0.9(1991)</h3>
 			                <ul>
@@ -426,7 +396,7 @@
 
 			                <span id="httpfund"></span>
 	                	</div>
-	                	<div id="http2" class="subtopic-content">
+	                	<div id="http3" class="subtopic-content">
 	                		<h2>HTTP Fundamentals</h2>
 	                		<ul>
 			                    <li>HTTP typically runs on top of TCP/IP using TCP port 80 by default or TCP port 443 for HTTPS (HTTP over SSL/TLS)</li>
@@ -440,9 +410,6 @@
 			                </ul>
 
 			                <p>HTTP resource are identified using URL</p>
-
-
-
 
 			                <h3>Components of URL for HTTP(or HTTPS)</h3>
 			                <ul>
@@ -476,10 +443,6 @@
 			                        </ul></li>
 			                    </ul></li>
 			               </ul>
-
-
-
-
 
 			                <h3>HTTP Request Message</h3>
 			                <ul>
@@ -611,9 +574,6 @@
 			                        <li>599 Network Connect Timeout Error</li>
 			                    </ul>
 			                </div>
-
-
-
 
 			                <p>HTTP Extensions *WevDAV (Distributes Authority Version)</p>
 			                <p>*HTTP can be extended by defining new request methods, message headers and/or status codes, and then implementing servers and/or clients that make us of the new functionality*</p>

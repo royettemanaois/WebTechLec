@@ -16,6 +16,7 @@ function resetDisplay(){
   document.getElementById("html4").style.display = 'none';
   document.getElementById("http1").style.display = 'none';
   document.getElementById("http2").style.display = 'none';
+  document.getElementById("http3").style.display = 'none';
 }
 
 function toggleMenu(togggleTopic){
@@ -113,5 +114,10 @@ function showhttp1(){
 function showhttp2(){
   resetDisplay();
   document.getElementById("http2").style.display = 'block';
+  http_content_page();
+} 
+function showhttp3(){
+  resetDisplay();
+  document.getElementById("http3").style.display = 'block';
   http_content_page();
 } 
