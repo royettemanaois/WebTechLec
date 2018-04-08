@@ -9,7 +9,7 @@ header {
 }
 
 nav {
-
+  
 	overflow: hidden;
   font-family: 'Palatino';
   box-shadow: inset 0 0 10px rgba(255,255,255,0.1);
@@ -67,13 +67,13 @@ nav a:hover {
     border-bottom:5px;
     border-bottom-color:#19B5FE;
     border-bottom-style:solid;
-
+   
 }
 
-.bg {
-
+.bg { 
+  
     background-image: url("../img/IMG_0058.jpg");
-    height: 100%;
+    height: 100%; 
     position: relative;
     background-attachment: fixed;
     background-position: center;
@@ -83,7 +83,7 @@ nav a:hover {
 
 .bg2 {
     background-image: url("../img/IMG_0046.jpg");
-    height: 80%;
+    height: 80%; 
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -93,7 +93,7 @@ nav a:hover {
 .bg3 {
 
     background-image: url("../img/IMG_0031.png");
-    height: 100%;
+    height: 100%; 
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -104,7 +104,7 @@ nav a:hover {
 .bg4 {
 
     background-image: url("../img/IMG_0064.jpg");
-    height: 100%;
+    height: 100%; 
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -132,7 +132,7 @@ nav a:hover {
   width:30%;
   padding: 19px;
   float: left;
-
+  
 
 }
 
@@ -163,7 +163,7 @@ nav a:hover {
 #boxes .box:hover {
     border: 1px solid;
     border-color: #151515;
-    box-shadow: 5px 10px 18px #151515;
+    box-shadow: 5px 10px 18px #151515; 
 }
 
 
@@ -232,49 +232,32 @@ nav a:hover {
     transition: 0.4s all;
 }
 
-.ps a img:hover {
-  filter: none;
+.ps a:hover > img{
+    filter: none;
+}
+
+.section{
+    width: 600px;
+    margin: auto;
+    font-size: 20px;
+    color: white;
+    text-align: justify;
+    height: 0;
+    overflow: hidden;
+}
+
+.section:target{
+    height: auto;
 }
 
 .name{
-    margin-top: 210px;
+    display: block;
+    margin-bottom: 30px;
     text-align: center;
     text-transform: uppercase;
-    font-size: 22px;
-    opacity: 0;
-    position: absolute;
-    visibility: hidden;
-    z-index: 1;
-    background-color: white;
-    color: black;
-    border-radius: 10%;
+    font-size: 22px; 
 }
 
-#p1:hover #name1{
-  visibility: visible;
-  opacity: 1;
-}
-#p2:hover #name2{
-  visibility: visible;
-  opacity: 1;
-}
-#p3:hover #name3{
-  visibility: visible;
-  opacity: 1;
-}
-#p4:hover #name4{
-  visibility: visible;
-  opacity: 1;
-}
-#p5:hover #name5{
-  visibility: visible;
-  opacity: 1;
-}
-#p6:hover #name6{
-  visibility: visible;
-  opacity: 1;
-  margin-left: 20px;
-}
 
 
 .footcontainer {
@@ -342,7 +325,7 @@ nav a:hover {
     transition: all 0.2s;
     margin:2px;
 }
-
+ 
 .start{
     position: absolute;
     text-align: center;
@@ -409,7 +392,7 @@ nav a:hover {
 }
 
 
-.buttonStart{
+.buttonStart{  
   position: initial;
   text-align: center;
   margin-left: 50%;
