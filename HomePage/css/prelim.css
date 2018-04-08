@@ -14,8 +14,8 @@ body, html {
     height: 100%; 
     position: relative;
     /* Center and scale the image nicely */
-    background-attachment: fixed
-        background-position: center;
+    background-attachment: fixed;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
