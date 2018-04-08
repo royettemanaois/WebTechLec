@@ -144,6 +144,7 @@
 			},
         
 	],
+
 	"Midterm Questions":[
         
         //  Identification
@@ -197,23 +198,23 @@
             Fill the blanks with appropriate CSS propertiy to achieve the style of the text displayed.
         */
             {
-				"question":"<p style="color:green;">I checked to make sure that he was still alive.</p> -- _____: green;",
+				"question":"<p style='color:green;'>I checked to make sure that he was still alive.</p> -- _____: green;",
 				"ans":"color"
 			},
             {
-				"question":"<p style="font-size:20px;">This sentence is 20 px large.</p>? -- _____:20px;",
+				"question":"<p style='font-size:20px;'>This sentence is 20 px large.</p>? -- _____:20px;",
 				"ans":"font-size"
 			},
             {
-				"question":"<p style="border-style: dotted">They got there early, and they got really good seats.</p> -- _____: dotted;",
+				"question":"<p style='border-style: dotted'>They got there early, and they got really good seats.</p> -- _____: dotted;",
 				"ans":"border-style"
 			},   
             {
-				"question":"<p style="text-decoration: line-through">Abstraction is often one floor above you.</p> -- _____: line-through;",
+				"question":"<p style='text-decoration: line-through'>Abstraction is often one floor above you.</p> -- _____: line-through;",
 				"ans":"text-decoration"
 			},
             {
-				"question":"<p style="text-shadow: 2px 2px red">Winter is coming.</p> -- _____: 2px 2px red;",
+				"question":"<p style='text-shadow: 2px 2px red'>Winter is coming.</p> -- _____: 2px 2px red;",
 				"ans":"text-shadow"
 			},
         
@@ -223,23 +224,23 @@
         */
         
             {
-				"question":"This CSS level added properties for positioning that allowed CSS to be used for page layout. -- a. CSS Level 1 -- b. CSS Level 2 -- CSS Level 3",
+				"question":"This CSS level added properties for positioning that allowed CSS to be used for page layout. -- a. CSS Level 1 -- b. CSS Level 2 -- c. CSS Level 3",
 				"ans":"b"
 			},
             {
-				"question":"This level allows you to effectively build presentations from Web documents. -- a. CSS Level 1 -- b. CSS Level 2 -- CSS Level 3",
+				"question":"This level allows you to effectively build presentations from Web documents. -- a. CSS Level 1 -- b. CSS Level 2 -- c. CSS Level 3",
 				"ans":"c"
 			},
             {
-				"question":"This level of CSS specifications is considered by the CSS WG to be obsolete. -- a. CSS Level 1 -- b. CSS Level 2 -- CSS Level 3",
+				"question":"This level of CSS specifications is considered by the CSS WG to be obsolete. -- a. CSS Level 1 -- b. CSS Level 2 -- c. CSS Level 3",
 				"ans":"a"
 			},
             {
-				"question":"This level is divided into several modules. -- a. CSS Level 1 -- b. CSS Level 2 -- CSS Level 3",
+				"question":"This level is divided into several modules. -- a. CSS Level 1 -- b. CSS Level 2 -- c. CSS Level 3",
 				"ans":"c"
 			},
             {
-				"question":"The CSS level that lacks dependable web browser support. -- a. CSS Level 1 -- b. CSS Level 2 -- CSS Level 3",
+				"question":"The CSS level that lacks dependable web browser support. -- a. CSS Level 1 -- b. CSS Level 2 -- c. CSS Level 3",
 				"ans":"a"
 			},
         
