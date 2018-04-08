@@ -235,27 +235,51 @@ nav a:hover {
 .ps a:hover > img{
     filter: none;
 }
-
-.section{
-    width: 600px;
-    margin: auto;
-    font-size: 20px;
-    color: white;
-    text-align: justify;
-    height: 0;
-    overflow: hidden;
-}
-
-.section:target{
-    height: auto;
-}
-
 .name{
     display: block;
-    margin-bottom: 30px;
+    visibility: hidden;
+    position: absolute;
     text-align: center;
     text-transform: uppercase;
-    font-size: 22px; 
+    background-color: white;
+    margin-top: 210px;
+    opacity: 1;
+    font-size: 22px;
+    border-radius: 20%;
+}
+a:hover{
+    opacity: .8;
+}
+a:hover #name1{
+    visibility: visible;
+    z-index: 1;
+    
+}
+a:hover #name2{
+    visibility: visible;
+    z-index: 1;
+    
+}
+a:hover #name3{
+    visibility: visible;
+    z-index: 1;
+    
+}
+a:hover #name4{
+    visibility: visible;
+    z-index: 1;
+    
+}
+a:hover #name5{
+    visibility: visible;
+    z-index: 1;
+    
+}
+a:hover #name6{
+    visibility: visible;
+    z-index: 1;
+    margin-left: 20px;
+    
 }
 
 
