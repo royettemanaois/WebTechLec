@@ -27,15 +27,17 @@ function toggleMenu(togggleTopic){
 }
 //show www
 function show_www_content_page(){
+  var www_topic = document.getElementById("www-topic");
+  toggleMenu(www_topic);
   www_content_page();
   showwww1();
 }
 function www_content_page(){
+  document.getElementById("html-topic").style.display = "none";
+  document.getElementById("http-topic").style.display = "none";
   document.getElementById("www-content-page").style.display = 'block';
   document.getElementById("html-content-page").style.display = 'none';
   document.getElementById("http-content-page").style.display = 'none';
-  var www_topic = document.getElementById("www-topic");
-  toggleMenu(www_topic);
 }
 function showwww1(){
   resetDisplay();
@@ -54,6 +56,8 @@ function showwww3(){
 }
 //show html
 function show_html_content_page(){
+  var html_topic = document.getElementById("html-topic");
+  toggleMenu(html_topic);
   html_content_page();
   showhtml_intro();
 }
@@ -61,8 +65,6 @@ function html_content_page(){
   document.getElementById("www-content-page").style.display = 'none';
   document.getElementById("html-content-page").style.display = 'block';
   document.getElementById("http-content-page").style.display = 'none';
-  var html_topic = document.getElementById("html-topic");
-  toggleMenu(html_topic);
 }
 function showhtml_intro(){
   resetDisplay();
@@ -91,15 +93,17 @@ function showhtml4(){
 }
 //show http
 function show_http_content_page(){
+  var http_topic = document.getElementById("http-topic");
+  toggleMenu(http_topic);
   http_content_page();
   showhttp1();
 }
 function http_content_page(){
+  document.getElementById("www-topic").style.display = "none";
+  document.getElementById("html-topic").style.display = "none";
   document.getElementById("www-content-page").style.display = 'none';
   document.getElementById("html-content-page").style.display = 'none';
   document.getElementById("http-content-page").style.display = 'block';
-  var http_topic = document.getElementById("http-topic");
-  toggleMenu(http_topic);
 }
 function showhttp1(){
   resetDisplay();
