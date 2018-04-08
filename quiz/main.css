@@ -19,6 +19,9 @@
   cursor: pointer;
 }
 
+.samp:first-child{
+     border-top: 8px solid yellow;
+}
 
 #qNav{
   position: absolute;
@@ -32,8 +35,19 @@
   display: none;
 }
 
-#idk{
-  position: absolute;
-  margin-top: 100px;
+#chkBtn {
+  display: none;
 }
 
+#idk{
+  position: absolute;
+  margin-top: 400px;
+  display: block;
+}
+
+#result{
+  position: absolute;
+  margin-top: 400px;
+  display: none;
+
+}
