@@ -4,8 +4,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>WebTechLec</title>
         <link rel="stylesheet" type="text/css" href="css/prelim.css">
-        <link rel="stylesheet" type="text/css" href="css/prelimv2.css">
-        <script type="text/javascript" src="js/prelimv2.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/midterm.css">
+        <script type="text/javascript" src="js/midterm.js"></script>
     </head>
 
     <body>
@@ -26,7 +26,7 @@
                     <a class="home" href="index.html">HOME</a>
                 </div>
                 <div class=navcontainer>
-                    <nav id="nav"> 
+                    <nav id="nav">
                         <button onclick="drop()" class="dropbtn">TOPICS
                             <svg version="1.1" id="down" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="451.847px" height="451.847px" viewBox="0 0 451.847 451.847" style="enable-background:new 0 0 451.847 451.847;" xml:space="preserve"> <g>
                                 <path d="M225.923,354.706c-8.098,0-16.195-3.092-22.369-9.263L9.27,151.157c-12.359-12.359-12.359-32.397,0-44.751
@@ -37,7 +37,7 @@
                         <div id="dropdown" class="dropdown-content">
                             <div class="container">
                                 <header><a class="nav topic one" href="#topicwww" onclick="showwww()">WWW</a></header>
-                                <ul class="subtopic1"> 
+                                <ul class="subtopic1">
                                     <li><a href="#topicwww" onclick="showwww()">The World Wide Web</a></li>
                                     <li><a href="#howwww" onclick="showwww()">How the Web Works</a></li>
                                     <li><a href="#whatwww" onclick="showwww()"> What happens when we type a URL in our browsers</a></li>
@@ -65,7 +65,7 @@
             		<div id="topic-box">
             			<div class="topic-box-dropdown">
             				<button class="topic-button" onclick="show_www_content_page()">WWW</button>
-            				<div id="www-topic" class="topic-box-dropdown-content">		
+            				<div id="www-topic" class="topic-box-dropdown-content">
             					<button id="www1-link" class="sub-topic-button" onclick="showwww1()">The World Wide Web</button><br/>
             					<button id="www2-link" class="sub-topic-button" onclick="showwww2()">How the ....</button><br/>
             					<button id="www3-link" class="sub-topic-button" onclick="showwww3()">What hap ....</button><br/>
@@ -238,7 +238,7 @@
 			                            <li>Strict</li>
 			                            <li>Traditional</li>
 			                            <li>Frameset</li>
-			                        </ul>	
+			                        </ul>
 			                    </ul>
 			                    <li>Elements (HTML 4.01, XHTML 1.0, HTML 5)</li>
 			                    <ul>
@@ -247,7 +247,7 @@
 			                    <li>Tags</li>
 			                    <li>Content</li>
 			                    <ul>
-			                        <li>Content Models</li> 
+			                        <li>Content Models</li>
 			                        <li>Void Elements (ex br, hr, img)</li>
 			                    </ul>
 			                    <li>Attributes and Attribute values</li>
@@ -295,7 +295,7 @@
 			                    <li>invented by Sir Tim Berners-Lee at CERN 1989</li>
 			                    <li>jointly developed by W3C and IETF(Internet Engineering Task Force)</li>
 			                    <li>is stateless</li>
-			                </ul> 
+			                </ul>
 			                <h3>HTTP was based on a client-server architecture</h3>
 			                <ul>
 			                    <li>Servers</li>
@@ -305,7 +305,7 @@
 			                    </ul>
 			                    <div class="notes">
 			                        <i>*NOTE:</i>
-			                        <br> 
+			                        <br>
 			                        Gateways - connection across networks
 			                        <br>
 			                        Tunnels - more on encryption
@@ -506,7 +506,7 @@
 			                    <li>CONNECT - request the establishment tunnel to the destination origin server</li>
 			                </ul>
 			                <p>*SAFE METHOD - indicated that the resources can't be modified</p>
-			                <ul>   
+			                <ul>
 			                    <li>Idempotent - intended effect on the server of multiple identical requests </li>
 			                </ul>
 			                <p>*Cacheable METHOD - indicates that the response to a method is allowed to stored for future reset</p>
@@ -520,7 +520,7 @@
 			                </ul>
 
 
-			                <h3>HTTP status code</h3> 
+			                <h3>HTTP status code</h3>
 			                <div class = "statusC" onclick="showInformational()">
 			                    <h4>1. Informational(1xx)</h4>
 			                    <ul id="informational">
@@ -529,7 +529,7 @@
 			                        <li>102 Processing</li>
 			                    </ul>
 			                </div>
-			                <div class = "statusC" onclick="showSuccess()">   
+			                <div class = "statusC" onclick="showSuccess()">
 			                    <h4>2.	 Success(2xx)</h4>
 			                    <ul id="Success">
 			                        <li>200 OK</li>
