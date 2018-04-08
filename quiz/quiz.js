@@ -130,6 +130,7 @@ function changeEvents(){
 }
 
 
+
 function generateQuestionNav() {
 	var questions = questionObj2['Prelim Questions'];
 	var d = document.getElementById('qNav');
@@ -178,10 +179,11 @@ function displayResult(){
 
 
 	var score = 0;
-	document.getElementById('idk').style.display = "none";
+	document.getElementById('container').style.display = "none";
 	document.getElementById('result').style.display = "block";
 	var d = document.getElementById('result');
 	var ol = document.createElement("ol");
+
 	
 	for(var i = 0; i < questions.length; i++){
  	  
