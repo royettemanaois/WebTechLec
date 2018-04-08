@@ -2,27 +2,14 @@
 	 run in localhost to record the answer of the user.
 ***/
 
-function storeData(fileName, localID) {
-	var xhttp = new XMLHttpRequest();
-	xhttp.open("GET", fileName, true);
-	xhttp.setRequestHeader("Content-type", "application/json");
-		xhttp.onreadystatechange = function() {
-		if (this.readyState == 4 && this.status == 200) {
-		     var res = this.responseText;
-		     var string = JSON.stringify(res);
-		     localStorage.setItem(localID, string);
-		}
-	};
-	xhttp.send();
+
+
+function runQuiz(term){
+		localStorage.setItem("setQuestion",JSON.stringify(term));
+		window.open("quiz.html");
 }
 
-	
 
-	if(!localStorage.getItem("questions")){
-		storeData("questions.json","questions");
-	}
-		
-	
 	var questionsObjJSON = localStorage.getItem("questions");
 	var questionsObj = JSON.parse(questionsObjJSON);
 	eval("var questionObj2 ="+questionsObj);
@@ -31,7 +18,9 @@ function storeData(fileName, localID) {
 	
 	var index = 0;
 
-	
+
+	var termQuestions = JSON.parse(localStorage.getItem("setQuestion"));
+		
 
 window.onload = function () {
 	
@@ -41,18 +30,18 @@ window.onload = function () {
 	
 	
 	if(!localStorage.getItem("userAnswer")){
-		//var userAnswer = new Array(questionObj2['Prelim Questions'].length);
+		//var userAnswer = new Array(questionObj2[termQuestions].length);
 
 			var userAnswer = [];
 
-			for(var i = 0; i < questionObj2['Prelim Questions'].length; i++){
+			for(var i = 0; i < questionObj2[termQuestions].length; i++){
 					userAnswer.push("");
 			}
 
 
 		localStorage.setItem("userAnswer",JSON.stringify(userAnswer));
 	}else{
-		for(var i = 0; i < questionObj2['Prelim Questions'].length; i++){
+		for(var i = 0; i < questionObj2[termQuestions].length; i++){
 			updateNav(i);
 
 			changeEvents();
@@ -66,7 +55,7 @@ window.onload = function () {
 var userAnswer = JSON.parse(localStorage.getItem("userAnswer"));
 
 function nextQuestion(x){
-	var questions = questionObj2['Prelim Questions'];
+	var questions = questionObj2[termQuestions];
 	document.getElementById('question').innerHTML = questions[x].question.replace(/--/g,"<br>");
 	index = x;
 
@@ -90,7 +79,7 @@ function submitAnswer(x){
 	localStorage.setItem("userAnswer",JSON.stringify(userAnswer));
 	document.getElementById('answer').value = "";
 	
-	if(x < questionObj2['Prelim Questions'].length){
+	if(x < questionObj2[termQuestions].length){
 		updateNav(x);
 	}
 	
@@ -101,11 +90,12 @@ function submitAnswer(x){
 function changeEvents(){
 	var i = index + 1;
 	var v = index - 1;
-	var questions = questionObj2['Prelim Questions'];
+	var questions = questionObj2[termQuestions];
 
 	if(i == questions.length){
 		document.getElementById('question').innerHTML = questions[i-1].question.replace(/--/g,"<br>");
 		document.getElementById('chkBtn').style.display = "inline-block";
+		document.getElementById('chkBtn').onclick = function () {submitAnswer(index); displayResult();};
 		document.getElementById('nxtBtn').style.display = "none";
 	}else{
 		document.getElementById('nxtBtn').style.display = "inline-block";
@@ -130,9 +120,8 @@ function changeEvents(){
 }
 
 
-
 function generateQuestionNav() {
-	var questions = questionObj2['Prelim Questions'];
+	var questions = questionObj2[termQuestions];
 	var d = document.getElementById('qNav');
 
 	for(var i = 0; i < questions.length; i++){
@@ -142,13 +131,13 @@ function generateQuestionNav() {
 }
 
 function changeQuestion(x){
-	var questions = questionObj2['Prelim Questions'];
+	var questions = questionObj2[termQuestions];
 	document.getElementById('question').innerHTML = questions[x].question.replace(/--/g,"<br>");
 	var prevIndex = index;
 	index = x;
 	document.getElementById("q"+(index+1)).style.borderTop = "8px solid yellow";
 	document.getElementById("q"+(prevIndex+1)).style.borderTop = "8px solid #1C6EA4";
-	changeEvents();
+	submitAnswer(prevIndex);
 }
 
 function updateNav(index){
@@ -174,7 +163,7 @@ function updateNav(index){
 
 
 function displayResult(){
-	var questions = questionObj2['Prelim Questions'];
+	var questions = questionObj2[termQuestions];
 	var userAnswer = JSON.parse(localStorage.getItem("userAnswer"));
 
 
@@ -183,7 +172,6 @@ function displayResult(){
 	document.getElementById('result').style.display = "block";
 	var d = document.getElementById('result');
 	var ol = document.createElement("ol");
-
 	
 	for(var i = 0; i < questions.length; i++){
  	  
@@ -194,7 +182,7 @@ function displayResult(){
 
 	  var li = document.createElement("li");
 	  var br = document.createElement("br");
-	  var q = document.createTextNode(questions[i].question);
+	  var q = document.createTextNode("Question: "+questions[i].question);
 	  li.appendChild(q);
 	  li.appendChild(br.cloneNode());
 	  var ans = document.createTextNode("Your answer: "+userAnswer[i]);
@@ -204,21 +192,34 @@ function displayResult(){
 	  li.appendChild(ans);
 	  li.appendChild(br.cloneNode());
 	  ol.appendChild(li);
+
+	  var e = document.getElementById("q"+(i+1));
 	  
 	  if(userAnswer[i].toUpperCase() == questions[i].ans.toUpperCase()){
 			score++;
 			li.className = "right";
+
 	  }else{
-			document.getElementById("q"+(i+1)).style.borderTop = "8px solid red";
+			e.style.borderTop = "8px solid red";
 			li.className = "wrong";
 	  }
+
+	 li.id = "question"+(i+1);
+	 
+
+	 var qNav = document.getElementById("qNav");
+	 e.removeAttribute("onclick");
+	 var a = document.createElement("a");
+	 a.href = "#question"+(i+1);
+	 a.appendChild(e);
+	 qNav.appendChild(a);
 	 
   
 	}
 
   	d.appendChild(ol);
   	var span = document.createElement('span');
-    var score = document.createTextNode(score);
+    var score = document.createTextNode("Score: "+score+"/"+questions.length);
     span.appendChild(score);
     d.insertBefore(span, d.childNodes[0]);
 

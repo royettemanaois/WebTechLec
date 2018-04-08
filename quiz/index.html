@@ -2,30 +2,10 @@
 <html>
 <head>
 	<title></title>
+	<script type="text/javascript" src="main.js"></script>
 	<script type="text/javascript" src="quiz.js"></script>
-	<link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
-
-	<div id="qNav"> </div>
-
-	
-	<div id="container">
-		
-		<p id="question"> </p>	
-
-		<button id ="bckBtn" onclick="previousQuestion(0);" > Back </button>
-	
-    	<input id='answer' value="" type='text' placeholder="Answer">
-    	
-    	<button id ="nxtBtn" onclick="nextQuestion(1); submitAnswer(0); ">Next</button>
-
-    	<button id="chkBtn" onclick="displayResult()"> Submit </button> 
-
-	</div>
-
-	<div id="result"></div>
-
-
+	<button onclick="runQuiz('Prelim Questions');"> Start quiz </button>
 </body>
 </html>
