@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,11 +12,11 @@
 
         <header class="bg">
 
-            <div class="center"><img id="logo" src="img/logo.png"></div>
+            <div class="center"><img id="logo" src="img/logo.png" alt="logo"></div>
             <div class ="start">
-                <a class="button-one" href="#">Prelims</a>
-                <a class="button-two" href="#">Midterms</a>
-                <a class="button-three" href="#">Finals</a>
+                <a class="button" id="button-one" href="#">Prelims</a>
+                <a class="button" id="button-two" href="#">Midterms</a>
+                <a class="button" id="button-three" href="#">Finals</a>
             </div>
 
         </header>
@@ -25,34 +25,63 @@
                 <div class="homecontainer">
                     <a class="home" href="index.html">HOME</a>
                 </div>
-                <div class=navcontainer>
-                    <nav id="nav"> 
-                        <button onclick="drop()" class="dropbtn">TOPICS
-                            <svg version="1.1" id="down" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="451.847px" height="451.847px" viewBox="0 0 451.847 451.847" style="enable-background:new 0 0 451.847 451.847;" xml:space="preserve"> <g>
+                <div id="prelim">
+                    <nav id="nav">                         
+                        <button onclick="drop()" class="dropbtn">PRELIM
+                            <svg version="1.1" class="down" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="451.847px" height="451.847px" viewBox="0 0 451.847 451.847" style="enable-background:new 0 0 451.847 451.847;" xml:space="preserve"> <g>
                                 <path d="M225.923,354.706c-8.098,0-16.195-3.092-22.369-9.263L9.27,151.157c-12.359-12.359-12.359-32.397,0-44.751
                                          c12.354-12.354,32.388-12.354,44.748,0l171.905,171.915l171.906-171.909c12.359-12.354,32.391-12.354,44.744,0
                                          c12.365,12.354,12.365,32.392,0,44.751L248.292,345.449C242.115,351.621,234.018,354.706,225.923,354.706z"/>
                                 </g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
                         </button>
-                        <div id="dropdown" class="dropdown-content">
+                        <div id="dropdown1" class="dropdown-content">
                             <div class="container">
-                                <header><a class="nav topic one" href="#topicwww" onclick="showwww()">WWW</a></header>
+                                <header><a class="nav topic one" href="#topicwww" onclick="showwww1()">WWW</a></header>
                                 <ul class="subtopic1"> 
-                                    <li><a href="#topicwww"  onclick="showwww()">The World Wide Web</a></li>
-                                    <li><a href="#howwww"  onclick="showwww()">How the Web Works</a></li>
-                                    <li><a href="#whatwww"  onclick="showwww()"> What happens when we type a URL in our browsers</a></li>
+                                    <li><a href="#topicwww"  onclick="showwww1()">The World Wide Web</a></li>
+                                    <li><a href="#howwww"  onclick="showwww2()">How the Web Works</a></li>
+                                    <li><a href="#whatwww"  onclick="showwww3()"> What happens when we type a URL in our browsers</a></li>
                                 </ul>
-                                <header><a class="nav topic two" href="#topichttp"  onclick="showhttp()">HTTP</a></header>
+                                <header><a class="nav topic two" href="#topichttp"  onclick="showhttp1()">HTTP</a></header>
                                 <ul class="subtopic2">
-                                    <li><a href="#topichttp" onclick="showhttp()">What is HTTP</a></li>
-                                    <li><a href="#httpver" onclick="showhttp()">HTTP Versions</a></li>
-                                    <li><a href="#httpfund" onclick="showhttp()">FUNDAMENTAL</a></li>
+                                    <li><a href="#topichttp" onclick="showhttp1()">Hypertext Transfer Protocol</a></li>
+                                    <li><a href="#httpver" onclick="showhttp2()">HTTP Versions</a></li>
+                                    <li><a href="#httpfund" onclick="showhttp3()">HTTP Fundamentals</a></li>
                                 </ul>
-                                <header><a class="nav topic three" href="#html" onclick="showhtml()">HTML</a></header>
+                                <header><a class="nav topic three" href="#html" onclick="showhtml1()">HTML</a></header>
                                 <ul class="subtopic3">
-                                    <li><a href="#htmlhist" onclick="showhtml()">History</a></li>
-                                    <li><a href="#html5" onclick="showhtml()">HTML5</a></li>
-                                    <li><a href="#htmldocstruc" onclick="showhtml()">HTML document Structure</a></li>
+                                    <li><a href="#htmlhist" onclick="showhtml1()">The Hypertext Markup Language</a></li>
+                                    <li><a href="#htmlhist" onclick="showhtml2()">Version History</a></li>
+                                    <li><a href="#html5" onclick="showhtml3()">HTML 5.0</a></li>
+                                    <li><a href="#htmldocstruc" onclick="showhtml4()">HTML document Structure</a></li>
+                                    <li><a href="#htmlprepr" onclick="showhtml5()">HTML Preprocessor</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <div id="midterm">
+                    <nav>
+                        <button onclick="drop()" class="dropbtn">MIDTERM
+                            <svg version="1.1" class="down" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="451.847px" height="451.847px" viewBox="0 0 451.847 451.847" style="enable-background:new 0 0 451.847 451.847;" xml:space="preserve"> <g>
+                                <path d="M225.923,354.706c-8.098,0-16.195-3.092-22.369-9.263L9.27,151.157c-12.359-12.359-12.359-32.397,0-44.751
+                                         c12.354-12.354,32.388-12.354,44.748,0l171.905,171.915l171.906-171.909c12.359-12.354,32.391-12.354,44.744,0
+                                         c12.365,12.354,12.365,32.392,0,44.751L248.292,345.449C242.115,351.621,234.018,354.706,225.923,354.706z"/>
+                                </g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                        </button>
+                        <div id="dropdown2" class="dropdown-content">
+                            <div class="container">
+                                <header><a class="nav topic one" href="#topicwww" onclick="showcss1()">CSS</a></header>
+                                <ul class="subtopic1"> 
+                                    <li><a href="#topicwww"  onclick="showcss1()">The World Wide Web</a></li>
+                                    <li><a href="#howwww"  onclick="showcss2()">How the Web Works</a></li>
+                                    <li><a href="#whatwww"  onclick="showcss3()"> What happens when we type a URL in our browsers</a></li>
+                                </ul>
+                                <header><a class="nav topic two" href="#topichttp"  onclick="showjs1()">JS</a></header>
+                                <ul class="subtopic2">
+                                    <li><a href="#topichttp" onclick="showjs1()">Hypertext Transfer Protocol</a></li>
+                                    <li><a href="#httpver" onclick="showjs2()">HTTP Versions</a></li>
+                                    <li><a href="#httpfund" onclick="showjs3()">HTTP Fundamentals</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -60,522 +89,556 @@
                 </div>
             </div>
             <main>
-                <div id="www">
-                    <h1>WWW</h1>
 
-                    <h2 id="topicwww">The World Wide Web</h2>
-                    <ul>
-                        <li>It is a collection of webpages.</li>
-                        <li>It is invented by Sir Tim Berners-Lee who is a british scientist in CERN to spread scientific discovery to other researchers worldwide.</li>
-                        <li> It is considered to be the greatest information system.</li>
-                    </ul>
-                    <h3>The World Wide Web was based in these three (3) core technologies:</h3>
-                    <ul>
-                        <li>HTTP</li>
-                        <li>HTML</li>
-                        <li>URL</li>
-                    </ul>
+                <div class="wrap" id="www">
 
-                    <i>Hypermedia</i>
-                    <p><li>one document that contain link to other documents.</li></p>
+                    <h1 id="topicwww" class="maintopic">World Wide Web</h1>
+                    <section id="www1">
+                        <h2 id="thewww" class="subtopic">The World Wide Web</h2>
+                        <div class="content"> 
+                            <ul>
+                                <li>It is a collection of webpages.</li>
+                                <li>It is invented by Sir Tim Berners-Lee who is a british scientist in CERN to spread scientific discovery to other researchers worldwide.</li>
+                                <li> It is considered to be the greatest information system.</li>
+                            </ul>
+                            <h3 class="subcontent">The World Wide Web was based in these three (3) core technologies:</h3>
+                            <ul>
+                                <li>HTTP: Hypertext Transfer Protocol</li>
+                                <li>HTML: Hypertext Markup Language</li>
+                                <li>URL: Uniform Resource Locator</li>
+                            </ul>
+                            <div class="notes"><i>Hypermedia:
+                                one document that contain link to other documents.
+                                </i>
+                            </div>
 
-                    <h3>2 Kinds of Resource:</h3>
-                    <ul>
-                        <li>  Static Resource – The resources already exist in the web server.</li>
-                        <li>Dynamic Resource – Resource that is produced on the fly.
-                            (ex. Google image search)</li>
-                    </ul>
-                    <i>WWW plays one of two roles. Either server which provides functionalities / server application.</i>
+                            <h3 class="subcontent">2 Kinds of Resource:</h3>
+                            <ul>
+                                <li>  Static Resource – The resources already exist in the web server.</li>
+                                <li>Dynamic Resource – Resource that is produced on the fly.
+                                    (ex. Google image search)</li>
+                            </ul>
+                            <div class="notes"><i>WWW plays one of two roles. Either server which provides functionalities / server application.</i></div>
 
-                    <h3>Application</h3>
-                    <ul>
-                        <li>web servers (hosting or storing)</li>
-                        <li>wait connection of clients</li>
-                        <li>web client (browser)</li>
-                    </ul>
-                    <i>Webservers</i>
-                    <li>Hosting or storing of web resources</li>
-                    <li>Waits for clients to request those resources.</li>
+                            <h3 class="subcontent">Application</h3>
+                            <ul>
+                                <li>web servers (hosting or storing)</li>
+                                <li>wait connection of clients</li>
+                                <li>web client (browser)</li>
+                            </ul>
+                            <div class="notes"><i>Webservers
+                            <li>Hosting or storing of web resources</li>
+                            <li>Waits for clients to request those resources.</li>
+                            </i></div>
+                            <h3 class="subcontent">Web crawler (a.k.a Web Spider)</h3>
+                            <p><li>This application crawls the web and harvests information</li></p>
 
-                    <h3>Web crawler (a.k.a Web Spider)</h3>
-                    <p><li>This application crawls the web and harvests information</li></p>
+                            <h3 class="subcontent">Inter-Network</h3>
+                            <ul>
+                                <li>Internet - global network</li>
+                                <li>inter - across boundaries</li>
+                                <li>network - establishing a connection (interconnection)</li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section id="www2">
+                        <h2 id="howweb" class="subtopic"> How the Web Works</h2>
+                        <div class="content">
+                            <p>PCs associated with the web are called clients and servers. This is a simple diagram on how they interact:
+                            <h3 class="subcontent">Clients</h3>
+                            The typical devices that use the web. (mobile phone, computers)
 
-                    <h3>Inter-Network</h3>
-                    <ul>
-                        <li>Internet - global network</li>
-                        <li>inter - across boundaries</li>
-                        <li>network - establishing a connection (interconnection)</li>
-                    </ul>
-                    
-                    <h2 id="howwww"> How the Web Works</h2>
+                            <h3 class="subcontent">Servers</h3>
+                            Computers that stores web pages and websites.
+                        </div>
+                    </section>
+                    <section id="www3">
+                        <h2 id="whathap" class="subtopic">What happens when we type a URL in our browsers</h2>
+                        <div class="content">
+                            <ol>
+                                <li>The browser will first go to the DNS server and it will find the address of the server.</li>
 
-                    <p>PCs associated with the web are called clients and servers. This is a simple diagram on how they interact:
-                    <h3>Clients</h3>
-                    The typical devices that use the web. (mobile phone, computers)
+                                <li>The browser now sends an HTTP request message to the server asking for a copy of the website to the client.</li>
 
-                    <h3>Servers</h3>
-                    Computers that stores web pages and websites.
-                    </p>
-                <h2 id="whatwww">What happens when we type a URL in our browsers</h2>
-                <ol>
-                    <li>The browser will first go to the DNS server and it will find the address of the server.</li>
-
-                    <li>The browser now sends an HTTP request message to the server asking for a copy of the website to the client.</li>
-
-                    <li>If the server approves the client’s requests, the server now sends an “OK” message (200 OK) and it will now start sending data packets of the website’s files.</li>
-                    <div class="notes"><i>*NOTE*
-                        <p>Data Packets - data that is chopped into smaller pieces.</p></i>
-                    </div>
-                    <li>The browsers assemble the received data packets into a complete website and displays it to the client.</li>
-                </ol>
+                                <li>If the server approves the client’s requests, the server now sends an “OK” message (200 OK) and it will now start sending data packets of the website’s files.</li>
+                                <div class="notes"><i>
+                                    Data Packets - data that is chopped into smaller pieces.</i>
+                                </div>
+                                <li>The browsers assemble the received data packets into a complete website and displays it to the client.</li>
+                            </ol>
+                        </div>
+                    </section>
                 </div>
-            <div id="html">
-                <div id="HTML_head">
-                    <h1>HTML(Hypertext Markup Language)</h1>
+
+                <div class="wrap" id="html">
+                    <h1 id="topichtml" class="maintopic">Hypertext Markup Language</h1>
+                    <section id="html1">
+                        <h2 id="thehtml" class="subtopic">The Hypertext Markup Language</h2>
+                        <div class="content">
+                            <ul>
+                                <li>Language used to mark up document</li>
+                                <li>Application of SGML(Standard Generalized Markup Language)</li>
+                                <li>Modern web developer practice solely for semantic specification of web page structure and the content with the presentation aspect delegates to stylesheet</li>
+                                <li>HTML before was used to specify the structure and content together with the presentation of the web page</li>
+                                <li>Developed at CERN followed by IETF then the W3C and also WHATWG</li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section id="html2">
+                        <h2 id="htmlhist" class="subtopic">Version History</h2>
+                        <div class="content">
+                            <p>HTML Tags Tim-Berners Lee, late 1991</p>
+                            <ul>
+                                <li>HTML 2.0 (RFC 1866)</li>
+                                <ul>
+                                    <li>Form -based File Upload</li>
+                                    <li>HTML table</li>
+                                    <li>Client - Side Image Maps</li>
+                                    <li>i18n(Internationalization)</li>
+                                </ul>
+                                <li>HTML 3.2 (W3C Recommendation, Jan 1997)</li>
+                                <li>HTML 4.0 (W3C Recommendation, Dec 1997)</li>
+                                <li>HTML 4.1 (W3C Recommendation, Dec 1999)</li>
+                                <ul>
+                                    <li>introduced depreciation of presentation elements and attributes in favor of style sheets</li>
+                                    <li>Strict, Transitional, Frameset DTDs(Document Type Definition)</li>
+                                </ul>
+
+                                <li>XHTML</li>
+                                <ul>
+                                    <li>The updated version of HTML in XML that made in writing the codes stricter</li>
+                                    <li>It is intended to make make the programmers follow the norm in coding, provide interoperability in HTML and XML</li>
+                                </ul>
+                            </ul>
+                        </div>
+                    </section>
+                    <section id="html3">
+                        <h2 id="html5" class="subtopic">HTML 5.0</h2>
+                        <div class="content">
+                            <ul>
+                                <li>Not all developers wanted the XHTML and Ian Hickson is one of them. He oppose in continuing the XHTML and says it is better to modernized HTML5 instead of XHTML</li>
+                                <li>The WHATWG undertake in HTML5 and W3C joins in</li>
+                                <li>HTML5 is now updated HTML4 and XHTML and it depends on the user what they want to use</li>
+                            </ul>
+                            <ul>
+                                <li>HTML5 (W3C Recommendation, Oct 2014)</li>
+                                <li>HTML5.1 (W3C Recommendation, Nov 2016)</li>
+                                <li>HTML5.2 (W3c Recommendation, Dec 2017)</li>
+                                <li>HTML Living Standard (WHATWG)</li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section id="html4">
+                        <h2 id="htmldocstruc" class="subtopic">HTML Document Structure</h2>
+                        <div class="content">
+                            <ul>
+                                <li>Versions information(ex DOCTYPE)</li>
+                                <ul>
+                                    <li>Root element(html)</li>
+                                    <ul>
+                                        <li>Header section that contains document metadata</li>
+                                    </ul>
+                                    <li>HTML 5 &lt;DOCTYPE html&gt;</li>
+                                    <ul>
+                                        <li>Case insensitive</li>
+                                        <li>Standard mode</li>
+                                        <li>Quirks mode - deals with older browser with nesting rendering</li>
+                                    </ul>
+                                    <li>HTML 4 DOCTYPE</li>
+                                    <ul>
+                                        <li>Strict</li>
+                                        <li>Traditional</li>
+                                        <li>Frameset</li>
+                                    </ul>	
+                                </ul>
+                                <li>Elements (HTML 4.01, XHTML 1.0, HTML 5)</li>
+                                <ul>
+                                    <li>Ex. &lt;a href = “____”&gt; Trial &lt;/a&gt;</li>
+                                </ul>
+                                <li>Tags</li>
+                                <li>Content</li>
+                                <ul>
+                                    <li>Content Models</li> 
+                                    <li>Void Elements (ex br, hr, img)</li>
+                                </ul>
+                                <li>Attributes and Attribute values</li>
+                                <ul>
+                                    <li>Global attribute</li>
+                                    <ul>
+                                        <li>Apply across the board (ex class, id)</li>
+                                    </ul>
+                                    <li>Custom Non-Visible</li>
+                                    <ul>
+                                        <li>Apply own attribute (data-*)</li>
+                                    </ul>
+                                    <li>WAI-ARIA Attributes (WCAG)</li>
+                                    <li>Elements-Specific Attributes</li>
+                                    <ul>
+                                        <li>Attributes to specific elements</li>
+                                    </ul>
+                                </ul>
+                                <li>MathML, SVG(Scalable Vector Graphics)</li>
+                                <ul>
+                                    <li>bitmapped</li>
+                                    <li>vector(not to loose quality)</li>
+                                </ul>
+                                <li>Character Reference</li>
+                                <ul>
+                                    <li>Representation to a character for a special symbol (ex > =  &amp;gt;)</li>
+                                </ul>
+                                <li>Comments</li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section id="html5">
+                        <h2 class="subtopic" id="htmlprep">HTML Preprocessor</h2>
+                        <div class="content">
+                            <p>A language that allows you to write in HTML and converts to another language</p>
+                        </div>
+                    </section>
                 </div>
-                <ul>
-                    <li>Language used to mark up document</li>
-                    <li>Application of SGML(Standard Generalized Markup Language)</li>
-                    <li>Modern web developer practice solely for semantic specification of web page structure and the content with the presentation aspect delegates to stylesheet</li>
-                    <li>HTML before was used to specify the structure and content together with the presentation of the web page</li>
-                    <li>Developed at CERN followed by IETF then the W3C and also WHATWG</li>
-                </ul>
-                <h2 id="htmlhist">Version History</h2>
-                <p>HTML Tags Tim-Berners Lee, late 1991</p>
-                <ul>
-                    <li>HTML 2.0 (RFC 1866)</li>
-                    <ul>
-                        <li>Form -based File Upload</li>
-                        <li>HTML table</li>
-                        <li>Client - Side Image Maps</li>
-                        <li>i18n(Internationalization)</li>
-                    </ul>
-                    <li>HTML 3.2 (W3C Recommendation, Jan 1997)</li>
-                    <li>HTML 4.0 (W3C Recommendation, Dec 1997)</li>
-                    <li>HTML 4.1 (W3C Recommendation, Dec 1999)</li>
-                    <ul>
-                        <li>introduced depreciation of presentation elements and attributes in favor of style sheets</li>
-                        <li>Strict, Transitional, Frameset DTDs(Document Type Definition)</li>
-                    </ul>
 
-                    <li>XHTML</li>
-                    <ul>
-                        <li>The updated version of HTML in XML that made in writing the codes stricter</li>
-                        <li>It is intended to make make the programmers follow the norm in coding, provide interoperability in HTML and XML</li>
-                    </ul>
-                </ul>
-                <h2 id="html5">HTML 5.0</h2>
-                <ul>
-                    <li>Not all developers wanted the XHTML and Ian Hickson is one of them. He oppose in continuing the XHTML and says it is better to modernized HTML5 instead of XHTML</li>
-                    <li>The WHATWG undertake in HTML5 and W3C joins in</li>
-                    <li>HTML5 is now updated HTML4 and XHTML and it depends on the user what they want to use</li>
-                </ul>
-                <ul>
-                    <li>HTML5 (W3C Recommendation, Oct 2014)</li>
-                    <li>HTML5.1 (W3C Recommendation, Nov 2016)</li>
-                    <li>HTML5.2 (W3c Recommendation, Dec 2017)</li>
-                    <li>HTML Living Standard (WHATWG)</li>
-                </ul>
+                <div class="wrap" id="http">
+                    <h1 id="topichttp" class="maintopic">HTTP</h1>
+                    <section id="http1">
+                        <h2 id="thehttp" class="subtopic"><a>Hypertext Transfer Protocol</a></h2>
+                        <div class="content">
+                            <ul>
+                                <li>an application layer communications protocol used to access resources (hypertext / hypermedia) on the world wide web</li>
+                                <li>invented by Sir Tim Berners-Lee at CERN 1989</li>
+                                <li>jointly developed by W3C and IETF(Internet Engineering Task Force)</li>
+                                <li>is stateless</li>
+                            </ul> 
+                            <h3 class="subcontent">HTTP was based on a client-server architecture</h3>
+                            <ul>
+                                <li>Servers</li>
+                                <ul>
+                                    <li>Origin servers - resides actual resource</li>
+                                    <li>Proxy servers, gateways, tunnels</li>
+                                </ul>
+                                <div class="notes">
+                                    <i> 
+                                    Gateways - connection across networks
+                                    <br>
+                                    Tunnels - more on encryption
+                                    </i>
+                                </div>
+                                <li>Clients / UA (User Agents)</li>
+                                <ul>
+                                    <li>web browsers, web crawlers / spiders, other end user tools and applications</li>
+                                </ul>
+                            </ul>
 
-                <h2 id="htmldocstruc">HTML Document Structure</h2>
-                <ul>
-                    <li>Versions information(ex DOCTYPE)</li>
-                    <ul>
-                        <li>Root element(html)</li>
+                            <i>HTTP uses a request-response standard protocol</i>
+                            <ul>
+                                <li>the clients send on HTTP request message to the server</li>
+                                <li>the server processes the request and replies with an HTTP response message</li>
+                            </ul>
+
+                            <p>Physical Layer</p>
+                            <p>Highest Layer (application layer)</p>
+                            <ul>
+                                <li>E.g: browsers (chrome) / webserver (apache)</li>
+                            </ul>
+
+                            <ul>
+                                <li>Bandwidth Hog</li>
+                                <ul>
+                                    <li>sending large chunk of data</li>
+                                </ul>
+                                <p>Solution: chunk it up to “packets”</p>
+                            </ul>
+
+
+                            <h3 class="subcontent">HTTP support for other functionality</h3>
+                            <ul>
+                                <li>Cache controls</li>
+                                <li>Content media type (MIME - Multipurpose Internet Mail Extensions) spec</li>
+                                <ul>
+                                    <li>What resource is sending</li>
+                                </ul>
+                                <li>Language and character set specification</li>
+                                <ul>
+                                    <li>Specify the language English in ASCII</li>
+                                </ul>
+                                <li>content/transfer codings compression</li>
+                                <li>Content negotiation</li>
+                                <li>Client - Server protocol negotiation</li>
+                                <ul>
+                                    <li>Switch protocol for specific transfer</li>
+                                </ul>
+                                <li>Persistent connection (ex. 400 transfer in one page)</li>
+                                <li>Request pipelining</li>
+                                <li>Authentication or authorization</li>
+                            </ul>
+
+                            <h3>OSI Model (7 layers)</h3>
+                            <ul>
+                                <li>retrieve web resources</li>
+                                <li>Send http request message to the server</li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section id="http2">
+                        <h2 id="httpver" class="subtopic">HTTP Versions:</h2>
+
+                        <h3 class="subcontent">HTTP 0.9(1991)</h3>
                         <ul>
-                            <li>Header section that contains document metadata</li>
+                            <li>port 80 was used</li>
+                            <li>request: “GET + URL” response: assumed to be HTML</li>
                         </ul>
-                        <li>HTML 5 &lt;DOCTYPE html&gt;</li>
+                        <h3 class="subcontent">HTTP 1.0 (RFC 1996)</h3>
                         <ul>
-                            <li>Case insensitive</li>
-                            <li>Standard mode</li>
-                            <li>Quirks mode - deals with older browser with nesting rendering</li>
+                            <li>methods GET, HEAD, and POST was added</li>
+                            <li>status code definitions were introduced and header field definitions</li>
+                            <li>pull protocol</li>
+                            <ul>
+                                <li>server push</li>
+                                <ul>
+                                    <li>the server can volunteer info to the client</li>
+                                    <li>lessens page load times</li>
+                                </ul>
+                            </ul>
                         </ul>
-                        <li>HTML 4 DOCTYPE</li>
+
+
+                        <h3 class="subcontent">HTTP 1.1 (1999 -2014)</h3>
                         <ul>
-                            <li>Strict</li>
-                            <li>Traditional</li>
-                            <li>Frameset</li>
-                        </ul>	
-                    </ul>
-                    <li>Elements (HTML 4.01, XHTML 1.0, HTML 5)</li>
-                    <ul>
-                        <li>Ex. &lt;a href = “____”&gt; Trial &lt;/a&gt;</li>
-                    </ul>
-                    <li>Tags</li>
-                    <li>Content</li>
-                    <ul>
-                        <li>Content Models</li> 
-                        <li>Void Elements (ex br, hr, img)</li>
-                    </ul>
-                    <li>Attributes and Attribute values</li>
-                    <ul>
-                        <li>Global attribute</li>
-                        <ul>
-                            <li>Apply across the board (ex class, id)</li>
+                            <li>provision of persistent connections (greatest contribution)</li>
+                            <li>make request -> wait for response -> make another request</li>
                         </ul>
-                        <li>Custom Non-Visible</li>
+                        <div class = "notes">
+                            <i>
+                                <p>Persistent connections (HTTP keep-alive) - allows both the
+                                    client and the server to use the same TCP connection. This
+                                    allows them to send and receive multiple HTTP requests and
+                                    responses. </p>
+                            </i>
+                        </div>
+
+
+                        <h3 class="subcontent">HTTP 2</h3>
                         <ul>
-                            <li>Apply own attribute (data-*)</li>
+                            <li>comes from SPDY (a google protocol)</li>
                         </ul>
-                        <li>WAI-ARIA Attributes (WCAG)</li>
-                        <li>Elements-Specific Attributes</li>
+                        <div class = "notes">
+                            <i>
+                                <p>The goal of HTTP 2 is to make the transfer of
+                                    resources via the WWW.</p>
+                            </i>
+                        </div>
                         <ul>
-                            <li>Attributes to specific elements</li>
+                            <li>heading compression</li>
+                            <li>request pipelining / request multiplexing</li>
+                            <ul>
+                                <li>ws users to send multiple requests.</li>
+                            </ul>
+                            <li>the transfer of data is optimized</li>
                         </ul>
-                    </ul>
-                    <li>MathML, SVG(Scalable Vector Graphics)</li>
-                    <ul>
-                        <li>bitmapped</li>
-                        <li>vector(not to loose quality)</li>
-                    </ul>
-                    <li>Character Reference</li>
-                    <ul>
-                        <li>Representation to a character for a special symbol (ex > =  &amp;gt;)</li>
-                    </ul>
-                    <li>Comments</li>
-                </ul>
-                <h2>HTML Preprocessor</h2>
-                <p>A language that allows you to write in HTML and converts to another language</p>
-            </div>
+                    </section>
+                    <section id="http3">
+                        <h2 id="httpfund" class="subtopic">HTTP FUNDAMENTALS</h2>
+                        <div class="content">
+                            <ul>
+                                <li>HTTP typically runs on top of TCP/IP using TCP port 80 by default or TCP port 443 for HTTPS (HTTP over SSL/TLS)</li>
+                            </ul>
 
-            <div id="http">
-                <h1>HTTP</h1>
-                <h2 onclick="httpdrop()" class="httpdrop"><a>Hypertext Transfer Protocol</a></h2>
-                <ul>
-                    <li>an application layer communications protocol used to access resources (hypertext / hypermedia) on the world wide web</li>
-                    <li>invented by Sir Tim Berners-Lee at CERN 1989</li>
-                    <li>jointly developed by W3C and IETF(Internet Engineering Task Force)</li>
-                    <li>is stateless</li>
-                </ul> 
-                <h3>HTTP was based on a client-server architecture</h3>
-                <ul>
-                    <li>Servers</li>
-                    <ul>
-                        <li>Origin servers - resides actual resource</li>
-                        <li>Proxy servers, gateways, tunnels</li>
-                    </ul>
-                    <div class="notes">
-                        <i>*NOTE:</i>
-                        <br> 
-                        Gateways - connection across networks
-                        <br>
-                        Tunnels - more on encryption
+                            <p>IANA </p>
+                            <ul>
+                                <li>is a department for ICANN</li>
+                                <li>a department responsible for coordinating key elements to keep the internet run smoothly</li>
+                                <li>allocate and maintain codes and numbering system that are used in technical standards that drive the internet</li>
+                            </ul>
 
-                    </div>
-                    <li>Clients / UA (User Agents)</li>
-                    <ul>
-                        <li>web browsers, web crawlers / spiders, other end user tools and applications</li>
-                    </ul>
-                </ul>
-
-                <i>HTTP uses a request-response standard protocol</i>
-                <ul>
-                    <li>the clients send on HTTP request message to the server</li>
-                    <li>the server processes the request and replies with an HTTP response message</li>
-                </ul>
-
-                <p>Physical Layer</p>
-                <p>Highest Layer (application layer)</p>
-                <ul>
-                    <li>E.g: browsers (chrome) / webserver (apache)</li>
-                </ul>
-
-                <ul>
-                    <li>Bandwidth Hog</li>
-                    <ul>
-                        <li>sending large chunk of data</li>
-                    </ul>
-                    <p>Solution: chunk it up to “packets”</p>
-                </ul>
+                            <p>HTTP resource are identified using URL</p>
 
 
-                <h3>HTTP support for other functionality</h3>
-                <ul>
-                    <li>Cache controls</li>
-                    <li>Content media type (MIME - Multipurpose Internet Mail Extensions) spec</li>
-                    <ul>
-                        <li>What resource is sending</li>
-                    </ul>
-                    <li>Language and character set specification</li>
-                    <ul>
-                        <li>Specify the language English in ASCII</li>
-                    </ul>
-                    <li>content/transfer codings compression</li>
-                    <li>Content negotiation</li>
-                    <li>Client - Server protocol negotiation</li>
-                    <ul>
-                        <li>Switch protocol for specific transfer</li>
-                    </ul>
-                    <li>Persistent connection (ex. 400 transfer in one page)</li>
-                    <li>Request pipelining</li>
-                    <li>Authentication or authorization</li>
-                </ul>
-
-                <h3>OSI Model (7 layers)</h3>
-                <ul>
-                    <li>retrieve web resources</li>
-                    <li>Send http request message to the server</li>
-                </ul>
-                <h2 id=httpver>HTTP Versions:</h2>
-
-                <h3>HTTP 0.9(1991)</h3>
-                <ul>
-                    <li>port 80 was used</li>
-                    <li>request: “GET + URL” response: assumed to be HTML</li>
-                </ul>
-                <h3>HTTP 1.0 (RFC 1996)</h3>
-                <ul>
-                    <li>methods GET, HEAD, and POST was added</li>
-                    <li>status code definitions were introduced and header field definitions</li>
-                    <li>pull protocol</li>
-                    <ul>
-                        <li>server push</li>
-                        <ul>
-                            <li>the server can volunteer info to the client</li>
-                            <li>lessens page load times</li>
-                        </ul>
-                    </ul>
-                </ul>
+                            <h3>Components of URL for HTTP(or HTTPS)</h3>
+                            <ul>
+                                <li>Scheme</li>
+                                <ul>
+                                    <li>Authority</li>
+                                    <ul>
+                                        <li>Used information or authentication credentials</li>
+                                    </ul>
+                                </ul>
+                                <li>Host</li>
+                                <ul>
+                                    <li>A domain name (resolved to an IP address using DNS) of the server where the resource reside or will be created</li>
+                                </ul>
+                                <li>Path</li>
+                                <ul>
+                                    <li>Resolved relative to the document root on the server</li>
+                                    <li>May refer to a static or dynamic resource</li>
+                                </ul>
+                                <li>Query</li>
+                                <ul>
+                                    <li>Start with ? (ex ?id=12234)</li>
+                                    <li>Typically provided as key=value pairs, with (&amp;) separates between key/value pairs (ex.?size=M&amp;color=red)</li>
+                                    <li>It maybe URL-encoded</li>
+                                </ul>
+                                <li>Fragment Identifier</li>
+                                <ul>
+                                    <li>Refer to a bookmark<li>
+                                    <ul>
+                                        <li>Only part not sent to the server</li>
+                                    </ul>
+                                </ul>
+                            </ul>
 
 
-                <h3>HTTP 1.1 (1999 -2014)</h3>
-                <ul>
-                    <li>provision of persistent connections (greatest contribution)</li>
-                    <li>make request -> wait for response -> make another request</li>
-                </ul>
-                <div class = "notes">
-                    <i>*NOTE*
-                        <p>Persistent connections (HTTP keep-alive) - allows both the
-                            client and the server to use the same TCP connection. This
-                            allows them to send and receive multiple HTTP requests and
-                            responses. </p>
-                    </i>
+
+
+
+                            <h3>HTTP Request Message</h3>
+                            <ul>
+                                <li>Request line</li>
+                                <li>Message Headers</li>
+                                <li>Empty Line(CRLF - Carriage Return, Line Feed)</li>
+                                <li>Message Body aka payload</li>
+                            </ul>
+                            <h3>HTTP Response Message</h3>
+                            <ul>
+                                <li>us Line - protocol version, status code, reason phrase</li>
+                                <li>Message headers</li>
+                                <li>Empty Line(CRLF)</li>
+                                <li>Message Body(optional)</li>
+                            </ul>
+
+                            <h3>HTTP Request Methods</h3>
+                            <ul>
+                                <li>GET - request a representation of the resource that would retrieve data</li>
+                                <li>HEAD - asks for a copy similar to GET request but have no response body</li>
+                                <li>POST - submit entity to the specified resource and often change the state of the server</li>
+                                <li>PUT - create or replace the state of the targeted resource</li>
+                                <li>DELETE - removes the connection between the target resource and its functionality</li>
+                                <li>OPTIONS - ask information in the communication options that is available</li>
+                                <li>TRACE - request/remote, application level(loopback message that is used to tesing of the request/response drain</li>
+                                <li>CONNECT - request the establishment tunnel to the destination origin server</li>
+                            </ul>
+                            <p>*SAFE METHOD - indicated that the resources can't be modified</p>
+                            <ul>   
+                                <li>Idempotent - intended effect on the server of multiple identical requests </li>
+                            </ul>
+                            <p>*Cacheable METHOD - indicates that the response to a method is allowed to stored for future reset</p>
+
+                            <h3>HTTP Message Headers</h3>
+                            <ul>
+                                <li>1.	General Header Fields - can be used by both request (client) and response (servers)</li>
+                                <li>2.	Request Header Field - can only be seen in the request message(client side)</li>
+                                <li>3.	Response Header Field - can only be seen in the response message(server side)</li>
+                                <li>4.	Entity Header - contains information that is in the payload</li>
+                            </ul>
+
+
+                            <h3>HTTP status code</h3> 
+                            <div class = "statusC" onclick="showInformational()">
+                                <h4>1. Informational(1xx)</h4>
+                                <ul id="informational">
+                                    <li>100 Continue</li>
+                                    <li>101 Switching Protocols</li>
+                                    <li>102 Processing</li>
+                                </ul>
+                            </div>
+                            <div class = "statusC" onclick="showSuccess()">   
+                                <h4>2.	 Success(2xx)</h4>
+                                <ul id="Success">
+                                    <li>200 OK</li>
+                                    <li>201 Created</li>
+                                    <li>202 Accepted</li>
+                                    <li>203 Non-authoritative Information</li>
+                                    <li>204 No Content</li>
+                                    <li>205 Reset Content</li>
+                                    <li>206 Partial Content</li>
+                                    <li>207 Multi-Status</li>
+                                    <li>208 Already Reported</li>
+                                    <li>226 IM Used</li>
+                                </ul>
+                            </div>
+                            <div class = "statusC" onclick="showRedirection()">
+                                <h4>3.	 Redirection(3xx)</h4>
+                                <ul id="Redirection">
+                                    <li>300 Multiple Choices</li>
+                                    <li>301 Moved Permanently</li>
+                                    <li>302 Found</li>
+                                    <li>303 See Other</li>
+                                    <li>304 Not Modified</li>
+                                    <li>305 Use Proxy</li>
+                                    <li>307 Temporary Redirect</li>
+                                    <li>308 Permanent Redirect</li>
+                                </ul>
+                            </div>
+                            <div class = "statusC" onclick="showClient()">
+                                <h4>4.	 Client Error(4xx)</h4>
+                                <ul id="Client">
+                                    <li>400 Bad Request</li>
+                                    <li>401 Unauthorized</li>
+                                    <li>402 Payment Required</li>
+                                    <li>403 Forbidden</li>
+                                    <li>404 Not Found</li>
+                                    <li>405 Method Not Allowed</li>
+                                    <li>406 Not Acceptable</li>
+                                    <li>407 Proxy Authentication Required</li>
+                                    <li>408 Request Timeout</li>
+                                    <li>409 Conflict</li>
+                                    <li>410 Gone</li>
+                                    <li>411 Length Required</li>
+                                    <li>412 Precondition Failed</li>
+                                    <li>413 Payload Too Large</li>
+                                    <li>414 Request-URI Too Long</li>
+                                    <li>415 Unsupported Media Type</li>
+                                    <li>416 Requested Range Not Satisfiable
+                                    <li>417 Expectation Failed</li>
+                                    <li>418 I'm a teapot</li>
+                                    <li>421 Misdirected Request</li>
+                                    <li>422 Unprocessable Entity</li>
+                                    <li>423 Locked</li>
+                                    <li>424 Failed Dependency</li>
+                                    <li>426 Upgrade Required</li>
+                                    <li>428 Precondition Required</li>
+                                    <li>429 Too Many Requests</li>
+                                    <li>431 Request Header Fields Too Large</li>
+                                    <li>444 Connection Closed Without Response</li>
+                                    <li>451 Unavailable For Legal Reasons</li>
+                                    <li>499 Client Closed Request</li>
+                                </ul>
+                            </div>
+                            <div class = "statusC" onclick="showServer()">
+                                <h4>5.	 Server Error(5xx)</h4>
+                                <ul id="Server">
+                                    <li>500 Internal Server Error</li>
+                                    <li>501 Not Implemented</li>
+                                    <li>502 Bad Gateway</li>
+                                    <li>503 Service Unavailable</li>
+                                    <li>504 Gateway Timeout</li>
+                                    <li>505 HTTP Version Not Supported</li>
+                                    <li>506 Variant Also Negotiates</li>
+                                    <li>507 Insufficient Storage</li>
+                                    <li>508 Loop Detected</li>
+                                    <li>510 Not Extended</li>
+                                    <li>511 Network Authentication Required</li>
+                                    <li>599 Network Connect Timeout Error</li>
+                                </ul>
+                            </div>
+
+
+
+
+                            <p>HTTP Extensions *WevDAV (Distributes Authority Version)</p>
+                            <p>*HTTP can be extended by defining new request methods, message headers and/or status codes, and then implementing servers and/or clients that make us of the new functionality*</p>
+
+                        </div>
+                    </section>
                 </div>
-
-
-                <h3>HTTP 2</h3>
-                <ul>
-                    <li>comes from SPDY (a google protocol)</li>
-                </ul>
-                <div class = "notes">
-                    <i>
-                        *NOTE*
-                        <p>The goal of HTTP 2 is to make the transfer of
-                            resources via the WWW.</p>
-                    </i>
-                </div>
-                <ul>
-                    <li>heading compression</li>
-                    <li>request pipelining / request multiplexing</li>
-                    <ul>
-                        <li>ws users to send multiple requests.</li>
-                    </ul>
-                    <li>the transfer of data is optimized</li>
-                </ul>
-
-                <span id="httpfund"></span>
-                <h2>HTTP FUNDAMENTALS</h2>
-                <ul>
-                    <li>HTTP typically runs on top of TCP/IP using TCP port 80 by default or TCP port 443 for HTTPS (HTTP over SSL/TLS)</li>
-                </ul>
-
-                <p>IANA </p>
-                <ul>
-                    <li>is a department for ICANN</li>
-                    <li>a department responsible for coordinating key elements to keep the internet run smoothly</li>
-                    <li>allocate and maintain codes and numbering system that are used in technical standards that drive the internet</li>
-                </ul>
-
-                <p>HTTP resource are identified using URL</p>
-
-
-
-
-                <h3>Components of URL for HTTP(or HTTPS)</h3>
-                <ul>
-                    <li>Scheme</li>
-                    <ul>
-                        <li>Authority</li>
-                        <ul>
-                            <li>Used information or authentication credentials</li>
-                        </ul>
-                    </ul>
-                    <li>Host</li>
-                    <ul>
-                        <li>A domain name (resolved to an IP address using DNS) of the server where the resource reside or will be created</li>
-                    </ul>
-                    <li>Path</li>
-                    <ul>
-                        <li>Resolved relative to the document root on the server</li>
-                        <li>May refer to a static or dynamic resource</li>
-                    </ul>
-                    <li>Query</li>
-                    <ul>
-                        <li>Start with ? (ex ?id=12234)</li>
-                        <li>Typically provided as key=value pairs, with (&amp;) separates between key/value pairs (ex.?size=M&amp;color=red)</li>
-                        <li>It maybe URL-encoded</li>
-                    </ul>
-                    <li>Fragment Identifier</li>
-                    <ul>
-                        <li>Refer to a bookmark<li>
-                        <ul>
-                            <li>Only part not sent to the server</li>
-                        </ul>
-                    </ul>
-                </ul>
-
-
-
-
-
-                <h3>HTTP Request Message</h3>
-                <ul>
-                    <li>Request line</li>
-                    <li>Message Headers</li>
-                    <li>Empty Line(CRLF - Carriage Return, Line Feed)</li>
-                    <li>Message Body aka payload</li>
-                </ul>
-                <h3>HTTP Response Message</h3>
-                <ul>
-                    <li>us Line - protocol version, status code, reason phrase</li>
-                    <li>Message headers</li>
-                    <li>Empty Line(CRLF)</li>
-                    <li>Message Body(optional)</li>
-                </ul>
-
-                <h3>HTTP Request Methods</h3>
-                <ul>
-                    <li>GET - request a representation of the resource that would retrieve data</li>
-                    <li>HEAD - asks for a copy similar to GET request but have no response body</li>
-                    <li>POST - submit entity to the specified resource and often change the state of the server</li>
-                    <li>PUT - create or replace the state of the targeted resource</li>
-                    <li>DELETE - removes the connection between the target resource and its functionality</li>
-                    <li>OPTIONS - ask information in the communication options that is available</li>
-                    <li>TRACE - request/remote, application level(loopback message that is used to tesing of the request/response drain</li>
-                    <li>CONNECT - request the establishment tunnel to the destination origin server</li>
-                </ul>
-                <p>*SAFE METHOD - indicated that the resources can't be modified</p>
-                <ul>   
-                    <li>Idempotent - intended effect on the server of multiple identical requests </li>
-                </ul>
-                <p>*Cacheable METHOD - indicates that the response to a method is allowed to stored for future reset</p>
-
-                <h3>HTTP Message Headers</h3>
-                <ul>
-                    <li>1.	General Header Fields - can be used by both request (client) and response (servers)</li>
-                    <li>2.	Request Header Field - can only be seen in the request message(client side)</li>
-                    <li>3.	Response Header Field - can only be seen in the response message(server side)</li>
-                    <li>4.	Entity Header - contains information that is in the payload</li>
-                </ul>
-
-
-                <h3>HTTP status code</h3> 
-                <div class = "statusC" onclick="showInformational()">
-                    <h4>1. Informational(1xx)</h4>
-                    <ul id="informational">
-                        <li>100 Continue</li>
-                        <li>101 Switching Protocols</li>
-                        <li>102 Processing</li>
-                    </ul>
-                </div>
-                <div class = "statusC" onclick="showSuccess()">   
-                    <h4>2.	 Success(2xx)</h4>
-                    <ul id="Success">
-                        <li>200 OK</li>
-                        <li>201 Created</li>
-                        <li>202 Accepted</li>
-                        <li>203 Non-authoritative Information</li>
-                        <li>204 No Content</li>
-                        <li>205 Reset Content</li>
-                        <li>206 Partial Content</li>
-                        <li>207 Multi-Status</li>
-                        <li>208 Already Reported</li>
-                        <li>226 IM Used</li>
-                    </ul>
-                </div>
-                <div class = "statusC" onclick="showRedirection()">
-                    <h4>3.	 Redirection(3xx)</h4>
-                    <ul id="Redirection">
-                        <li>300 Multiple Choices</li>
-                        <li>301 Moved Permanently</li>
-                        <li>302 Found</li>
-                        <li>303 See Other</li>
-                        <li>304 Not Modified</li>
-                        <li>305 Use Proxy</li>
-                        <li>307 Temporary Redirect</li>
-                        <li>308 Permanent Redirect</li>
-                    </ul>
-                </div>
-                <div class = "statusC" onclick="showClient()">
-                    <h4>4.	 Client Error(4xx)</h4>
-                    <ul id="Client">
-                        <li>400 Bad Request</li>
-                        <li>401 Unauthorized</li>
-                        <li>402 Payment Required</li>
-                        <li>403 Forbidden</li>
-                        <li>404 Not Found</li>
-                        <li>405 Method Not Allowed</li>
-                        <li>406 Not Acceptable</li>
-                        <li>407 Proxy Authentication Required</li>
-                        <li>408 Request Timeout</li>
-                        <li>409 Conflict</li>
-                        <li>410 Gone</li>
-                        <li>411 Length Required</li>
-                        <li>412 Precondition Failed</li>
-                        <li>413 Payload Too Large</li>
-                        <li>414 Request-URI Too Long</li>
-                        <li>415 Unsupported Media Type</li>
-                        <li>416 Requested Range Not Satisfiable
-                        <li>417 Expectation Failed</li>
-                        <li>418 I'm a teapot</li>
-                        <li>421 Misdirected Request</li>
-                        <li>422 Unprocessable Entity</li>
-                        <li>423 Locked</li>
-                        <li>424 Failed Dependency</li>
-                        <li>426 Upgrade Required</li>
-                        <li>428 Precondition Required</li>
-                        <li>429 Too Many Requests</li>
-                        <li>431 Request Header Fields Too Large</li>
-                        <li>444 Connection Closed Without Response</li>
-                        <li>451 Unavailable For Legal Reasons</li>
-                        <li>499 Client Closed Request</li>
-                    </ul>
-                </div>
-                <div class = "statusC" onclick="showServer()">
-                    <h4>5.	 Server Error(5xx)</h4>
-                    <ul id="Server">
-                        <li>500 Internal Server Error</li>
-                        <li>501 Not Implemented</li>
-                        <li>502 Bad Gateway</li>
-                        <li>503 Service Unavailable</li>
-                        <li>504 Gateway Timeout</li>
-                        <li>505 HTTP Version Not Supported</li>
-                        <li>506 Variant Also Negotiates</li>
-                        <li>507 Insufficient Storage</li>
-                        <li>508 Loop Detected</li>
-                        <li>510 Not Extended</li>
-                        <li>511 Network Authentication Required</li>
-                        <li>599 Network Connect Timeout Error</li>
-                    </ul>
-                </div>
-
-
-
-
-                <p>HTTP Extensions *WevDAV (Distributes Authority Version)</p>
-                <p>*HTTP can be extended by defining new request methods, message headers and/or status codes, and then implementing servers and/or clients that make us of the new functionality*</p>
-
-            </div>
 
 
             </main>
 
-    </body>
+            </body>
 
-    <footer>
+        <footer>
 
-    </footer>
+        </footer>
 
-    <script src="js/prelim.js"></script>
-</html>
+        <script src="js/prelim.js"></script>
+        </html>
