@@ -157,3 +157,11 @@ main i {
 	color: black;
 }
 
+main div.notes {
+	color: black;
+}
+
+.hasChild {
+	list-style-type: none;
+}
+
