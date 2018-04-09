@@ -219,9 +219,10 @@ function displayResult(){
 
   	d.appendChild(ol);
   	var span = document.createElement('span');
-    var score = document.createTextNode("Score: "+score+"/"+questions.length);
-    span.appendChild(score);
-    d.insertBefore(span, d.childNodes[0]);
+        var score = document.createTextNode("Score: "+score+"/"+questions.length);
+        span.appendChild(score);
+	span.id = "score";
+        d.insertBefore(span, d.childNodes[0]);
 
 
     localStorage.removeItem('userAnswer');
