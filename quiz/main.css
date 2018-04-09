@@ -1,76 +1,176 @@
 .samp{
-  
-  background-color: white;
-  padding: 10px;
-  margin-top: 10px;
-  margin-left: 10px;
-  margin-bottom: 10px;
-  float: left;
-  width: 20px;
-  text-align: center;
-  border: 2px solid;
-  border-top: 8px solid #1C6EA4;
+
+    background-color: white;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    float: left;
+    width: 20px;
+    text-align: center;
+    border: 2px solid;
+    border-top: 8px solid #1C6EA4;
 }
 
 .samp:hover{
-  background-color: rgba(0, 0, 0, 0.78);
-  color: white;
-  transition: .2s linear;
-  cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.78);
+    color: white;
+    transition: .2s linear;
+    cursor: pointer;
 }
 
 .samp:first-child{
-     border-top: 8px solid yellow;
+    border-top: 8px solid yellow;
+}
+.wrapper{
+    display: grid;
+    align-self: flex-start;
+    grid-template-columns: 1fr 2fr 1fr 1fr ;
+    grid-template-rows: 400px 1fr;
+    grid-template-areas: 
+        ". qnav container ."
+        ". result result .";
 }
 
 #qNav{
-  position: absolute;
-  border: 2px solid;
-  width: 30.3%;
-
+    grid-area: qnav;
+    border: 2px solid;
+    margin-top: 15px;
+    width: 103%;
+    height: auto;
 }
 
-
-#bckBtn {
-  display: none;
-}
-
-#chkBtn {
-  display: none;
-}
 
 #container{
-  position: absolute;
-  margin-top: 400px;
-  display: block;
+    grid-area: container;
+    display: grid;
+    margin-top: 50px;
+    grid-template-rows: 1fr 50px 50px 1fr;
+    grid-template-columns: 300px 150px 150px 150px 400px;
+    grid-template-areas: 
+        "quest quest quest quest quest"
+        ". ans ans ans ."
+        ". bckb nxtb subm .";
+    grid grid-row-gap: 50px;
 }
 
 #result{
-  position: absolute;
-  margin-top: 400px;
-  display: none;
-
+    grid-area: result;
+    display: none;
+    margin-left: 25%;
 }
 
 ol{
-  background-color: rgb(52, 52, 54);
-  color: white;
-  margin: 10px;
-  width:  800px;
+    background-color: rgb(52, 52, 54);
+    color: white;
+    margin: 10px;
+    width:  800px;
 }
 
 .wrong{
-  background-color: red;
-  margin-top: 10px;
+    background-color: red;
+    margin-top: 10px;
 }
 
 .right{
-   background-color: green;
-   margin-top: 10px;
+    background-color: green;
+    margin-top: 10px;
 }
 
 a{
-  text-decoration: none;
-  text-emphasis: none;
-  color: black;
+    text-decoration: none;
+    text-emphasis: none;
+    color: black;
 }
+
+#answer{
+    grid-area: ans;
+    width: 100%;
+    margin-left: -50%;
+}
+#bckBtn{
+    grid-area: bckb;
+    width: 100px;
+    height: 50px;
+    -webkit-transition: all .2s;
+    background: #e3e3e3;
+    line-height: 50px;
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px rgba(0,0,0,.5), 1px 1px 1px rgba(0,0,0,.3);
+    margin-left: -110%;
+    margin-top: 5px;
+}
+#bckBtn:hover{
+    background: #333;
+    color: #e3e3e3;
+}
+
+#nxtBtn{
+    grid-area: nxtb;
+    width: 100px;
+    height: 50px;
+    -webkit-transition: all .2s;
+    background: #e3e3e3;
+    line-height: 50px;
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px rgba(0,0,0,.5), 1px 1px 1px rgba(0,0,0,.3);
+    margin-left: -130%;
+    margin-top: 5px;
+}
+#nxtBtn:hover{
+    background: #333;
+    color: #e3e3e3;
+}
+#chkBtn{
+    grid-area: subm;
+    width: 100px;
+    height: 50px;
+    -webkit-transition: all .2s;
+    background: #e3e3e3;
+    line-height: 50px;
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px rgba(0,0,0,.5), 1px 1px 1px rgba(0,0,0,.3);
+    margin-left: -140%;
+    margin-top: 5px;
+}
+#chkBtn:hover{
+    background: #333;
+    color: #e3e3e3;
+}
+#strtBtn{
+    width: 100px;
+    height: 50px;
+    -webkit-transition: all .2s;
+    background: #e3e3e3;
+    line-height: 50px;
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px rgba(0,0,0,.5), 1px 1px 1px rgba(0,0,0,.3);
+}
+#strtBtn:hover{
+    background: #333;
+    color: #e3e3e3;
+}
+
+#question {
+    grid-area: quest;
+    margin: auto;
+    width: 100%;
+    border: auto solid;
+    padding: 10px;
+    margin-left: 5%;
+    font-family: Tahoma;
+    font-size: 20px;
+}
+
