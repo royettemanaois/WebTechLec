@@ -11,6 +11,9 @@ function scrolls() {
 }
 var toggleStatus = 1;
 function drop() {
+    document.getElementById("dropdown1").classList.toggle("show");
+}
+function drop2() {
     document.getElementById("dropdown2").classList.toggle("show");
 }
 
@@ -37,7 +40,7 @@ function showcss1(){
     document.getElementById("css").style.display = "block";
     document.getElementById("js").style.display = 'none';
     document.getElementById("css1").style.display = 'block';
-    document.getElementById("dropdown1").classList.toggle("show");
+    document.getElementById("dropdown2").classList.toggle("show");
 }
 
 function showcss2(){
@@ -45,7 +48,7 @@ function showcss2(){
     document.getElementById("css").style.display = "block";
     document.getElementById("js").style.display = 'none';
     document.getElementById("css2").style.display = 'block';
-    document.getElementById("dropdown1").classList.toggle("show");
+    document.getElementById("dropdown2").classList.toggle("show");
 }
 
 function showcss3(){
@@ -53,7 +56,7 @@ function showcss3(){
     document.getElementById("css").style.display = "block";
     document.getElementById("js").style.display = 'none';
     document.getElementById("css3").style.display = 'block';
-    document.getElementById("dropdown1").classList.toggle("show");
+    document.getElementById("dropdown2").classList.toggle("show");
 }
 
 function showcss4(){
@@ -61,7 +64,7 @@ function showcss4(){
     document.getElementById("css").style.display = "block";
     document.getElementById("js").style.display = 'none';
     document.getElementById("css4").style.display = 'block';
-    document.getElementById("dropdown1").classList.toggle("show");
+    document.getElementById("dropdown2").classList.toggle("show");
 }
 
 
@@ -70,7 +73,7 @@ function showcss5(){
     document.getElementById("css").style.display = "block";
     document.getElementById("js").style.display = 'none';
     document.getElementById("css5").style.display = 'block';
-    document.getElementById("dropdown1").classList.toggle("show");
+    document.getElementById("dropdown2").classList.toggle("show");
 }
 
 
@@ -79,7 +82,7 @@ function showcss6(){
     document.getElementById("css").style.display = "block";
     document.getElementById("js").style.display = 'none';
     document.getElementById("css6").style.display = 'block';
-    document.getElementById("dropdown1").classList.toggle("show");
+    document.getElementById("dropdown2").classList.toggle("show");
 }
 
 
@@ -88,7 +91,7 @@ function showcss7(){
     document.getElementById("css").style.display = "block";
     document.getElementById("js").style.display = 'none';
     document.getElementById("css7").style.display = 'block';
-    document.getElementById("dropdown1").classList.toggle("show");
+    document.getElementById("dropdown2").classList.toggle("show");
 }
 
 function showcss8(){
@@ -96,7 +99,7 @@ function showcss8(){
     document.getElementById("css").style.display = "block";
     document.getElementById("js").style.display = 'none';
     document.getElementById("css8").style.display = 'block';
-    document.getElementById("dropdown1").classList.toggle("show");
+    document.getElementById("dropdown2").classList.toggle("show");
 }
 
 
@@ -105,7 +108,7 @@ function showcss9(){
     document.getElementById("css").style.display = "block";
     document.getElementById("js").style.display = 'none';
     document.getElementById("css9").style.display = 'block';
-    document.getElementById("dropdown1").classList.toggle("show");
+    document.getElementById("dropdown2").classList.toggle("show");
 }
 
 
@@ -114,7 +117,7 @@ function showcss10(){
     document.getElementById("css").style.display = "block";
     document.getElementById("js").style.display = 'none';
     document.getElementById("css10").style.display = 'block';
-    document.getElementById("dropdown1").classList.toggle("show");
+    document.getElementById("dropdown2").classList.toggle("show");
 }
 
 
@@ -123,7 +126,7 @@ function showcss11(){
     document.getElementById("css").style.display = "block";
     document.getElementById("js").style.display = 'none';
     document.getElementById("css11").style.display = 'block';
-    document.getElementById("dropdown1").classList.toggle("show");
+    document.getElementById("dropdown2").classList.toggle("show");
 }
 
 
@@ -132,7 +135,7 @@ function showjs1(){
     document.getElementById("js").style.display = "block";
     document.getElementById("css").style.display = 'none';
     document.getElementById("js1").style.display = 'block';
-    document.getElementById("dropdown1").classList.toggle("show");
+    document.getElementById("dropdown2").classList.toggle("show");
 }
 
 function showjs2(){
@@ -140,7 +143,7 @@ function showjs2(){
     document.getElementById("js").style.display = "block";
     document.getElementById("css").style.display = 'none';
     document.getElementById("js2").style.display = 'block';
-    document.getElementById("dropdown1").classList.toggle("show");
+    document.getElementById("dropdown2").classList.toggle("show");
 }
 
 function showjs3(){
@@ -148,5 +151,5 @@ function showjs3(){
     document.getElementById("js").style.display = "block";
     document.getElementById("css").style.display = 'none';
     document.getElementById("js3").style.display = 'block';
-    document.getElementById("dropdown1").classList.toggle("show");
+    document.getElementById("dropdown2").classList.toggle("show");
 }
