@@ -223,13 +223,14 @@ nav a:hover {
     width: 250px;
     height: 240px;
     overflow: hidden;
-    border-radius: 50%;
+    border-radius: 10%;
 }
 .ps a img{
     position: relative;
     width: 100%;
     filter: grayscale(100%);
     transition: 0.4s all;
+    border-radius: 25%;
 }
 
 .ps a:hover > img{
