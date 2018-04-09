@@ -31,7 +31,7 @@ function storeData(fileName, localID) {
 
 
 if(!localStorage.getItem("questions")){
-	storeData("questions.json","questions");
+	storeData("quiz/questions.json","questions");
 }
 
 
