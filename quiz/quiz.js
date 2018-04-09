@@ -169,7 +169,10 @@ function displayResult(){
 
 	var score = 0;
 	document.getElementById('container').style.display = "none";
+    document.getElementById('qNav').style.position = "fixed";
+    document.getElementById('qNav').style.left = "50px";
 	document.getElementById('result').style.display = "block";
+    
 	var d = document.getElementById('result');
 	var ol = document.createElement("ol");
 	

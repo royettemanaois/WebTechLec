@@ -8,43 +8,43 @@
         */
         
 			{
-				"question":"1. It is considered to be the greatest information system.",
+				"question":"It is considered to be the greatest information system.",
 				"ans":"World Wide Web"
 			},
             {
-                "question":"2. The ability to open new Web pages by clicking text links on a Web browser.",
+                "question":"The ability to open new Web pages by clicking text links on a Web browser.",
                 "ans":"Hypermedia"
             },
             {
-                "question":"3. A type of Web resource that is produced on the fly.",
+                "question":"A type of Web resource that is produced on the fly.",
                 "ans":"Dynamic Resource"
             },
             {
-                "question":"4. A type of Web resource that already exists in a Web server.",
+                "question":"A type of Web resource that already exists in a Web server.",
                 "ans":"Static Resource"
             },
             {
-                "question":"5. A program that uses HTTP  to serve the files that form Web pages to users, in response to their requests, which are forwarded by their computers' HTTP clients.",
+                "question":"A program that uses HTTP  to serve the files that form Web pages to users, in response to their requests, which are forwarded by their computers' HTTP clients.",
                 "ans":"Web server"
             },
             {
-                "question":"6. This application crawls the web and harvests information.",
+                "question":"This application crawls the web and harvests information.",
                 "ans":"Web spiders" //or web crawlers
             },
             {
-                "question":"7. They are the typical devices that uses the Web.",
+                "question":"They are the typical devices that uses the Web.",
                 "ans":"Clients"
             },
             {
-                "question":"8. Data that is chopped into smaller pieces",
+                "question":"Data that is chopped into smaller pieces",
                 "ans":"Data Packets"
             },
             {
-                "question":"9. Computers that store web pages and websites.",
+                "question":"Computers that store web pages and websites.",
                 "ans":"Servers"
             },
             {
-                "question":"10. He was the one who invented The World Wide Web.",
+                "question":"He was the one who invented The World Wide Web.",
                 "ans":"Tim Berners-Lee"
             },
         
@@ -54,23 +54,23 @@
         */
         
 			{
-				"question":"11. Methods GET, HEAD, and POST are now supported. Content-Type Header was added. -- a. HTTP 0.9 -- b. HTTP 1.0 -- c. HTTP 1.1 -- d. HTTP 2.0",
+				"question":"Methods GET, HEAD, and POST are now supported. Content-Type Header was added. -- a. HTTP 0.9 -- b. HTTP 1.0 -- c. HTTP 1.1 -- d. HTTP 2.0",
 				"ans":"b"
 			},
 			{
-				"question":"12. The Upgrade header was introduced. Also, HTTP pipelining was implemented.",
+				"question":"The Upgrade header was introduced. Also, HTTP pipelining was implemented.",
 				"ans":"c"
 			},
 			{
-				"question":"13. It only supports GET method and its response type is only hypertext. -- a. HTTP 0.9 -- b. HTTP 1.0 -- c. HTTP 1.1 -- d. HTTP 2.0",
+				"question":"It only supports GET method and its response type is only hypertext. -- a. HTTP 0.9 -- b. HTTP 1.0 -- c. HTTP 1.1 -- d. HTTP 2.0",
 				"ans":"a"
 			},
             {
-				"question":"14. Aside from the methods GET, HEAD, and POST, the methods PUT, DELETE, TRACE, and OPTIONS are now supported. The Keep-Alive header first used. -- a. HTTP 0.9 -- b. HTTP 1.0 -- c. HTTP 1.1 -- d. HTTP 2.0",
+				"question":"Aside from the methods GET, HEAD, and POST, the methods PUT, DELETE, TRACE, and OPTIONS are now supported. The Keep-Alive header first used. -- a. HTTP 0.9 -- b. HTTP 1.0 -- c. HTTP 1.1 -- d. HTTP 2.0",
 				"ans":"c"
 			},
             {
-				"question":"15. This version supports Query Multiplexing and Headers Compression. -- a. HTTP 0.9 -- b. HTTP 1.0 -- c. HTTP 1.1 -- d. HTTP 2.0",
+				"question":"This version supports Query Multiplexing and Headers Compression. -- a. HTTP 0.9 -- b. HTTP 1.0 -- c. HTTP 1.1 -- d. HTTP 2.0",
 				"ans":"d"
 			},
         
@@ -80,66 +80,66 @@
         */
         
             {
-				"question":"16. True or False: Continue -- HTTP Status: Informational",
+				"question":"True or False: Continue -- HTTP Status: Informational",
 				"ans":"true"
 			},
             {
-				"question":"17. True or False: OK -- HTTP Status: Success",
+				"question":"True or False: OK -- HTTP Status: Success",
 				"ans":"true"
 			},
             {
-				"question":"18. True or False: Found -- HTTP Status: Success",
+				"question":"True or False: Found -- HTTP Status: Success",
 				"ans":"false"
 			},
             {
-				"question":"19. True or False: Created -- HTTP Status: Informational",
+				"question":"True or False: Created -- HTTP Status: Informational",
 				"ans":"false"
 			},
             {
-				"question":"20. True or False: Processing -- HTTP Status: Redirection",
+				"question":"True or False: Processing -- HTTP Status: Redirection",
 				"ans":"false"
 			},
             {
-				"question":"21. True or False: Internal Server Error -- HTTP Status: Server Error",
+				"question":"True or False: Internal Server Error -- HTTP Status: Server Error",
 				"ans":"true"
 			},
             {
-				"question":"22. True or False: Misdirected Request -- HTTP Status: Client Error",
+				"question":"True or False: Misdirected Request -- HTTP Status: Client Error",
 				"ans":"true"
 			},
             {
-				"question":"23. True or False: Already Reported -- HTTP Status: Informational",
+				"question":"True or False: Already Reported -- HTTP Status: Informational",
 				"ans":"false"
 			},
             {
-				"question":"24. True or False: Use Proxy -- HTTP Status: Redirection",
+				"question":"True or False: Use Proxy -- HTTP Status: Redirection",
 				"ans":"true"
 			},
             {
-				"question":"25. True or False: Forbidden -- HTTP Status: Server Error",
+				"question":"True or False: Forbidden -- HTTP Status: Server Error",
 				"ans":"false"
 			},
         
         //  Fill in the blanks.
         
             {
-				"question":"26. HTML means Hypertext _____ Language",
+				"question":"HTML means Hypertext _____ Language",
 				"ans":"Markup"
 			},
             {
-				"question":"27. The X in XHTML means _____",
+				"question":"The X in XHTML means _____",
 				"ans":"Extensible"
 			},
             {
-				"question":"28. WHATWG means Web Hypertext Application _____ Working Group",
+				"question":"WHATWG means Web Hypertext Application _____ Working Group",
 				"ans":"Technology"
 			},
             {
-				"question":"29. _____ opposed in continuing the XHTML.",
+				"question":"_____ opposed in continuing the XHTML.",
 				"ans":"Ian Hickson"
 			},
             {
-				"question":"30. HTML _____ is a language that allows you to write in HTML and converts that into another language.",
+				"question":"HTML _____ is a language that allows you to write in HTML and converts that into another language.",
 				"ans":"Preprocessor"
 			},
         
