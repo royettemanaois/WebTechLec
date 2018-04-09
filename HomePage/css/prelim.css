@@ -291,10 +291,6 @@ main{
     display: none;
 }
 
-main ul{
-    color: white;
-}
-
 li {
     padding: 3px;
 }
@@ -427,4 +423,8 @@ p{
     #logo{
         width: 300px;
     }
+}
+
+.hasChild {
+    list-style-type: none;
 }

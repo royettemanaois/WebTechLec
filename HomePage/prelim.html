@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
         <title>WebTechLec</title>
         <link rel="stylesheet" type="text/css" href="css/prelim.css">
     </head>
@@ -88,6 +89,7 @@
                     </nav>
                 </div>
             </div>
+        </div>
             <main>
 
                 <div class="wrap" id="www">
@@ -126,12 +128,16 @@
                                 <li>wait connection of clients</li>
                                 <li>web client (browser)</li>
                             </ul>
-                            <div class="notes"><i>Webservers
-                            <li>Hosting or storing of web resources</li>
-                            <li>Waits for clients to request those resources.</li>
-                            </i></div>
+                            <div class="notes"><i>Webservers</i>
+                                <ul>
+                                    <li>Hosting or storing of web resources</li>
+                                    <li>Waits for clients to request those resources.</li>
+                                </ul>
+                            </div>
                             <h3 class="subcontent">Web crawler (a.k.a Web Spider)</h3>
-                            <p><li>This application crawls the web and harvests information</li></p>
+                            <ul>
+                                <li><p>This application crawls the web and harvests information</p></li>
+                            </ul>
 
                             <h3 class="subcontent">Inter-Network</h3>
                             <ul>
@@ -160,10 +166,10 @@
 
                                 <li>The browser now sends an HTTP request message to the server asking for a copy of the website to the client.</li>
 
-                                <li>If the server approves the client’s requests, the server now sends an “OK” message (200 OK) and it will now start sending data packets of the website’s files.</li>
-                                <div class="notes"><i>
+                                <li>If the server approves the client’s requests, the server now sends an <q>OK</q> message (200 OK) and it will now start sending data packets of the website’s files.</li>
+                                <li class="hasChild"><div class="notes"><i>
                                     Data Packets - data that is chopped into smaller pieces.</i>
-                                </div>
+                                </div></li>
                                 <li>The browsers assemble the received data packets into a complete website and displays it to the client.</li>
                             </ol>
                         </div>
@@ -190,30 +196,35 @@
                             <p>HTML Tags Tim-Berners Lee, late 1991</p>
                             <ul>
                                 <li>HTML 2.0 (RFC 1866)</li>
-                                <ul>
-                                    <li>Form -based File Upload</li>
-                                    <li>HTML table</li>
-                                    <li>Client - Side Image Maps</li>
-                                    <li>i18n(Internationalization)</li>
-                                </ul>
+                                <li class="hasChild">
+                                    <ul>
+                                        <li>Form -based File Upload</li>
+                                        <li>HTML table</li>
+                                        <li>Client - Side Image Maps</li>
+                                        <li>i18n(Internationalization)</li>
+                                    </ul>
+                                </li>
                                 <li>HTML 3.2 (W3C Recommendation, Jan 1997)</li>
                                 <li>HTML 4.0 (W3C Recommendation, Dec 1997)</li>
                                 <li>HTML 4.1 (W3C Recommendation, Dec 1999)</li>
-                                <ul>
-                                    <li>introduced depreciation of presentation elements and attributes in favor of style sheets</li>
-                                    <li>Strict, Transitional, Frameset DTDs(Document Type Definition)</li>
-                                </ul>
-
+                                <li class="hasChild">
+                                    <ul>
+                                        <li>introduced depreciation of presentation elements and attributes in favor of style sheets</li>
+                                        <li>Strict, Transitional, Frameset DTDs(Document Type Definition)</li>
+                                    </ul>
+                                </li>
                                 <li>XHTML</li>
-                                <ul>
-                                    <li>The updated version of HTML in XML that made in writing the codes stricter</li>
-                                    <li>It is intended to make make the programmers follow the norm in coding, provide interoperability in HTML and XML</li>
-                                </ul>
+                                <li class="hasChild">
+                                    <ul>
+                                        <li>The updated version of HTML in XML that made in writing the codes stricter</li>
+                                        <li>It is intended to make make the programmers follow the norm in coding, provide interoperability in HTML and XML</li>
+                                    </ul>
+                                </li>
                             </ul>
                         </div>
                     </section>
                     <section id="html3">
-                        <h2 id="html5" class="subtopic">HTML 5.0</h2>
+                        <h2 id="html5ver" class="subtopic">HTML 5.0</h2>
                         <div class="content">
                             <ul>
                                 <li>Not all developers wanted the XHTML and Ian Hickson is one of them. He oppose in continuing the XHTML and says it is better to modernized HTML5 instead of XHTML</li>
@@ -233,59 +244,83 @@
                         <div class="content">
                             <ul>
                                 <li>Versions information(ex DOCTYPE)</li>
-                                <ul>
-                                    <li>Root element(html)</li>
+                                <li class="hasChild">
                                     <ul>
-                                        <li>Header section that contains document metadata</li>
+                                        <li>Root element(html)</li>
+                                        <li class="hasChild">
+                                            <ul>
+                                                <li>Header section that contains document metadata</li>
+                                            </ul>
+                                        </li>
+                                        <li>HTML 5 &lt;DOCTYPE html&gt;</li>
+                                        <li class="hasChild">
+                                            <ul>
+                                                <li>Case insensitive</li>
+                                                <li>Standard mode</li>
+                                                <li>Quirks mode - deals with older browser with nesting rendering</li>
+                                            </ul>
+                                        </li>
+                                        <li>HTML 4 DOCTYPE</li>
+                                        <li class="hasChild">
+                                            <ul>
+                                                <li>Strict</li>
+                                                <li>Traditional</li>
+                                                <li>Frameset</li>
+                                            </ul>
+                                        </li>	
                                     </ul>
-                                    <li>HTML 5 &lt;DOCTYPE html&gt;</li>
-                                    <ul>
-                                        <li>Case insensitive</li>
-                                        <li>Standard mode</li>
-                                        <li>Quirks mode - deals with older browser with nesting rendering</li>
-                                    </ul>
-                                    <li>HTML 4 DOCTYPE</li>
-                                    <ul>
-                                        <li>Strict</li>
-                                        <li>Traditional</li>
-                                        <li>Frameset</li>
-                                    </ul>	
-                                </ul>
+                                </li>
                                 <li>Elements (HTML 4.01, XHTML 1.0, HTML 5)</li>
-                                <ul>
-                                    <li>Ex. &lt;a href = “____”&gt; Trial &lt;/a&gt;</li>
-                                </ul>
+                                <li class="hasChild">
+                                    <ul>
+                                        <li>Ex. &lt;a href = <q>____</q>&gt; Trial &lt;/a&gt;</li>
+                                    </ul>
+                                </li>
                                 <li>Tags</li>
                                 <li>Content</li>
-                                <ul>
-                                    <li>Content Models</li> 
-                                    <li>Void Elements (ex br, hr, img)</li>
-                                </ul>
+                                <li class="hasChild">
+                                    <ul>
+                                        <li>Content Models</li> 
+                                        <li>Void Elements (ex br, hr, img)</li>
+                                    </ul>
+                                </li>
                                 <li>Attributes and Attribute values</li>
-                                <ul>
-                                    <li>Global attribute</li>
+                                <li class="hasChild">
                                     <ul>
-                                        <li>Apply across the board (ex class, id)</li>
+                                        <li>Global attribute</li>
+                                        <li class="hasChild">
+                                            <ul>
+                                                <li>Apply across the board (ex class, id)</li>
+                                            </ul>
+                                        </li>
+                                        <li>Custom Non-Visible</li>
+                                        <li class="hasChild">
+                                            <ul>
+                                                <li>Apply own attribute (data-*)</li>
+                                            </ul>
+                                        </li>
+                                        <li>WAI-ARIA Attributes (WCAG)</li>
+                                        <li>Elements-Specific Attributes</li>
+                                        <li class="hasChild">
+                                            <ul>
+                                                <li>Attributes to specific elements</li>
+                                            </ul>
+                                        </li>
                                     </ul>
-                                    <li>Custom Non-Visible</li>
-                                    <ul>
-                                        <li>Apply own attribute (data-*)</li>
-                                    </ul>
-                                    <li>WAI-ARIA Attributes (WCAG)</li>
-                                    <li>Elements-Specific Attributes</li>
-                                    <ul>
-                                        <li>Attributes to specific elements</li>
-                                    </ul>
-                                </ul>
+                                </li>
                                 <li>MathML, SVG(Scalable Vector Graphics)</li>
-                                <ul>
-                                    <li>bitmapped</li>
-                                    <li>vector(not to loose quality)</li>
-                                </ul>
+                                <li class="hasChild">
+                                    <ul>
+                                        <li>bitmapped</li>
+                                        <li>vector(not to loose quality)</li>
+                                    </ul>
+                                </li>
                                 <li>Character Reference</li>
-                                <ul>
-                                    <li>Representation to a character for a special symbol (ex > =  &amp;gt;)</li>
-                                </ul>
+                                <li class="hasChild">
+                                    <ul>
+                                        <li>Representation to a character for a special symbol (ex > =  &amp;gt;)</li>
+                                    </ul>
+                                </li>
                                 <li>Comments</li>
                             </ul>
                         </div>
@@ -312,21 +347,27 @@
                             <h3 class="subcontent">HTTP was based on a client-server architecture</h3>
                             <ul>
                                 <li>Servers</li>
-                                <ul>
-                                    <li>Origin servers - resides actual resource</li>
-                                    <li>Proxy servers, gateways, tunnels</li>
-                                </ul>
-                                <div class="notes">
-                                    <i> 
-                                    Gateways - connection across networks
-                                    <br>
-                                    Tunnels - more on encryption
-                                    </i>
-                                </div>
+                                <li class="hasChild">
+                                    <ul>
+                                        <li>Origin servers - resides actual resource</li>
+                                        <li>Proxy servers, gateways, tunnels</li>
+                                    </ul>
+                                </li>
+                                <li class="hasChild">
+                                    <div class="notes">
+                                        <i> 
+                                        Gateways - connection across networks
+                                        <br>
+                                        Tunnels - more on encryption
+                                        </i>
+                                    </div>
+                                </li>
                                 <li>Clients / UA (User Agents)</li>
-                                <ul>
-                                    <li>web browsers, web crawlers / spiders, other end user tools and applications</li>
-                                </ul>
+                                <li class="hasChild">
+                                    <ul>
+                                        <li>web browsers, web crawlers / spiders, other end user tools and applications</li>
+                                    </ul>
+                                </li>
                             </ul>
 
                             <i>HTTP uses a request-response standard protocol</i>
@@ -343,10 +384,14 @@
 
                             <ul>
                                 <li>Bandwidth Hog</li>
-                                <ul>
-                                    <li>sending large chunk of data</li>
-                                </ul>
-                                <p>Solution: chunk it up to “packets”</p>
+                                <li class="hasChild">
+                                    <ul>
+                                        <li>sending large chunk of data</li>
+                                    </ul>
+                                </li>
+                                <li class="hasChild">
+                                    <p>Solution: chunk it up to <q>packets</q></p>
+                                </li>
                             </ul>
 
 
@@ -354,19 +399,25 @@
                             <ul>
                                 <li>Cache controls</li>
                                 <li>Content media type (MIME - Multipurpose Internet Mail Extensions) spec</li>
-                                <ul>
-                                    <li>What resource is sending</li>
-                                </ul>
+                                <li class="hasChild">
+                                    <ul>
+                                        <li>What resource is sending</li>
+                                    </ul>
+                                </li>
                                 <li>Language and character set specification</li>
-                                <ul>
-                                    <li>Specify the language English in ASCII</li>
-                                </ul>
+                                <li class="hasChild">
+                                    <ul>
+                                        <li>Specify the language English in ASCII</li>
+                                    </ul>
+                                </li>
                                 <li>content/transfer codings compression</li>
                                 <li>Content negotiation</li>
                                 <li>Client - Server protocol negotiation</li>
-                                <ul>
-                                    <li>Switch protocol for specific transfer</li>
-                                </ul>
+                                <li class="hasChild">
+                                    <ul>
+                                        <li>Switch protocol for specific transfer</li>
+                                    </ul>
+                                </li>
                                 <li>Persistent connection (ex. 400 transfer in one page)</li>
                                 <li>Request pipelining</li>
                                 <li>Authentication or authorization</li>
@@ -385,20 +436,24 @@
                         <h3 class="subcontent">HTTP 0.9(1991)</h3>
                         <ul>
                             <li>port 80 was used</li>
-                            <li>request: “GET + URL” response: assumed to be HTML</li>
+                            <li>request: <q>GET + URL</q> response: assumed to be HTML</li>
                         </ul>
                         <h3 class="subcontent">HTTP 1.0 (RFC 1996)</h3>
                         <ul>
                             <li>methods GET, HEAD, and POST was added</li>
                             <li>status code definitions were introduced and header field definitions</li>
                             <li>pull protocol</li>
-                            <ul>
-                                <li>server push</li>
+                            <li class="hasChild">
                                 <ul>
-                                    <li>the server can volunteer info to the client</li>
-                                    <li>lessens page load times</li>
+                                    <li>server push</li>
+                                    <li class="hasChild">
+                                        <ul>
+                                            <li>the server can volunteer info to the client</li>
+                                            <li>lessens page load times</li>
+                                        </ul>
+                                    </li>
                                 </ul>
-                            </ul>
+                            </li>
                         </ul>
 
 
@@ -408,12 +463,12 @@
                             <li>make request -> wait for response -> make another request</li>
                         </ul>
                         <div class = "notes">
-                            <i>
-                                <p>Persistent connections (HTTP keep-alive) - allows both the
+                            <p>
+                                <i>Persistent connections (HTTP keep-alive) - allows both the
                                     client and the server to use the same TCP connection. This
                                     allows them to send and receive multiple HTTP requests and
-                                    responses. </p>
-                            </i>
+                                    responses. </i>
+                            </p>
                         </div>
 
 
@@ -422,17 +477,19 @@
                             <li>comes from SPDY (a google protocol)</li>
                         </ul>
                         <div class = "notes">
-                            <i>
-                                <p>The goal of HTTP 2 is to make the transfer of
-                                    resources via the WWW.</p>
-                            </i>
+                            <p>
+                                <i>The goal of HTTP 2 is to make the transfer of
+                                    resources via the WWW.</i>
+                            </p>
                         </div>
                         <ul>
                             <li>heading compression</li>
                             <li>request pipelining / request multiplexing</li>
-                            <ul>
-                                <li>ws users to send multiple requests.</li>
-                            </ul>
+                            <li class="hasChild">
+                                <ul>
+                                    <li>ws users to send multiple requests.</li>
+                                </ul>
+                            </li>
                             <li>the transfer of data is optimized</li>
                         </ul>
                     </section>
@@ -456,34 +513,48 @@
                             <h3>Components of URL for HTTP(or HTTPS)</h3>
                             <ul>
                                 <li>Scheme</li>
-                                <ul>
-                                    <li>Authority</li>
+                                <li class="hasChild">
                                     <ul>
-                                        <li>Used information or authentication credentials</li>
+                                        <li>Authority</li>
+                                        <li class="hasChild">
+                                            <ul>
+                                                <li>Used information or authentication credentials</li>
+                                            </ul>
+                                        </li>
                                     </ul>
-                                </ul>
+                                </li>
                                 <li>Host</li>
-                                <ul>
-                                    <li>A domain name (resolved to an IP address using DNS) of the server where the resource reside or will be created</li>
-                                </ul>
-                                <li>Path</li>
-                                <ul>
-                                    <li>Resolved relative to the document root on the server</li>
-                                    <li>May refer to a static or dynamic resource</li>
-                                </ul>
-                                <li>Query</li>
-                                <ul>
-                                    <li>Start with ? (ex ?id=12234)</li>
-                                    <li>Typically provided as key=value pairs, with (&amp;) separates between key/value pairs (ex.?size=M&amp;color=red)</li>
-                                    <li>It maybe URL-encoded</li>
-                                </ul>
-                                <li>Fragment Identifier</li>
-                                <ul>
-                                    <li>Refer to a bookmark<li>
+                                <li class="hasChild">
                                     <ul>
-                                        <li>Only part not sent to the server</li>
+                                        <li>A domain name (resolved to an IP address using DNS) of the server where the resource reside or will be created</li>
                                     </ul>
-                                </ul>
+                                </li>
+                                <li>Path</li>
+                                <li class="hasChild">
+                                    <ul>
+                                        <li>Resolved relative to the document root on the server</li>
+                                        <li>May refer to a static or dynamic resource</li>
+                                    </ul>
+                                </li>
+                                <li>Query</li>
+                                <li class="hasChild">
+                                    <ul>
+                                        <li>Start with ? (ex ?id=12234)</li>
+                                        <li>Typically provided as key=value pairs, with (&amp;) separates between key/value pairs (ex.?size=M&amp;color=red)</li>
+                                        <li>It maybe URL-encoded</li>
+                                    </ul>
+                                </li>
+                                <li>Fragment Identifier</li>
+                                <li class="hasChild">
+                                    <ul>
+                                        <li>Refer to a bookmark<li>
+                                        <li class="hasChild">
+                                            <ul>
+                                                <li>Only part not sent to the server</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
                             </ul>
 
 
@@ -633,12 +704,7 @@
 
 
             </main>
-
+            <script src="js/prelim.js"></script>
             </body>
-
-        <footer>
-
-        </footer>
-
-        <script src="js/prelim.js"></script>
+        
         </html>
