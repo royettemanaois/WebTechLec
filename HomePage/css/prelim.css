@@ -239,12 +239,12 @@ nav a{
 nav .container{
     display: grid;
     width: 100%;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 10px, 120px;
     grid-column-gap: 20px;
-    grid-template-areas: 
-        "topic1 topic2 topic3"
-        "stopic1 stopic2 stopic3";
+    grid-template-areas:
+        "topic1 topic2 topic3 topic4"
+        "stopic1 stopic2 stopic3 .";
 }
 
 .nav topic one{
@@ -255,6 +255,9 @@ nav .container{
 }
 .nav topic three{
     grid-area: topic3;
+}
+.nav topic four{
+    grid-area: topic4;
 }
 .subtopic1{
     grid-area: stopic1;
