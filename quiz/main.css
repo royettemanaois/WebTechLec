@@ -38,7 +38,7 @@
     margin-top: 15px;
     width: 103%;
     height: auto;
-    background-color: #013243
+    background-color: #013243;
 }
 
 
@@ -59,6 +59,8 @@
     grid-area: result;
     display: none;
     margin-left: 25%;
+    font-family: Tahoma;
+    font-size: 15px;
 }
 
 ol{
@@ -87,10 +89,15 @@ a{
     grid-area: ans;
     width: 100%;
     margin-left: -50%;
+    border-radius: 4px;
+    font-family: Tahoma;
+    font-size:15px;
 }
-#answer:hover{
-    color: #013243;
+#answer:focus{
+    border-color: #013243;
+    box-shadow: 0 0 8px 0 #013243;
 }
+
 #bckBtn{
     grid-area: bckb;
     width: 100px;
@@ -176,6 +183,4 @@ a{
     font-family: Tahoma;
     font-size: 20px;
 }
-
-
 
