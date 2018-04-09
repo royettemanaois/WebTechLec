@@ -283,8 +283,11 @@ main{
     grid-area: content;
 }
 
-#www{
-    display: block;
+#www2{
+    display: none;
+}
+#www3{
+    display: none;
 }
 
 #http , #html{
