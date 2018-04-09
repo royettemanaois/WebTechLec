@@ -282,7 +282,9 @@ a:hover #name6{
     margin-left: 20px;
     
 }
-
+a{
+  color: inherit;
+}
 
 
 .footcontainer {
