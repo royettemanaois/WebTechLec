@@ -11,7 +11,7 @@ function scrolls() {
 }
 var toggleStatus = 1;
 function drop() {
-    document.getElementById("dropdown1").classList.toggle("show");
+    document.getElementById("dropdown2").classList.toggle("show");
 }
 
 
