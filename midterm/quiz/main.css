@@ -1,15 +1,48 @@
-.samp{
 
+.samp:first-child{
+    border-top: 8px solid yellow;
+}
+
+#result{
+    grid-area: result;
+    display: none;
+    font-family: Tahoma;
+    font-size: 15px;
+    width: 100%;
+	padding-top: 270px;
+    overflow: scroll;
+}
+#result > span{
+    font-size: 30px;
+    position: fixed;
+    z-index: 100;
+	margin: 50px;
+    overflow: hidden;
+	margin-top: -70px;
+    border: 2px solid black;
     background-color: white;
-    padding: 10px;
+}
+
+
+.samp{
+    background-color: white;
+    padding: 5px;
     margin-top: 10px;
-    margin-left: 10px;
+    margin-left: 20px;
     margin-bottom: 10px;
     float: left;
-    width: 20px;
+    width: 40px;
     text-align: center;
     border: 2px solid;
     border-top: 8px solid #1C6EA4;
+}
+
+#qNav{
+    border: 2px solid;
+    width: 70%;
+    height: 250px;
+    background-color: #013243;
+	margin-top: 0px;
 }
 
 .samp:hover{
@@ -19,59 +52,64 @@
     cursor: pointer;
 }
 
-.samp:first-child{
-    border-top: 8px solid yellow;
-}
-.wrapper{
-    display: grid;
-    align-self: flex-start;
-    grid-template-columns: 1fr 2fr 1fr 1fr ;
-    grid-template-rows: 400px 1fr;
-    grid-template-areas: 
-        ". qnav container ."
-        ". result result .";
-}
-
-#qNav{
-    grid-area: qnav;
-    border: 2px solid;
-    margin-top: 15px;
-    width: 103%;
-    height: auto;
-    background-color: #013243;
-}
-
-
 #container{
-    grid-area: container;
-    display: grid;
-    margin-top: 50px;
-    grid-template-rows: 1fr 50px 50px 1fr;
-    grid-template-columns: 300px 150px 150px 150px 400px;
-    grid-template-areas: 
-        "quest quest quest quest quest"
-        ". ans ans ans ."
-        ". bckb nxtb subm .";
-    grid grid-row-gap: 50px;
+    margin: 50px auto 0 auto;
+	width: 70%;
 }
 
-#result{
-    grid-area: result;
-    display: none;
-    margin-left: 25%;
+#question {
+    border: auto solid;
+    padding: 10px;
+	margin-top: 60px;
     font-family: Tahoma;
-    font-size: 15px;
+    font-size: 30px;
+    width: 100%;
+	text-align: center;
+}
+
+#answer{
+    grid-area: ans;
+    width: 50%;
+	margin: 0 25% 0 25%;
+	border-radius: 6px;
+	padding: auto;
+	display: table;
+    font-family: Tahoma;
+    font-size:30px;
+	display: block;
+}
+
+#bckBtn{
+	width: 100px;
+    height: 50px;
+    -webkit-transition: all .2s;
+    background: #e3e3e3;
+    line-height: 50px;
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+	margin-left:39%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px rgba(0,0,0,.5), 1px 1px 1px rgba(0,0,0,.3);
+    margin-top: 5px;
+}
+#bckBtn:hover{
+    background: #333;
+    color: #e3e3e3;
 }
 
 ol{
     background-color: rgb(52, 52, 54);
     color: white;
     margin: 10px;
-    width:  800px;
+    width:  70%;
+	margin: auto;
 }
 
+
+
 .wrong{
-    background-color: red;
+    background-color:red;
     margin-top: 10px;
 }
 
@@ -85,44 +123,18 @@ a{
     text-emphasis: none;
     color: black;
 }
-#answer{
-    grid-area: ans;
-    width: 100%;
-    margin-left: -50%;
-    border-radius: 4px;
-    font-family: Tahoma;
-    font-size:15px;
-}
+
 #answer:focus{
     border-color: #013243;
     box-shadow: 0 0 8px 0 #013243;
 }
 
-#bckBtn{
-    grid-area: bckb;
-    width: 100px;
-    height: 50px;
-    -webkit-transition: all .2s;
-    background: #e3e3e3;
-    line-height: 50px;
-    text-align: center;
-    font-weight: bold;
-    color: #333;
-    border-radius: 5px;
-    box-shadow: 0px 0px 2px rgba(0,0,0,.5), 1px 1px 1px rgba(0,0,0,.3);
-    margin-left: -110%;
-    margin-top: 5px;
-}
-#bckBtn:hover{
-    background: #333;
-    color: #e3e3e3;
-}
-
 #nxtBtn{
-    grid-area: nxtb;
     width: 100px;
     height: 50px;
     -webkit-transition: all .2s;
+	float: right;
+	margin-right: 39%;
     background: #e3e3e3;
     line-height: 50px;
     text-align: center;
@@ -130,7 +142,6 @@ a{
     color: #333;
     border-radius: 5px;
     box-shadow: 0px 0px 2px rgba(0,0,0,.5), 1px 1px 1px rgba(0,0,0,.3);
-    margin-left: -130%;
     margin-top: 5px;
 }
 #nxtBtn:hover{
@@ -149,7 +160,6 @@ a{
     color: #333;
     border-radius: 5px;
     box-shadow: 0px 0px 2px rgba(0,0,0,.5), 1px 1px 1px rgba(0,0,0,.3);
-    margin-left: -140%;
     margin-top: 5px;
 }
 #chkBtn:hover{
@@ -173,14 +183,4 @@ a{
     color: #e3e3e3;
 }
 
-#question {
-    grid-area: quest;
-    margin: auto;
-    width: 100%;
-    border: auto solid;
-    padding: 10px;
-    margin-left: 5%;
-    font-family: Tahoma;
-    font-size: 20px;
-}
 
