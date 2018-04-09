@@ -283,17 +283,11 @@ main{
     grid-area: content;
 }
 
-#www2{
+#www2, #www3, #http1, #http2,
+#http3, #html1,#html2,#html3,
+#html4, #html5, #http , #html{
     display: none;
-}
-#www3{
-    display: none;
-}
-
-#http , #html{
-    display: none;
-}
-
+    
 li {
     padding: 3px;
 }
