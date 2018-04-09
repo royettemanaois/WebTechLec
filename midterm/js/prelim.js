@@ -96,7 +96,7 @@ function showhtml1(){
     document.getElementById("dropdown1").classList.toggle("show");
 }
 
-function showhtmlw(){
+function showhtml2(){
     resetdisplay();
     document.getElementById("html").style.display = 'block';
     document.getElementById("www").style.display = "none";
