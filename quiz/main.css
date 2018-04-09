@@ -1,15 +1,56 @@
-.samp{
 
+.samp:first-child{
+    border-top: 8px solid yellow;
+}
+.wrapper{
+    display: grid;
+    align-self: flex-start;
+    grid-template-columns: 50px 360px 1fr 50px ;
+    grid-template-rows: 500px 500px;
+    grid-template-areas: 
+        ". qnav container ."
+        ". qnav result result";
+    grid-column-gap: 50px;
+}
+
+
+#result{
+    grid-area: result;
+    display: none;
+    font-family: Tahoma;
+    font-size: 15px;
+    width: 100%;
+    margin-top: -90%;
+    overflow: scroll;
+}
+#result > span{
+    font-size: 30px;
+    position: fixed;
+    margin-top: -50px;
+    z-index: 100;
+    overflow: hidden;
+    border: 2px solid black;
     background-color: white;
-    padding: 10px;
+}
+
+.samp{
+    background-color: white;
+    padding: 5px;
     margin-top: 10px;
-    margin-left: 10px;
+    margin-left: 20px;
     margin-bottom: 10px;
     float: left;
-    width: 20px;
+    width: 20%;
     text-align: center;
     border: 2px solid;
     border-top: 8px solid #1C6EA4;
+}
+#qNav{
+    grid-area: qnav;
+    border: 2px solid;
+    width: 100%;
+    height: 600px;
+    background-color: #013243;
 }
 
 .samp:hover{
@@ -19,54 +60,51 @@
     cursor: pointer;
 }
 
-.samp:first-child{
-    border-top: 8px solid yellow;
-}
-.wrapper{
-    display: flex;
-    background-color: #013243;
-    height: 2480px;
-    justify-content: center;
-}
-
-#qNav{
-    grid-area: qnav;
-    border: 2px solid;
-    margin-top: 15px;
-    width: 500px;
-    height: 300px;
-    background-color: whitesmoke;
-    
-}
-
-
 #container{
+    grid-area: container;
     display: grid;
-    margin-top: 20px;
-    margin-left: 50px;
-    grid-template-rows: 200px 50px 50px;
-    grid-template-columns: 150px 150px 150px;
+    margin-top: 50px;
+    grid-template-rows: 300px 1fr 1fr;
+    grid-template-columns: 100px 100px 100px;
     grid-template-areas: 
         "quest quest quest"
         "ans ans ans"
         "bckb nxtb subm";
 }
-#score{
-    font-size: 50px;
-    color: antiquewhite;
-    position: absolute;
-    margin-top: -75px;
-    margin-left: 225px;
-    background-color: rgb(52, 52, 54);
+
+#question {
+    grid-area: quest;
+    border: auto solid;
+    padding: 10px;
+    margin-left: 5%;
+    font-family: Tahoma;
+    font-size: 20px;
+    width: 100%;
 }
 
-#result{
-    display: none;
+#answer{
+    grid-area: ans;
+    width: 100%;
+    border-radius: 4px;
     font-family: Tahoma;
-    margin-left: 50%;
-    font-size: 15px;
-    padding-top: 100px;
-    margin-top: 0%;
+    font-size:15px;
+}
+#bckBtn{
+    grid-area: bckb;
+    height: 50px;
+    -webkit-transition: all .2s;
+    background: #e3e3e3;
+    line-height: 50px;
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px rgba(0,0,0,.5), 1px 1px 1px rgba(0,0,0,.3);
+    margin-top: 5px;
+}
+#bckBtn:hover{
+    background: #333;
+    color: #e3e3e3;
 }
 
 ol{
@@ -91,36 +129,13 @@ a{
     text-emphasis: none;
     color: black;
 }
-#answer{
-    grid-area: ans;
-    width: 100%;
-    border-radius: 4px;
-    font-family: Tahoma;
-    font-size:15px;
-}
+
 #answer:focus{
     border-color: #013243;
     box-shadow: 0 0 8px 0 #013243;
 }
 
-#bckBtn{
-    grid-area: bckb;
-    width: 100px;
-    height: 50px;
-    -webkit-transition: all .2s;
-    background: #e3e3e3;
-    line-height: 50px;
-    text-align: center;
-    font-weight: bold;
-    color: #333;
-    border-radius: 5px;
-    box-shadow: 0px 0px 2px rgba(0,0,0,.5), 1px 1px 1px rgba(0,0,0,.3);
-    margin-top: 5px;
-}
-#bckBtn:hover{
-    background: #333;
-    color: #e3e3e3;
-}
+
 
 #nxtBtn{
     grid-area: nxtb;
@@ -175,15 +190,4 @@ a{
     color: #e3e3e3;
 }
 
-#question {
-    grid-area: quest;
-    margin: auto;
-    width: 100%;
-    height: 150px;
-    border: auto solid;
-    padding: 10px;
-    font-family: Tahoma;
-    font-size: 20px;
-    background-color: whitesmoke;
-}
 
