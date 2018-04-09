@@ -38,6 +38,7 @@
     margin-top: 15px;
     width: 103%;
     height: auto;
+    background-color: #013243
 }
 
 
@@ -82,11 +83,13 @@ a{
     text-emphasis: none;
     color: black;
 }
-
 #answer{
     grid-area: ans;
     width: 100%;
     margin-left: -50%;
+}
+#answer:hover{
+    color: #013243;
 }
 #bckBtn{
     grid-area: bckb;
@@ -173,4 +176,6 @@ a{
     font-family: Tahoma;
     font-size: 20px;
 }
+
+
 
