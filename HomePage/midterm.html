@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
         <title>WebTechLec</title>
-        <link rel="stylesheet" type="text/css" href="css/prelim.css">
+        <link rel="stylesheet" type="text/css" href="css/midterm.css">
     </head>
 
 
@@ -26,7 +27,7 @@
                     <a class="home" href="index.html">HOME</a>
                 </div>
                 <div id="prelim">
-                     <nav id="nav">                         
+                    <nav id="nav">
                         <button onclick="drop()" class="dropbtn">PRELIM
                             <svg version="1.1" class="down" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="451.847px" height="451.847px" viewBox="0 0 451.847 451.847" style="enable-background:new 0 0 451.847 451.847;" xml:space="preserve"> <g>
                                 <path d="M225.923,354.706c-8.098,0-16.195-3.092-22.369-9.263L9.27,151.157c-12.359-12.359-12.359-32.397,0-44.751
@@ -36,27 +37,26 @@
                         </button>
                         <div id="dropdown1" class="dropdown-content">
                             <div class="container">
-                                <header><a class="nav topic one" href="#topicwww" onclick="showwww1()">WWW</a></header>
-                                <ul class="subtopic1"> 
-                                    <li><a href="#topicwww"  onclick="showwww1()">The World Wide Web</a></li>
-                                    <li><a href="#howwww"  onclick="showwww2()">How the Web Works</a></li>
-                                    <li><a href="#whatwww"  onclick="showwww3()"> What happens when we type a URL in our browsers</a></li>
+                                <header><a class="nav topic one" href="prelim.html#topicwww" onclick="showwww1()">WWW</a></header>
+                                <ul class="subtopic1">
+                                    <li><a href="prelim.html#topicwww"  onclick="showwww1()">The World Wide Web</a></li>
+                                    <li><a href="prelim.html#howwww"  onclick="showwww2()">How the Web Works</a></li>
+                                    <li><a href="prelim.html#whatwww"  onclick="showwww3()"> What happens when we type a URL in our browsers</a></li>
                                 </ul>
-                                <header><a class="nav topic two" href="#topichttp"  onclick="showhttp1()">HTTP</a></header>
+                                <header><a class="nav topic two" href="prelim.html#topichttp"  onclick="showhttp1()">HTTP</a></header>
                                 <ul class="subtopic2">
-                                    <li><a href="#topichttp" onclick="showhttp1()">Hypertext Transfer Protocol</a></li>
-                                    <li><a href="#httpver" onclick="showhttp2()">HTTP Versions</a></li>
-                                    <li><a href="#httpfund" onclick="showhttp3()">HTTP Fundamentals</a></li>
+                                    <li><a href="prelim.html#topichttp" onclick="showhttp1()">Hypertext Transfer Protocol</a></li>
+                                    <li><a href="prelim.html#httpver" onclick="showhttp2()">HTTP Versions</a></li>
+                                    <li><a href="prelim.html#httpfund" onclick="showhttp3()">HTTP Fundamentals</a></li>
                                 </ul>
-                                <header><a class="nav topic three" href="#html" onclick="showhtml1()">HTML</a></header>
+                                <header><a class="nav topic three" href="prelim.html#html" onclick="showhtml1()">HTML</a></header>
                                 <ul class="subtopic3">
-                                    <li><a href="#htmlhist" onclick="showhtml1()">The Hypertext Markup Language</a></li>
-                                    <li><a href="#htmlhist" onclick="showhtml2()">Version History</a></li>
-                                    <li><a href="#html5" onclick="showhtml3()">HTML 5.0</a></li>
-                                    <li><a href="#htmldocstruc" onclick="showhtml4()">HTML document Structure</a></li>
-                                    <li><a href="#htmlprepr" onclick="showhtml5()">HTML Preprocessor</a></li>
+                                    <li><a href="prelim.html#htmlhist" onclick="showhtml1()">The Hypertext Markup Language</a></li>
+                                    <li><a href="prelim.html#htmlhist" onclick="showhtml2()">Version History</a></li>
+                                    <li><a href="prelim.html#html5" onclick="showhtml3()">HTML 5.0</a></li>
+                                    <li><a href="prelim.html#htmldocstruc" onclick="showhtml4()">HTML document Structure</a></li>
+                                    <li><a href="prelim.html#htmlprepr" onclick="showhtml5()">HTML Preprocessor</a></li>
                                 </ul>
-                                <header><a class="nav topic four" href="#html" onclick="showquiz1()">QUIZ</a></header>
                             </div>
                         </div>
                     </nav>
@@ -72,19 +72,26 @@
                         </button>
                         <div id="dropdown2" class="dropdown-content">
                             <div class="container">
-                                <header><a class="nav topic one" href="#topicwww" onclick="showcss1()">CSS</a></header>
-                                <ul class="subtopic1"> 
-                                    <li><a href="#topicwww"  onclick="showcss1()">The World Wide Web</a></li>
-                                    <li><a href="#howwww"  onclick="showcss2()">How the Web Works</a></li>
-                                    <li><a href="#whatwww"  onclick="showcss3()"> What happens when we type a URL in our browsers</a></li>
+                                <header><a class="nav topic one" href="#topiccss" onclick="showcss1()">CSS</a></header>
+                                <ul class="subtopic1">
+                                    <li><a href="#topicwww"  onclick="showcss1()">CSS Sub Topic Title</a></li>
+                                    <li><a href="#howwww"  onclick="showcss2()">CSS Sub Topic Title</a></li>
+                                    <li><a href="#whatwww"  onclick="showcss3()">CSS Sub Topic Title</a></li>
+                                    <li><a href="#whatwww"  onclick="showcss4()">CSS Sub Topic Title</a></li>
+                                    <li><a href="#whatwww"  onclick="showcss5()">CSS Sub Topic Title</a></li>
+                                    <li><a href="#whatwww"  onclick="showcss6()">CSS Sub Topic Title</a></li>
+                                    <li><a href="#whatwww"  onclick="showcss7()">CSS Sub Topic Title</a></li>
+                                    <li><a href="#whatwww"  onclick="showcss8()">CSS Sub Topic Title</a></li>
+                                    <li><a href="#whatwww"  onclick="showcss9()">CSS Sub Topic Title</a></li>
+                                    <li><a href="#whatwww"  onclick="showcss10()">CSS Sub Topic Title</a></li>
+                                    <li><a href="#whatwww"  onclick="showcss11()">CSS Sub Topic Title</a></li>
                                 </ul>
-                                <header><a class="nav topic two" href="#topichttp"  onclick="showjs1()">JS</a></header>
+                                <header><a class="nav topic two" href="#topicjs"  onclick="showjs1()">JS</a></header>
                                 <ul class="subtopic2">
-                                    <li><a href="#topichttp" onclick="showjs1()">Hypertext Transfer Protocol</a></li>
-                                    <li><a href="#httpver" onclick="showjs2()">HTTP Versions</a></li>
-                                    <li><a href="#httpfund" onclick="showjs3()">HTTP Fundamentals</a></li>
+                                    <li><a href="#topichttp" onclick="showjs1()">JS Sub Topic Title</a></li>
+                                    <li><a href="#httpver" onclick="showjs2()">JS Sub Topic Title</a></li>
+                                    <li><a href="#httpfund" onclick="showjs3()">JS Sub Topic Title</a></li>
                                 </ul>
-                                <header><a class="nav topic four" href="#html" onclick="showquiz1()">QUIZ</a></header>
                             </div>
                         </div>
                     </nav>
@@ -92,64 +99,656 @@
             </div>
             <main>
 
-                <div class="wrap" id="www">
-                    <h1 id="topicwww" class="maintopic">Main Topic Title</h1>
-                    <section id="www1">
-                        <h2 id="thewww" class="subtopic">Sub topic title</h2>
-                        <div class="content"> 
+                <div class="wrap" id="css">
+                    <h1 id="topiccss" class="maintopic">Cascading Style Sheet</h1>
+                    <ul>
+                      <li>The CSS or Cascading Style Sheet  was developed by Hakon Wium Lie. </li>
+                      <li>The language is used to specify the presentation</ul>
+                    </ul>
+                    <section id="css1">
+                        <h2 id="css-topic1" class="subtopic">Version History</h2>
+                        <div class="content">
+                            <ul>
+                              <li>CSS Level 1 (CSS 1, W3C Recommendation, Dec 1996)</li>
+                              <li>CSS Level 2 (CSS 2, W3C Recommendation, May 1998)</li>
+                              <li>CSS Level 2 Revision 1 (CSS 2.1, W3C Recommendation June 2018)</li>
+                              <li>CSS Level 3
+                                <p>modular approach to CSS development has opposed to the monolithic specification of CSS 2.1</p>
+                              </li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section id="css2">
+                        <h2 id="css-topic2" class="subtopic">Sources of styles for HTML documents</h2>
+                        <div class="content">
+                            <ul>
+                                <li><h3>Author Styles<h3></li>
+                                <li class="hasChild">
+                                    <ul>
+                                        <li>external(s.k.a linked) stylesheets
+                                            <p>separating stylesheet to the HTML document</p>
+                                        </li>
+                                        <li>embedded (a.k.a internal) stylesheets
+                                            <p>stylesheet that is located in the header enclosed in the
+                                              <q>&lt;style&lt;</q>
+                                            </p>
+                                        </li>
+                                        <li>inline styles
+                                          <p>style that is in the HTML element</p>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li><h3>User styles</h3></li>
+                                </p>It is available to some browser where it provides (non-standard) alternatives through plugins/extensions</p>
+                            </ul>
+                        </div>
+                    </section>
+                    <section id="css3">
+                        <h2 id="css-topic3" class="subtopic">The source of a file</h2>
+                        <div class="content">
                             <!-- sub topic content-->
-                            <h3 class="subcontent">sub content title</h3>
+                            <h3 class="subcontent">At - Rules</h3>
                             <!-- sub topic of sub topic area starts here-->
-                            <div class="notes">
-                            	<i>
-                            		<!-- notes for sub content -->
-                                </i>
+                            <ul>
+                                <li>@charset</li>
+                                <li>@import </li>
+                                <li>@Namespace</li>
+                                <li>@Media</li>
+                                <li>@Supports</li>
+                                <li>@Page</li>
+                                <li>@Font-face</li>
+                                <li>@Keyframes</li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section id="css4">
+                        <h2 id="css-topic4" class="subtopic">CSS Selectors</h2>
+                        <div class="content">
+                            <!-- sub topic content-->
+                            <ul>
+                                <li><h3 class="subcontent">Selector</h3></li>
+                                <p>Structure that is used as a condition in a CSS rule to determine which elements in the document tree are matched</p>
+
+                                <li><h3 class="subcontent">Selector Syntax</h3></li>
+                                <p>sequence of simple selectors separated by Combinators</p>
+
+                                <li><h3 class="subcontent">Selector Group</h3></li>
+                                <p>coma-separated list of selectors representing the union of all elements selected by each of the selectors in the list</p>
+
+                                <li><h3 class="subcontent">Attribute Selectors</h3></li>
+                                    <ul>
+                                        <li>type-selector</li>
+                                        <li>univesal selector</li>
+                                    </ul>
+                            </ul>
+                        </div>
+                    </section>
+                    <section id="css5">
+                        <h2 id="css-topic5" class="subtopic">Combinators</h2>
+                        <div class="content">
+                          <p>Descendant combinators (whitespace , i.e, space tab, line feed, carriage return,form feed)</p>
+                          <ul>
+                              <li>Child combinators(>)</li>
+                              <li>Sibling combinator<li>
+                              <ul>
+                                  <li>adjacent sibling combinators(+)</li>
+                                  <li>general sibling combinators(-)</li>
+                              </ul>
+                          </ul>
+                          <div class="notes">
+                             <i>*siblings are allowed after the targeted selector</i>
+                          </div>
+                        </div>
+                    </section>
+                    <section id="css6">
+                        <h2 id="css-topic6" class="subtopic">Pseudo-elements</h2>
+                        <div class="content">
+                            <ul>
+                                <li>:first-letter	</li>
+                                <li>:first-line</li>
+                                <li>:before</li>
+                                <li>:after</li>
+                            </ul>
+                            <div class=”otherSide”>
+                                CSS3
+                                <ul>
+                                    <li>::first-letter</li>
+                                    <li>::first-line</li>
+                                    <li>::before</li>
+                                    <li>::after</li>
+                                </ul>
                             </div>
+                        </div>
+                    </section>
+                    <section id="css7">
+                        <h2 id="css-topic7" class="subtopic">Simle Selectors</h2>
+                        <div class="content">
+                            <ul>
+                                <li><h3 class="subcontent">universal selector(*)</h3></li>
+                                <li><h3 class="subcontent">type selector</h3>- different type of selector
+                                    <br/>ex. p,h1
+                                </li>
+                                <li><h3 class="subcontent">ID selector</h3>
+                                  ex. nav, #main, #info</li>
+                                <li><h3 class="subcontent">class selectors</h3>
+                                  ex. .xsample .trial</li>
+                                <li><h3 class="subcontent">attribute selectors</h3></li>
+                                ex. Img[alt]
+                            </ul>
+                        </div>
+                    </section>
+                    <section id="css8">
+                        <h2 id="css-topic8" class="subtopic">Sub topic title</h2>
+                        <div class="content">
+                            <ul>
+                                <li><h3 class="subcontent">dynamic pseudo-classes</h3>
+                                  :link, visited</li>
+                                <li><h3 class="subcontent">target pseudo-classes</h3>
+                                  :target (css3)</li>
+                                <li><h3 class="subcontent">structural pseudo-classes</h3>
+                                  :root	:empty</li>
+                                <li><h3 class="subcontent">negation pseudo-classes</h3>
+                                  not() 	&#92;&#92;anything else except</li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section id="css9">
+                        <h2 id="css-topic9" class="subtopic">CSS Rule Precedence</h2>
+                        <div class="content">
+                            <p>An HTML element may be the subject of the selectors of multiple style rules</p>
+                            <h3 class="subcontent">Resolution:</h3>
+                            <ul>
+                                  <li>
+                                      <h4>by origin and importance</h4>
+                                      <div class="indent">
+                                          <br>!important rule override normal rule
+                                          <br>The importance of user and author is reserved in normal declaration
+                                      </div>
+                                  </li>
+                                  <li>
+                                      <h4>by specificity</h4>
+                                      <br>Calculating a selector’s specify
+                                  </li>
+                                  <li>
+                                      <h4>by order</h4>
+                                      <br>Last is prioritize
+                                  </li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section id="css10">
+                        <h2 id="css-topic10" class="subtopic">CSS Declarations</h2>
+                        <div class="content">
+                            <ul>
+                                <li>
+                                    <h3 class="subcontent">properties</h3>
+                                    <h4>Shorthand properties</h4>
+                                    <p>
+                                        Allows author specific the values of several properties the values of several properties with a single property ( ex background, border-top)
+                                    </p>
+                                </li>
+                                <li>
+                                    <h3 class="subcontent">Vendor specific extensions ( a.k.a vendor prefixes )</h3>
+                                    <p>
+                                        Used by browser vendors as a prefix for the names of new experimental or non standards CSS properties, lately , vendors moving only from vendor prefixes in favor of user contrlled flags or preferences
+                                    </p>
+                                    Ex, -webkit-, -moz-, -o-, -ms-
+                                </li>
+                                <li>
+                                    <h3 class="subcontent">custom properties aka CSS variables (experimental)</h3>
+                                    <p>
+                                        Property names prefixed with --, representing a value that can be reused throughout the document using the var() function
+                                    </p>
+                                        Ex root{--bago: #000012;}<br>
+                                        h1{color: var(--bago);}<br>
+                                        &#92;&#92;color:var(bago, blue);
+                                </li>
+                                <li>
+                                    <h3 class="subcontent">values</h3>
+                                        <h4>Value processing</h4>
+                                        declared , cascaded, specified, computed, used, actual values
+                                        <h4>Value types</h4>
+                                            <h5>CSS-wide keywords</h5>
+                                                <ul>
+                                                    <li>Initial</li>
+                                                    <li>Inherit</li>
+                                                    <li>Unset</li>
+                                                </ul>
+                                            <h5>Property specific keywords</h5>
+                                </li>
+                                <li>
+                                    <h3 class"subcontent">numbers</h3>
+                                    <p>
+                                        integers or reals in (scientific) decimal notation
+                                    </p>
+                                </li>
+                                <li>
+                                    <h3 class="subcontent">dimensions</h3>
+                                    <p>
+                                        length, angle, duration(or time), frequency, resolution
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            length units
+                                            Font-relative: em, cx,ch, rem<br>
+                                            Viewport percentage: vw, vh, vmin, vmax<br>
+                                            Absolute:cm, mc, in, pt, pc, px
+                                        </li>
+                                        <li>
+                                            angle units
+                                            deg, grad, rad, turn<br>
+                                            Used in some gradient and transform functions
+                                        </li>
+                                        <li>
+                                            duration(or time) units:
+                                            s,ms<br>
+                                            Used in animation, transition and related protperties
+                                        </li>
+                                        <li>
+                                            frequency
+                                            Hz,kHz<br>
+                                            Initially introduces in CSS2 for the (obsolated) aural mediatype
+                                            *reintroduced in (CSS3 but is currently unused
+                                        </li>
+                                        <li>
+                                            resolution units:
+                                            Dpi, dpcm, dppx<br>
+                                            Used in media queries
+                                            *svg is resolution proof)
+                                        </li>
+                                        <li>
+                                            percentages
+                                            Number with % suffix <br>
+                                            Calculated as a percentiles
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <h3 class="subcontent">URLs and URIs</h3>
+                                    url() function with an absolute or relative
+                                </li>
+
+                                <li>
+                                    <h3 class="subcontent">Colors</h3>
+                                    <ul>
+                                        <li>Color keywords: red</li>
+                                        <li>RGB hexadecimal notation:<br>
+                                          Ex #ff0000</li>
+                                        <li>HSL function<br>
+                                          Ex (0,100%,50%)<br>
+                                          Color wheel, saturation, lightness</li>
+                                        <li>Current color, transparent</li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <h3 class="subcontent">Strings</h3>
+                                    <p>delimited be single quotes(‘) or double quotes(“)</p>
+                                      Ex: content
+                                </li>
+                                <li>
+                                    <h3 class="subcontent">functions(CSS3)</h3>
+                                    -miscellaneous types
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section id="css11">
+                        <h2 id="css-topic11" class="subtopic">Sub topic title</h2>
+                        <div class="content">
+                            <ul>
+                                <li>
+                                    <h3 class="subcontent">CSS preprocessors</h3>
+                                    <p>
+                                        generate CSS using a custom language syntax that typically includes features that typically includes features that don’t exist in pure CSS(Ex. Variables, control flow, nesting, mixins, functions, etc.)
+                                    </p>
+                                        ex. Sass, Less, Stylus, etc.
+                                </li>
+                                <li>
+                                    <h3 class="subcontent">CSS Frameworks</h3>
+                                    <p>
+                                        Provides predefined CSS design functionality that can be reused, extended, or customized
+                                    </p>
+                                        Ex. Bootstrap, Foundation, Materialize
+                                </li>
+                                <li>
+                                    <h3 class="subcontent">Fills</h3>
+                                    <p>
+                                        provide features that developers expect browser to provide natively
+                                    </p>
+                                </li>
+                            </ul>
                         </div>
                     </section>
                 </div>
 
-                <div class="wrap" id="html">
-                    <h1 id="topichtml" class="maintopic">Main Topic Title</h1>
-                    <section id="html1">
-                        <h2 id="thehtml" class="subtopic">Sub topic title</h2>
-                        <div class="content"> 
-                            <!-- sub topic content-->
-                            <h3 class="subcontent">sub content title</h3>
-                            <!-- sub topic of sub topic area starts here-->
-                            <div class="notes">
-                            	<i>
-                            		<!-- notes for sub content -->
-                                </i>
-                            </div>
+                <div class="wrap" id="js">
+                    <h1 id="topichtml" class="maintopic">JavaScript</h1>
+                    <p>
+                        Brendan Eich is the inventor of javascript in 1995 and in 1997 becomes an ECMA standard. A program that runs on a browser environment that allow to manipulate the design of the web page.
+                    </p>
+                    Extensions:
+                    <ul>
+                      	<li>
+                            Defer<br>
+                      		  Defer the execution of the page/not going to block
+                        </li>
+                      	<li>
+                            Async<br>
+                      		  Wait for a resource to load and while loading the rest of the page is loaded. When it loads, it can be parsed and loaded
+                        </li>
+                    </ul>
+                    <section id="js1">
+                        <h2 id="js-topic1" class="subtopic">Javascript Language Fundamentals</h2>
+                        <div class="content">
+                          <h3 class="subcontent">Variables and constant</h3>
+                          <ul>
+                              <li>var-global scope that becomes a property of the Window object</li>
+                              <li>let-global scope that is not a property of the window object</li>
+                              <li>Const- global constant that does not become a property of the window object</li>
+                              <li>No datatype which is a global reference to window property</li>
+                          </ul>
+                          <h3 class="subcontent">primitive data types(numbers, strings, booleans, null, and undefined)</h3>
+                              <h4>Numbers (in decimal notation)</h4>
+                                  Var example = 21;	&#92;&#92;decimal integer	<br>
+                                  exampleB  =  0.25;	&#92;&#92;decimal floating-point	<br>
+                                  exampleC  = 6.022e23;	&#92;&#92;decimal scientific notation
+
+                              <h4>Number in base 2, 8, and 16</h4>
+                                  Var binary = 01101;		&#92;&#92;binary numbers	<br>
+                                  Octal = 0152;			&#92;&#92;octal numbers	<br>
+                                  Hexadecimal = 0xABC	&#92;&#92;hexadecimal
+
+                              <h4>Special numbers</h4>
+                                  Positive infinity <br>
+                                  Negative infinity <br>
+                                  NaN (not a number) <br>
+
+                              <h4>Strings</h4>
+                                  Single = ‘single’;		&#92;&#92;single-quote delimited	<br>
+                                  Double = “double”;		&#92;&#92;double-quote delimited	<br>
+
+                                  Template = ‘&{first}	<br>
+                                              &{second}	<br>
+                                  Third’;		&#92;&#92;template literals, that allows multi line		<br>
+                                  strings and expression interpolation
+
+                              <h4>Booleans</h4>
+                                  <p>0, '', false, null, undefined, and NaN are "false" values.</p> <br>
+                                  all other values are "truth" values</p>
+
+                              <h4>null and undefined</h4>
+                                  var nullex=null; <br>
+                                  undex = undefined <br>
+
+                          <h3 class="subcontent">Object Types that correspond to the primitive types </h3>
+                              <h4>dates and times</h4>
+                                  var ex1 = new Date();
+                                      &#92;&#92;show current client date and time<br>
+                                  var ex2 = new Date(2018, 8, 23)
+                                      &#92;&#92;show specific date<br>
+
+                              <h4>regular expressions (RegExp object)<h4>
+                                  var ex1 = new RegExp('[,.]', 'g');	<br>
+                                  var ex2 = /[/ :]/g;
+
+                              <h4>mathematical functions and constants (Math object)</h4>
+                              <p>Math.sqrt(),Math.PI(),Math.random(),and others</p>
+
+                              <h4>JavaScript is loose and dynamically-typed for single variable</h4>
+                                  var ex=100		&#92;&#92;ex is a number		<br>
+                                  ex=”letters”		&#92;&#92;ex is now a string		<br>
+                                  ex=true		&#92;&#92;ex is now a boolean	<br>
+
+                              <h4>equality and identity or known as strict equality </h4>
+                                  1==’1’			&#92;&#92;true <br>
+                                  1===’1’		&#92;&#92;false, 3 equals means not equal to <br>
+                                  1 != true		&#92;&#92;false <br>
+                                  1 !== true		&#92;&#92;true, exclamation with 2 following = sign means equal to <br>
+
+                              <h4>implicit type conversions</h4>
+                                  1+’2’		&#92;&#92;12	,adding a string will connect the values<br>
+                                  1*’2’		&#92;&#92;2<br>
+                                  1 / false	&#92;&#92;Infinity,false is 0<br>
+                                  1 + true	&#92;&#92;2,true is 1<br>
+                                  1 - 'nine'	&#92;&#92;NaN,It will not do the operation unless it is a number<br>
+                                  1 + null		&#92;&#92;1,null is 0<br>
+                                  1 + undefined &#92;&#92;NaN,data type not specified<br>
+
+                              <h4>use object functions for explicit type conversions</h4>
+                                  <p>Number(),	String()&#92;&#92;and inside the round bracket will be the value which will be parsed</p>
+
+                          <h3 class="subcontent">Functions</h3>
+                              <p>arguments' object that is only valid inside a function</p>
+                                  function ex1() {			<br>
+                                      var result = value[0];		<br>
+                                      for (let i = 1; index < value.length; index++) {<br>
+                                          result += arguments[index];<br>
+                                      }<br>
+                                      return result;<br>
+                                  }<br>
+                                  var res = ex1(1,2,3,4);
+
+                              <p>default parameter values</p>
+                                  function ex2(a=1,b,c=’a’){<br>
+                                      console.log(`a = ${a}, b = ${b}, z = ${z}`);<br>
+                                  }
+
+                              <p>"rest" parameters</p>
+                                  function ex3(example1, example2,example3)	<br>
+                                      console.log(example1);		<br>
+                                      console.log(example2);		<br>
+                                      console.log(example3);		<br>
+                                  }
+
+                              <p>function expressions</p>
+                                  var ex4 = function(a,b)  {return a*b};	<br>
+                                  ex4(2,3);
+
+                              <p>arrow" function expressions</p>
+                                  var ex5 = a => a + a;
+
+
+                              <p>nesting functions</p>
+                                  function outer{			<br>
+                                      function innerFunc{	<br>
+                                      }			<br>
+                                  }
+
+                          <h3 class="subcontent">Arrays</h3>
+                              var ex = new Array(5);		&#92;&#92;the length of the array is specified inside the round bracket	<br>
+                              ex[0]=0;		<br>
+                              ex[1]=1		<br>
+                              ex[2]=2;		<br>
+                              ex[3]=3;		<br>
+                              ex[4]=4;		<br>
+                              ex[10]			&#92;&#92;this is allowed because the array size is dynamic leading the parsed array to null <br>
+
+                              var arr = new Array(10);	&#92;&#92;having “new Array()” will give an array depending on the number inside the round bracket with null value <br>
+                              var arr2=[10];			&#92;&#92;this will lead to 1 element array with value of given		<br>
+
+                          <h3 class="subcontent">user-defined objects</h3>
+                              var ex = new Object();      &#92;&#92; Object object constructor<br>
+                              ex.name = Luigi	      &#92;&#92;properties and methods defining<br>
+                              console.log(ex['name']);   	&#92;&#92; properties and methods accessing<br>
+                              console.log(ex.unown);    &#92;&#92; properties and methods is undefined <br>
+
+                              for (let property in ex) {  		&#92;&#92; property enumeration<br>
+                                 console.log(`${property} = ${ex[property]}`);		<br>
+                              }
+
+                          <h3 class="subcontent">object literal syntax</h3>
+                              var xsample = {}		<br>
+                              xsample.samp1 = 1;		<br>
+                              xsample.samp2 = “two”;	<br>
+                              xsample.samp3 = “3”;		<br>
+
+                              var anotherSubject = {	<br>
+                                  xsample.samp1 = 1;	<br>
+                                  xsample.samp2 = “two”;	<br>
+                                  xsample.samp3 = “3”;		<br>
+                              }
+
+                          <h3 class="subcontent">Object constructor function</h3>
+                              function xsample2(samp1,samp2 , samp3) {	<br>
+                                  this.samp1 = 1;		<br>
+                                  this.samp2 = “two;		<br>
+                                  this.samp3 = “3”;		<br>
+                              }
+
+                          <h3 class="subcontent">JSON </h3>
+                              <p>allows object conversions JSON-formatted strings</p>
+                              var ex = JSON.stringify(xsample);
+
+                          <h3 class="subcontent">miscellaneous object APIs</h3>
+                              <p>Map(),	Set()</p>
                         </div>
                     </section>
-                </div>
+                    <section id="js2">
+                        <h2 id="js-topic2" class="subtopic">Document Object Model (DOM)</h2>
+                        <div class="content">
+                            <ul>
+                                <li>the document itself</li>
+                                <li>the most important API</li>
+                                <li>An API which withn the javascript allow access to the HTML document associated with the webpage</li>
+                                <li>It is represented be a DOM tree which is a parsed document</li>
+                            </ul>
 
-                <div class="wrap" id="http">
-                    <h1 id="topichttp" class="maintopic">Main Topic Title</h1>
-                    <section id="http1">
-                        <h2 id="thehttp" class="subtopic">Sub topic title</h2>
-                        <div class="content"> 
-                            <!-- sub topic content-->
-                            <h3 class="subcontent">sub content title</h3>
-                            <!-- sub topic of sub topic area starts here-->
+                            <h3 class="subcontent">DOM API functionalities:<h3>
+                                <h4>Interface Node which retreive references to node collection in the DOM</h4>
+                                    <ul>
+                                        <li>getElementById()</li>
+                                        <li>getElementsByTagName(), getElementsByClassName(), getElementsByName()</li>
+                                        <li>querySelector(), querySelectorAll()</li>
+                                    </ul>
+
+                                <h4>From a given node traverse the DOM tree</h4>
+                                    <ul>
+                                        <li>parentNode, parentElement<li>
+                                        <li>childNodes, children<li>
+                                        <li>firstChild, lastChild, nextSibling, previousSibling<li>
+                                        <li>firstElementChild, lastElementChild, nextElementSibling, previousElementSibling<li>
+                                    </ul>
+
+                                <h4>construct/copy nodes:</h4>
+                                    <ul>
+                                        <li>createElement(), createTextNode(), createAttribute(), etc.</li>
+                                        <li>cloneNode(), importNode()</li>
+                                    </ul>
+
+                                <h4>DOM tree manipulation</h4>
+                                    <ul>
+                                        <li>nodeType, nodeName, nodeValue</li>
+                                        <li>attributes, id, tagName, className, classList</li>
+                                        <li>ownerDocument, documentElement, hasChildNodes()</li>
+                                        <li>normalize()</li>
+                                    </ul>
+
+                                <h4>miscellaneous attributes and methods</h4>
+                                    <ul>
+                                        <li>nodeType, nodeName, nodeValue</li>
+                                        <li>attributes, id, tagName, className, classList</li>
+                                        <li>ownerDocument, documentElement, hasChildNodes()</li>
+                                        <li>normalize()</li>
+                                        <li>
+                                            manipulate attributes (for 'Element' nodes):
+                                            setAttribute(), getAttribute(), removeAttribute()<br>
+                                            setAttributeNode(), getAttributeNode(), removeAttributeNode()
+                                        </li>
+                                        <li>
+                                            event handling: <br>
+                                              -addEventListener(), removeEventListener(), dispatchEvent()
+                                        </li>
+                                        <li>
+                                            style handling: <br>
+                                            styleSheets, ownerRule, cssRules, insertRule(), deleteRule()
+                                            getComputedStyle()
+                                            innerHTML, outerHTML, innerText, outerText
+                                            references to oft-used document sections and collections:<br>
+                                            head, body, anchors, forms, images
+                                        </li>
+                                    </ul>
+                        </div>
+                    </section>
+                    <section id="js3">
+                        <h2 id="js-topic3" class="subtopic">AJAX</h2>
+                        <p>
+                            - provides an object which allows you to fetch something
+                        </p>
+                        <div class="content">
+                            <h3 class="subcontent">XML Request</h3>
+                            <ul>
+                                <li>Create http request object</li>
+                                <li>Specify resourse</li>
+                                <li>Do the fetch be using fetch method</li>
+                            </ul>
                             <div class="notes">
-                            	<i>
-                            		<!-- notes for sub content -->
-                                </i>
+                                <i>*Javascript is inherently single-threaded*</i>
                             </div>
+
+                            <h3 class="subcontent">Two modes of fetching</h3>
+                            <ul>
+                                <li>Synchronous</li>
+                                <li>Asynchronous</li>
+                            </ul>
+                            <div class="notes">
+                                <i>*callback function - when events occur, it will be invoked automatically</i>
+                            </div>
+
+                            <h3 class="subcontent">Event Propagation Order</h3>
+                            <ul>
+                                <li>Capturing Phase(Netscape)</li>
+                                <li>Target</li>
+                                <li>Bubble Phase</li>
+                            </ul>
+
+                            <h3 class="subcontent">Event Handler Registration</h3>
+                            Methods:
+                            <ul>
+                                <li class="hasChild">
+                                    <ul>
+                                      <li>Inline HTML event attrib (ex <button id='button' onclick='handler();'>CM</button>
+                                      <li>pre-DOM L2</li>
+                                      <li>DOM:L2 event registration</li>
+                                          <li class="hasChild">
+                                              <ul>
+                                                  <li>standard, well supported</li>
+                                                  <li>introduced, addEventListener</li>
+                                                  <li>can register more than one event listener</li>
+                                                  <li>can register bundles on the bubble or capture phase</li>
+                                                  <li>function expressions always have unique identity</li>
+                                                  <li>if you register it in capture, close it in capture</li>
+                                              </ul>
+                                          </li>
+                                    </ul>
+                                </li>
+                                <li class="hasChild">
+                                    <ul>
+                                        <li>Microsoft-specific, non-standard, IEv6-v10</li>
+                                        <li class="hasChild">
+                                            <ul>
+                                                <li>determining associated information about event</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                            <h3 class="subcontent">Javascript promise</h3>
+                            <ul>
+                                <li>&#92;&#92;do operation</li>
+                                <li>&#92;&#92;success		resolve(success)</li>
+                                <li>&#92;&#92;failure			reject(err)</li>
+                            </ul>
+
                         </div>
                     </section>
                 </div>
 
             </main>
-
+            <script src="js/prelim.js"></script>
             </body>
-
-        <footer>
-
-        </footer>
-
-        <script src="js/prelim.js"></script>
         </html>
