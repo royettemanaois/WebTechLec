@@ -1,0 +1,988 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=windows-1252"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 6.0.1.1 (Windows)"/>
+	<meta name="created" content="2018-04-09T10:51:59.603000000"/>
+	<meta name="changed" content="2018-04-09T10:52:32.307000000"/>
+	<style type="text/css">
+		@page { margin: 2cm }
+		p { margin-bottom: 0.25cm; line-height: 115% }
+	</style>
+</head>
+<body lang="en-PH" dir="ltr">
+<p style="margin-bottom: 0.5cm; font-weight: normal; line-height: 100%"><a name="docs-internal-guid-ae5e1570-a851-1e7f-2fef-61ee1f875349"></a>
+<br/>
+<br/>
+<br/>
+
+</p>
+<p style="margin-bottom: 0cm; font-variant: normal; font-style: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><b><span style="background: transparent">JavaScript</span></b></font></font></font></p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 138%">
+<span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Verdana"><font size="3" style="font-size: 11pt"><span style="font-style: normal"><b><span style="background: #ffffcc">Brendan
+Eich is the inventor of javascript in 1995 and in 1997 becomes an
+ECMA standard. </span></b></span></font></font></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="background: transparent">a
+program that runs on a browser environment that allow to manipulate
+the design of the web page.</span></span></font></font></span></font></span></p>
+<p><br/>
+<br/>
+
+</p>
+<p style="margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">Extensions:</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">Defer
+</span></font></font></font>
+</p>
+<p style="margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">Defer
+the execution of the page/not going to blck</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">Async</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">Wait
+for a resource to load and while loading the rest of the page is
+loaded. When it loads, it can be parsed and loaded</span></font></font></font></p>
+<p><br/>
+<br/>
+
+</p>
+<p style="margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">Javascript
+Language Fundamentals</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">Variables
+and constant </span></font></font></font>
+</p>
+<p style="margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">-var-global
+scope that becomes a property of the Window object</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">-let-global
+scope that is not a property of the window object</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">-Const-
+global constant that does not become a property of the window object</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">No
+datatype which is a global reference to window property</span></font></font></font></p>
+<p><br/>
+<br/>
+
+</p>
+<p style="margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">primitive
+data types(numbers, strings, booleans, null, and undefined)</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">Numbers
+(in decimal notation)</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 138%">
+<span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="background: transparent">Var
+example = 21;</span></span></font></font></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><span style="background: transparent">
+</span></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="background: transparent">//decimal
+integer</span></span></font></font></span></font></span></p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 138%">
+<span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="background: transparent">exampleB
+&nbsp;= 0.25;</span></span></font></font></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><span style="background: transparent">
+</span></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="background: transparent">//decimal
+floating-point</span></span></font></font></span></font></span></p>
+<p style="margin-left: 2.54cm; text-indent: 1.27cm; margin-bottom: 0cm; font-weight: normal; line-height: 138%">
+<span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="background: transparent">exampleC
+&nbsp;= 6.022e23;</span></span></font></font></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><span style="background: transparent">
+</span></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="background: transparent">//decimal
+scientific notation</span></span></font></font></span></font></span></p>
+<p><br/>
+<br/>
+
+</p>
+<p style="margin-left: 2.54cm; margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">Number
+in base 2, 8, and 16</span></font></font></font></p>
+<p style="margin-left: 2.54cm; margin-bottom: 0cm; font-weight: normal; line-height: 138%">
+<span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="background: transparent">Var
+binary = 01101;</span></span></font></font></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><span style="background: transparent">
+</span></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="background: transparent">//binary
+numbers</span></span></font></font></span></font></span></p>
+<p style="margin-left: 2.54cm; margin-bottom: 0cm; font-weight: normal; line-height: 138%">
+<span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="background: transparent">Octal
+= 0152;</span></span></font></font></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><span style="background: transparent">
+</span></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="background: transparent">//octal
+numbers</span></span></font></font></span></font></span></p>
+<p style="margin-left: 2.54cm; margin-bottom: 0cm; font-weight: normal; line-height: 138%">
+<span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="background: transparent">Hexadecimal
+= 0xABC</span></span></font></font></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><span style="background: transparent">
+</span></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="background: transparent">//hexadecimal</span></span></font></font></span></font></span></p>
+<p><br/>
+<br/>
+
+</p>
+<p style="margin-left: 2.54cm; margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">Special
+numbers</span></font></font></font></p>
+<p style="margin-left: 2.54cm; margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">Positive
+infinity</span></font></font></font></p>
+<p style="margin-left: 2.54cm; margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">Negative
+infinity</span></font></font></font></p>
+<p style="margin-left: 2.54cm; margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">NaN
+(not a number)</span></font></font></font></p>
+<p style="font-weight: normal"><br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+</p>
+<p style="margin-left: 2.54cm; margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">Strings</span></font></font></font></p>
+<p style="margin-left: 2.54cm; margin-bottom: 0cm; font-weight: normal; line-height: 138%">
+<span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="background: transparent">Single
+= &lsquo;single&rsquo;;</span></span></font></font></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><span style="background: transparent">
+</span></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="background: transparent">//single-quote
+delimited..</span></span></font></font></span></font></span></p>
+<p style="margin-left: 2.54cm; margin-bottom: 0cm; font-weight: normal; line-height: 138%">
+<span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="background: transparent">Double
+= &ldquo;double&rdquo;;</span></span></font></font></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><span style="background: transparent">
+</span></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="background: transparent">//double-quote
+delimited..</span></span></font></font></span></font></span></p>
+<p><br/>
+<br/>
+
+</p>
+<p style="margin-left: 2.54cm; margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">Template
+= &lsquo;&amp;{first}</span></font></font></font></p>
+<p style="margin-left: 2.54cm; margin-bottom: 0cm; font-variant: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><span style="background: transparent">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="font-weight: normal">&amp;{second}</span></span></font></font></span></font></p>
+<p style="margin-left: 5.08cm; margin-bottom: 0cm; line-height: 138%">
+<span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><span style="background: transparent">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="font-weight: normal"><span style="background: transparent">Third&rsquo;;</span></span></span></font></font></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><span style="font-weight: normal"><span style="background: transparent">
+</span></span></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="font-weight: normal"><span style="background: transparent">//template
+literals, that allows multi line</span></span></span></font></font></span></font></span></p>
+<p style="margin-left: 7.62cm; text-indent: 1.27cm; margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">strings
+and expression interpolation</span></font></font></font></p>
+<p><br/>
+<br/>
+
+</p>
+<p style="margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">Booleans</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">0,
+'', false, null, undefined, and NaN are &quot;false&quot; values.</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">all
+other values are &quot;truth&quot; values..</span></font></font></font></p>
+<p><br/>
+<br/>
+
+</p>
+<p style="margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">null
+and undefined</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">var
+nullex=null;</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">undex
+= undefined</span></font></font></font></p>
+<p><br/>
+<br/>
+
+</p>
+<p style="text-indent: 1.27cm; margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">Object
+Types that correspond to the primitive types </span></font></font></font>
+</p>
+<p style="text-indent: 1.27cm; margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">dates
+and times</span></font></font></font></p>
+<p style="text-indent: 1.27cm; margin-bottom: 0cm; font-weight: normal; line-height: 138%">
+<span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="background: transparent">var
+ex1 = new Date();</span></span></font></font></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><span style="background: transparent">
+</span></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="background: transparent">//show
+current client date and time</span></span></font></font></span></font></span></p>
+<p style="text-indent: 1.27cm; margin-bottom: 0cm; font-weight: normal; line-height: 138%">
+<span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="background: transparent">var
+ex2 = new Date(2018, 8, 23)</span></span></font></font></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><span style="background: transparent">
+</span></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="background: transparent">//show
+specific date</span></span></font></font></span></font></span></p>
+<p><br/>
+<br/>
+
+</p>
+<p style="text-indent: 1.27cm; margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">regular
+expressions (RegExp object)</span></font></font></font></p>
+<p style="text-indent: 1.27cm; margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">var
+ex1 = new RegExp('[,.]', 'g');</span></font></font></font></p>
+<p style="text-indent: 1.27cm; margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">var
+ex2 = /[/ :]/g; </span></font></font></font>
+</p>
+<p><br/>
+<br/>
+
+</p>
+<p style="text-indent: 1.27cm; margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">mathematical
+functions and constants (Math object)</span></font></font></font></p>
+<p style="margin-left: 3.81cm; margin-bottom: 0cm; font-weight: normal; line-height: 138%">
+<span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="background: transparent">Math.sqrt(),</span></span></font></font></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><span style="background: transparent">
+</span></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="background: transparent">Math.PI(),</span></span></font></font></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><span style="background: transparent">
+</span></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="background: transparent">Math.random(),</span></span></font></font></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><span style="background: transparent">
+</span></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="background: transparent">and
+others</span></span></font></font></span></font></span></p>
+<p><br/>
+<br/>
+
+</p>
+<p style="margin-left: 1.27cm; text-indent: 1.27cm; margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">JavaScript
+is loose and dynamically-typed for single variable</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 138%">
+<span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="background: transparent">var
+ex=100</span></span></font></font></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><span style="background: transparent">
+</span></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="background: transparent">//ex
+is a number</span></span></font></font></span></font></span></p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 138%">
+<span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="background: transparent">ex=&rdquo;letters&rdquo;</span></span></font></font></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><span style="background: transparent">
+</span></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="background: transparent">//ex
+is now a string</span></span></font></font></span></font></span></p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 138%">
+<span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="background: transparent">ex=true</span></span></font></font></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><span style="background: transparent">
+</span></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="background: transparent">//ex
+is now a boolean</span></span></font></font></span></font></span></p>
+<p><br/>
+<br/>
+
+</p>
+<p style="margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">equality
+and identity or known as strict equality</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 138%">
+<span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="background: transparent">1==&rsquo;1&rsquo;</span></span></font></font></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><span style="background: transparent">
+</span></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="background: transparent">//true</span></span></font></font></span></font></span></p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 138%">
+<span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="background: transparent">1===&rsquo;1&rsquo;</span></span></font></font></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><span style="background: transparent">
+</span></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="background: transparent">//false</span></span></font></font></span></font></span></p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 138%">
+<span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="background: transparent">1
+!= true</span></span></font></font></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><span style="background: transparent">
+</span></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="background: transparent">//false</span></span></font></font></span></font></span></p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 138%">
+<span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="background: transparent">1
+!== true</span></span></font></font></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><span style="background: transparent">
+</span></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="background: transparent">//true</span></span></font></font></span></font></span></p>
+<p><br/>
+<br/>
+
+</p>
+<p style="margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">implicit
+type conversions</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 138%">
+<span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="background: transparent">1+&rsquo;2&rsquo;</span></span></font></font></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><span style="background: transparent">
+</span></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="background: transparent">//12</span></span></font></font></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><span style="background: transparent">
+</span></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="background: transparent">adding
+a string will connect the values</span></span></font></font></span></font></span></p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 138%">
+<span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="background: transparent">1*&rsquo;2&rsquo;</span></span></font></font></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><span style="background: transparent">
+</span></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="background: transparent">//2</span></span></font></font></span></font></span></p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 138%">
+<span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="background: transparent">1
+/ false</span></span></font></font></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><span style="background: transparent">
+</span></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="background: transparent">//Infinity</span></span></font></font></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><span style="background: transparent">
+</span></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="background: transparent">false
+is 0</span></span></font></font></span></font></span></p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 138%">
+<span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="background: transparent">1
++ true</span></span></font></font></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><span style="background: transparent">
+</span></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="background: transparent">//9</span></span></font></font></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><span style="background: transparent">
+</span></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="background: transparent">true
+is 1</span></span></font></font></span></font></span></p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 138%">
+<span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="background: transparent">1
+- 'nine'</span></span></font></font></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><span style="background: transparent">
+</span></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="background: transparent">//NaN</span></span></font></font></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><span style="background: transparent">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="background: transparent">It
+will not do the operation unless it is a number</span></span></font></font></span></font></span></p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 138%">
+<span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="background: transparent">1
++ null</span></span></font></font></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><span style="background: transparent">
+</span></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="background: transparent">//8</span></span></font></font></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><span style="background: transparent">
+</span></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="background: transparent">null
+is 0</span></span></font></font></span></font></span></p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 138%">
+<span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="background: transparent">1
++ undefined //NaN</span></span></font></font></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><span style="background: transparent">
+</span></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="background: transparent">data
+type not specified</span></span></font></font></span></font></span></p>
+<p><br/>
+<br/>
+
+</p>
+<p style="margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">use
+object functions for explicit type conversions</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 138%">
+<span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="background: transparent">Number(),</span></span></font></font></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><span style="background: transparent">
+</span></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="background: transparent">String()</span></span></font></font></span></font></span></p>
+<p><br/>
+<br/>
+
+</p>
+<p style="text-indent: 1.27cm; margin-bottom: 0cm; font-weight: normal; line-height: 138%">
+<span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="background: transparent">Functions</span></span></font></font></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><span style="background: transparent">
+</span></span></font></span>
+</p>
+<p style="text-indent: 1.27cm; margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">arguments'
+object that is only valid inside a function</span></font></font></font></p>
+<p style="text-indent: 1.27cm; margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">function
+ex1() {</span></font></font></font></p>
+<p style="text-indent: 1.27cm; margin-bottom: 0cm; line-height: 138%">
+<span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><span style="background: transparent">&nbsp;&nbsp;&nbsp;
+</span></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="font-weight: normal"><span style="background: transparent">var
+result = value[0];</span></span></span></font></font></span></font></span></p>
+<p style="text-indent: 1.27cm; margin-bottom: 0cm; line-height: 138%">
+<span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><span style="background: transparent">&nbsp;&nbsp;
+</span></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="font-weight: normal"><span style="background: transparent">for
+(let i = 1; index &lt; value.length; index++) {</span></span></span></font></font></span></font></span></p>
+<p style="text-indent: 1.27cm; margin-bottom: 0cm; line-height: 138%">
+<span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><span style="background: transparent">&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp; </span></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="font-weight: normal"><span style="background: transparent">result
++= arguments[index];</span></span></span></font></font></span></font></span></p>
+<p style="text-indent: 1.27cm; margin-bottom: 0cm; line-height: 138%">
+<span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><span style="background: transparent">&nbsp;&nbsp;&nbsp;
+</span></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="font-weight: normal"><span style="background: transparent">}</span></span></span></font></font></span></font></span></p>
+<p style="text-indent: 1.27cm; margin-bottom: 0cm; line-height: 138%">
+<span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><span style="background: transparent">&nbsp;&nbsp;&nbsp;
+</span></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="font-weight: normal"><span style="background: transparent">return
+result;</span></span></span></font></font></span></font></span></p>
+<p style="margin-left: 2.54cm; text-indent: 1.27cm; margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">}</span></font></font></font></p>
+<p style="margin-left: 2.54cm; text-indent: 1.27cm; margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">var
+res = ex1(1,2,3,4);</span></font></font></font></p>
+<p><br/>
+<br/>
+
+</p>
+<p style="margin-left: 2.54cm; margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">default
+parameter values</span></font></font></font></p>
+<p style="margin-left: 2.54cm; margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">Function
+ex2(a=1,b,c=&rsquo;a&rsquo;){</span></font></font></font></p>
+<p style="margin-left: 2.54cm; margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">console.log(`a
+= ${a}, b = ${b}, z = ${z}`);</span></font></font></font></p>
+<p style="margin-left: 2.54cm; margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">}</span></font></font></font></p>
+<p><br/>
+<br/>
+
+</p>
+<p style="margin-left: 2.54cm; margin-bottom: 0cm; font-variant: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><span style="background: transparent">&ldquo;<font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="font-weight: normal">rest&quot;
+parameters</span></span></font></font></span></font></p>
+<p style="text-indent: 1.27cm; margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">Function
+ex3(example1, example2,example3)</span></font></font></font></p>
+<p style="text-indent: 1.27cm; margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">console.log(example1);</span></font></font></font></p>
+<p style="text-indent: 1.27cm; margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">console.log(example2);</span></font></font></font></p>
+<p style="text-indent: 1.27cm; margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">console.log(example3);</span></font></font></font></p>
+<p style="text-indent: 1.27cm; margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">}</span></font></font></font></p>
+<p><br/>
+<br/>
+
+</p>
+<p style="text-indent: 1.27cm; margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">function
+expressions</span></font></font></font></p>
+<p style="text-indent: 1.27cm; margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">var
+ex4 = function(a,b) &nbsp;{return a*b};</span></font></font></font></p>
+<p style="text-indent: 1.27cm; margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">ex4(2,3);</span></font></font></font></p>
+<p style="text-indent: 1.27cm; margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">arrow&quot;
+function expressions</span></font></font></font></p>
+<p style="text-indent: 1.27cm; margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">var
+ex5 = a =&gt; a + a;</span></font></font></font></p>
+<p><br/>
+<br/>
+
+</p>
+<p style="text-indent: 1.27cm; margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">nesting
+functions</span></font></font></font></p>
+<p style="text-indent: 1.27cm; margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">function
+outer{</span></font></font></font></p>
+<p style="text-indent: 1.27cm; margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">Function
+innerFunc{</span></font></font></font></p>
+<p style="text-indent: 1.27cm; margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">}</span></font></font></font></p>
+<p style="text-indent: 1.27cm; margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">}</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">Arrays</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 138%">
+<span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="background: transparent">var
+ex = new Array(5);</span></span></font></font></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><span style="background: transparent">
+</span></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="background: transparent">//the
+length of the array is specified inside the round</span></span></font></font></span></font></span></p>
+<p style="margin-left: 6.35cm; text-indent: 1.27cm; margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">bracket</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 138%">
+<span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="background: transparent">ex[0]=0;</span></span></font></font></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><span style="background: transparent">
+</span></span></font></span>
+</p>
+<p style="margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">ex[1]=1</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 138%">
+<span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="background: transparent">ex[2]=2;</span></span></font></font></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><span style="background: transparent">
+</span></span></font></span>
+</p>
+<p style="margin-left: 1.27cm; text-indent: 1.27cm; margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">ex[3]=3;</span></font></font></font></p>
+<p style="margin-left: 2.54cm; margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">ex[4]=4;</span></font></font></font></p>
+<p><br/>
+<br/>
+
+</p>
+<p style="margin-left: 1.27cm; text-indent: 1.27cm; margin-bottom: 0cm; font-weight: normal; line-height: 138%">
+<span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="background: transparent">ex[10]</span></span></font></font></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><span style="background: transparent">
+</span></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="background: transparent">//this
+is allowed because the array size is dynamic leading </span></span></font></font></span></font></span>
+</p>
+<p style="margin-left: 5.08cm; text-indent: 1.27cm; margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">the
+parsed array to null </span></font></font></font>
+</p>
+<p><br/>
+<br/>
+
+</p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 138%">
+<span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="background: transparent">var
+arr = new Array(10);</span></span></font></font></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><span style="background: transparent">
+</span></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="background: transparent">//having
+&ldquo;new Array()&rdquo; will give an array depending </span></span></font></font></span></font></span>
+</p>
+<p style="margin-left: 7.62cm; margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">on
+the number inside the round bracket with null value </span></font></font></font>
+</p>
+<p><br/>
+<br/>
+
+</p>
+<p style="margin-left: 1.27cm; text-indent: 1.27cm; margin-bottom: 0cm; font-weight: normal; line-height: 138%">
+<span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="background: transparent">var
+arr2=[10];</span></span></font></font></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><span style="background: transparent">
+</span></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="background: transparent">//this
+will lead to 1 element array with value of given</span></span></font></font></span></font></span></p>
+<p><br/>
+<br/>
+
+</p>
+<p style="text-indent: 1.27cm; margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">user-defined
+objects &nbsp;&nbsp;&nbsp;</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">var
+ex = new Object(); &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Object object
+constructor</span></font></font></font></p>
+<p style="margin-left: 1.27cm; text-indent: 1.27cm; margin-bottom: 0cm; font-weight: normal; line-height: 138%">
+<span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="background: transparent">ex.name
+= Luigi</span></span></font></font></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><span style="background: transparent">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="background: transparent">//properties
+and methods defining</span></span></font></font></span></font></span></p>
+<p style="margin-left: 1.27cm; text-indent: 1.27cm; margin-bottom: 0cm; font-weight: normal; line-height: 138%">
+<span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="background: transparent">console.log(ex['name']);
+&nbsp;&nbsp;</span></span></font></font></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><span style="background: transparent">
+</span></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="background: transparent">//
+properties and methods accessing </span></span></font></font></span></font></span>
+</p>
+<p style="margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">console.log(ex.unown);
+&nbsp;&nbsp;&nbsp;// properties and methods is undefined </span></font></font></font>
+</p>
+<p><br/>
+<br/>
+
+</p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 138%">
+<span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="background: transparent">for
+(let property in ex) { &nbsp;</span></span></font></font></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><span style="background: transparent">
+</span></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="background: transparent">//
+property enumeration</span></span></font></font></span></font></span></p>
+<p style="margin-bottom: 0cm; line-height: 138%"><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><span style="background: transparent">&nbsp;&nbsp;
+</span></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="font-weight: normal"><span style="background: transparent">console.log(`${property}
+= ${ex[property]}`);</span></span></span></font></font></span></font></span></p>
+<p style="margin-left: 1.27cm; text-indent: 1.27cm; margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">}</span></font></font></font></p>
+<p style="font-weight: normal"><br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+</p>
+<p style="margin-bottom: 0cm; font-variant: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><i><span style="background: transparent">object
+literal syntax</span></i></font></font></font></p>
+<p style="margin-left: 1.27cm; margin-bottom: 0cm; font-weight: normal; line-height: 138%">
+<span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="background: transparent">var
+xsample = {}</span></span></font></font></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><span style="background: transparent">
+</span></span></font></span>
+</p>
+<p style="margin-left: 1.27cm; margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">xsample.samp1
+= 1;</span></font></font></font></p>
+<p style="margin-left: 1.27cm; margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">xsample.samp2
+= &ldquo;two&rdquo;;</span></font></font></font></p>
+<p style="margin-left: 1.27cm; margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">xsample.samp3
+= &ldquo;3&rdquo;;</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">var
+anotherSubject = {</span></font></font></font></p>
+<p style="margin-bottom: 0cm; line-height: 138%"><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><span style="background: transparent">&nbsp;
+</span></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="font-weight: normal"><span style="background: transparent">xsample.samp1
+= 1;</span></span></span></font></font></span></font></span></p>
+<p style="margin-left: 1.27cm; margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">xsample.samp2
+= &ldquo;two&rdquo;;</span></font></font></font></p>
+<p style="margin-left: 1.27cm; margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">xsample.samp3
+= &ldquo;3&rdquo;;</span></font></font></font></p>
+<p style="margin-left: 2.54cm; text-indent: 1.27cm; margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">}</span></font></font></font></p>
+<p style="margin-left: 2.54cm; margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">Object
+constructor function</span></font></font></font></p>
+<p style="margin-left: 2.54cm; text-indent: 1.27cm; margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">function
+xsample2(samp1,samp2 , samp3) {</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">this.samp1
+= 1;</span></font></font></font></p>
+<p style="margin-left: 3.81cm; text-indent: 1.27cm; margin-bottom: 0cm; font-variant: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><span style="background: transparent">&nbsp;<font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="font-weight: normal">this.samp2
+= &ldquo;two;</span></span></font></font></span></font></p>
+<p style="margin-bottom: 0cm; line-height: 138%"><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><span style="background: transparent">&nbsp;&nbsp;&nbsp;
+</span></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="font-weight: normal"><span style="background: transparent">this.samp3
+= &ldquo;3&rdquo;;</span></span></span></font></font></span></font></span></p>
+<p><br/>
+<br/>
+
+</p>
+<p style="margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">JSON
+- allows object conversions JSON-formatted strings</span></font></font></font></p>
+<p style="margin-left: 2.54cm; text-indent: 1.27cm; margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">var
+ex = JSON.stringify(xsample);</span></font></font></font></p>
+<p><br/>
+<br/>
+
+</p>
+<p style="margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">miscellaneous
+object APIs</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 138%">
+<span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="background: transparent">Map(),</span></span></font></font></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><span style="background: transparent">
+</span></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="background: transparent">Set()</span></span></font></font></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><span style="background: transparent">
+</span></span></font></span>
+</p>
+<p style="text-indent: 1.27cm; font-weight: normal"><br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+</p>
+<p style="margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<br/>
+
+</p>
+<p style="font-weight: normal"><br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+</p>
+<p style="margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">Document
+Object Model (DOM)</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">-the
+document itself</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">-the
+most important API</span></font></font></font></p>
+<p style="margin-left: 1.27cm; margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">-An
+API which withn the javascript allow access to the HTML document
+associated with the webpage</span></font></font></font></p>
+<p style="margin-left: 1.27cm; margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">-
+It is represented be a DOM tree which is a parsed document</span></font></font></font></p>
+<p><br/>
+<br/>
+
+</p>
+<p style="margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">DOM
+API functionalities:</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">Interface
+Node which retreive references to node collection in the DOM</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">getElementById()</span></font></font></font></p>
+<p style="margin-left: 2.54cm; margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">-
+getElementsByTagName(), getElementsByClassName(), getElementsByName()</span></font></font></font></p>
+<p style="margin-bottom: 0cm; line-height: 138%"><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><span style="background: transparent">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="font-weight: normal"><span style="background: transparent">-
+querySelector(), querySelectorAll()</span></span></span></font></font></span></font></span></p>
+<p><br/>
+<br/>
+
+</p>
+<p style="margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">From
+a given node traverse the DOM tree</span></font></font></font></p>
+<p style="margin-left: 1.27cm; text-indent: 1.27cm; margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">parentNode,
+parentElement</span></font></font></font></p>
+<p style="margin-bottom: 0cm; line-height: 138%"><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><span style="background: transparent">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="font-weight: normal"><span style="background: transparent">-
+childNodes, children</span></span></span></font></font></span></font></span></p>
+<p style="margin-bottom: 0cm; line-height: 138%"><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><span style="background: transparent">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="font-weight: normal"><span style="background: transparent">-
+firstChild, lastChild, nextSibling, previousSibling</span></span></span></font></font></span></font></span></p>
+<p style="margin-left: 2.54cm; margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">-
+firstElementChild, lastElementChild, nextElementSibling,
+previousElementSibling</span></font></font></font></p>
+<p><br/>
+<br/>
+
+</p>
+<p style="margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">construct/copy
+nodes:</span></font></font></font></p>
+<p style="margin-bottom: 0cm; line-height: 138%"><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><span style="background: transparent">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;</span></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="font-weight: normal"><span style="background: transparent">-
+createElement(), createTextNode(), createAttribute(), etc.</span></span></span></font></font></span></font></span></p>
+<p style="margin-bottom: 0cm; line-height: 138%"><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><span style="background: transparent">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;</span></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="font-weight: normal"><span style="background: transparent">-
+cloneNode(), importNode()</span></span></span></font></font></span></font></span></p>
+<p><br/>
+<br/>
+
+</p>
+<p style="margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">DOM
+tree manipulation</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">-
+nodeType, nodeName, nodeValue</span></font></font></font></p>
+<p style="text-indent: 1.27cm; margin-bottom: 0cm; font-variant: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><span style="background: transparent">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="font-weight: normal">-
+attributes, id, tagName, className, classList</span></span></font></font></span></font></p>
+<p style="margin-bottom: 0cm; line-height: 138%"><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><span style="background: transparent">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="font-weight: normal"><span style="background: transparent">-
+ownerDocument, documentElement, hasChildNodes()</span></span></span></font></font></span></font></span></p>
+<p style="margin-bottom: 0cm; line-height: 138%"><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><span style="background: transparent">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="font-weight: normal"><span style="background: transparent">-
+normalize()</span></span></span></font></font></span></font></span></p>
+<p style="font-weight: normal"><br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+</p>
+<p style="margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">miscellaneous
+attributes and methods</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">-
+nodeType, nodeName, nodeValue</span></font></font></font></p>
+<p style="margin-bottom: 0cm; line-height: 138%"><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><span style="background: transparent">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="font-weight: normal"><span style="background: transparent">-
+attributes, id, tagName, className, classList</span></span></span></font></font></span></font></span></p>
+<p style="margin-bottom: 0cm; line-height: 138%"><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><span style="background: transparent">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="font-weight: normal"><span style="background: transparent">-
+ownerDocument, documentElement, hasChildNodes()</span></span></span></font></font></span></font></span></p>
+<p style="margin-bottom: 0cm; line-height: 138%"><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><span style="background: transparent">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="font-weight: normal"><span style="background: transparent">-
+normalize()</span></span></span></font></font></span></font></span></p>
+<p><br/>
+<br/>
+
+</p>
+<p style="margin-bottom: 0cm; line-height: 138%"><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><span style="background: transparent">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;</span></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="font-weight: normal"><span style="background: transparent">-
+manipulate attributes (for 'Element' nodes):</span></span></span></font></font></span></font></span></p>
+<p style="margin-bottom: 0cm; line-height: 138%"><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><span style="background: transparent">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="font-weight: normal"><span style="background: transparent">-
+setAttribute(), getAttribute(), removeAttribute()</span></span></span></font></font></span></font></span></p>
+<p style="margin-bottom: 0cm; line-height: 138%"><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><span style="background: transparent">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="font-weight: normal"><span style="background: transparent">-
+setAttributeNode(), getAttributeNode(), removeAttributeNode()</span></span></span></font></font></span></font></span></p>
+<p><br/>
+<br/>
+
+</p>
+<p style="margin-bottom: 0cm; line-height: 138%"><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><span style="background: transparent">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;</span></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="font-weight: normal"><span style="background: transparent">-
+event handling:</span></span></span></font></font></span></font></span></p>
+<p style="margin-bottom: 0cm; line-height: 138%"><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><span style="background: transparent">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="font-weight: normal"><span style="background: transparent">-addEventListener(),
+removeEventListener(), dispatchEvent()</span></span></span></font></font></span></font></span></p>
+<p><br/>
+<br/>
+
+</p>
+<p style="margin-bottom: 0cm; line-height: 138%"><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><span style="background: transparent">&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;</span></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="font-weight: normal"><span style="background: transparent">-
+style handling:</span></span></span></font></font></span></font></span></p>
+<p style="margin-bottom: 0cm; line-height: 138%"><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><span style="background: transparent">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="font-weight: normal"><span style="background: transparent">-
+styleSheets, ownerRule, cssRules, insertRule(), deleteRule()</span></span></span></font></font></span></font></span></p>
+<p style="margin-bottom: 0cm; line-height: 138%"><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><span style="background: transparent">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="font-weight: normal"><span style="background: transparent">-
+getComputedStyle()</span></span></span></font></font></span></font></span></p>
+<p style="margin-left: 1.27cm; text-indent: 1.27cm; margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">-
+innerHTML, outerHTML, innerText, outerText &nbsp;&nbsp;&nbsp;</span></font></font></font></p>
+<p style="margin-left: 1.27cm; text-indent: 1.27cm; margin-bottom: 0cm; font-variant: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><span style="background: transparent">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="font-weight: normal">-
+references to oft-used document sections and collections:</span></span></font></font></span></font></p>
+<p style="margin-left: 1.27cm; text-indent: 1.27cm; margin-bottom: 0cm; font-variant: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><span style="background: transparent">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="font-weight: normal">-
+head, body, anchors, forms, images</span></span></font></font></span></font></p>
+<p><br/>
+<br/>
+
+</p>
+<p style="font-weight: normal"><br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+</p>
+<p style="margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">Event
+Propagation Order</span></font></font></font></p>
+<ol>
+	<li/>
+<p style="margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; background: transparent; text-decoration: none">
+	<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">Capturing
+	Phase(Netscape)</span></font></font></font></p>
+	<li/>
+<p style="margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; background: transparent; text-decoration: none">
+	<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">Target</span></font></font></font></p>
+	<li/>
+<p style="margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; background: transparent; text-decoration: none">
+	<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">Bubble
+	Phase</span></font></font></font></p>
+</ol>
+<p><br/>
+<br/>
+
+</p>
+<p style="margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">Event
+Handler Registration</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">Methods:</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">-Inline
+HTML event attrib (ex &lt;button id=&rsquo;button&rsquo;
+onclick=&rsquo;handler();&gt;CM&lt;/button&gt;</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">-pre-DOM
+L2 </span></font></font></font>
+</p>
+<p style="margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">-DOM:L2
+event registration</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">-standard,
+well supported</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">-introduced,
+addEventListener</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">-can
+register more than one event listener</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">-can
+register bundles on the bubble or capture phase</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">-function
+expressions always have unique identity</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">-
+If you register it in capture, close it in capture</span></font></font></font></p>
+<p><br/>
+<br/>
+
+</p>
+<p style="margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">-Microsoft-specific,
+non-standard, IEv6-v10</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">-determining
+associated information about event</span></font></font></font></p>
+<p><br/>
+<br/>
+
+</p>
+<p style="margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">AJAX
+- provides an object which allows you to fetch something</span></font></font></font></p>
+<p><br/>
+<br/>
+
+</p>
+<p style="margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">XML
+Request</span></font></font></font></p>
+<ul>
+	<li/>
+<p style="margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; background: transparent; text-decoration: none">
+	<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">Create
+	http request object</span></font></font></font></p>
+	<li/>
+<p style="margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; background: transparent; text-decoration: none">
+	<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">Specify
+	resourse</span></font></font></font></p>
+	<li/>
+<p style="margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; background: transparent; text-decoration: none">
+	<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">Do
+	the fetch be using fetch method </span></font></font></font>
+	</p>
+</ul>
+<p><br/>
+<br/>
+
+</p>
+<p style="margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">*Javascript
+is inherently single-threaded*</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">Two
+modes of fetching</span></font></font></font></p>
+<ol>
+	<li/>
+<p style="margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; background: transparent; text-decoration: none">
+	<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">Synchronous</span></font></font></font></p>
+	<li/>
+<p style="margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; background: transparent; text-decoration: none">
+	<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">Asynchronous</span></font></font></font></p>
+</ol>
+<p style="margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">*callback
+function - when events occur, it will be invoked automatically</span></font></font></font></p>
+<p><br/>
+<br/>
+
+</p>
+<p style="margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">Javascript
+promise</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; text-decoration: none">
+<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">//do
+operation</span></font></font></font></p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 138%">
+<span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="background: transparent">//success</span></span></font></font></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><span style="background: transparent">
+</span></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="background: transparent">resolve(success)</span></span></font></font></span></font></span></p>
+<p style="margin-bottom: 0cm; font-weight: normal; line-height: 138%">
+<span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="background: transparent">//failure</span></span></font></font></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><span style="background: transparent">
+</span></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="background: transparent">reject(err)</span></span></font></font></span></font></span></p>
+<p><span style="font-weight: normal"><br/>
+</span><br/>
+<br/>
+
+</p>
+</body>
+</html>
