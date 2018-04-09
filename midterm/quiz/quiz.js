@@ -6,7 +6,7 @@
 
 function runQuiz(term){
 		localStorage.setItem("setQuestion",JSON.stringify(term));
-		window.open("quiz/quiz.html");
+		window.open("quiz.html");
 }
 
 
