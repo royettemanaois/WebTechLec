@@ -11,12 +11,17 @@ function scrolls() {
 }
 var toggleStatus = 1;
 function drop1() {
+    if(document.getElementById("dropdown2").classList.contains("show")){
+        document.getElementById("dropdown2").classList.toggle("show");
+    }
     document.getElementById("dropdown1").classList.toggle("show");
-    
 }
-
 function drop2() {
+    if(document.getElementById("dropdown1").classList.contains("show")){
+        document.getElementById("dropdown1").classList.toggle("show");
+    }
     document.getElementById("dropdown2").classList.toggle("show");
+
 }
 
 function resetdisplay(){
