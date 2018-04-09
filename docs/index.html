@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>WebTechLec</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	
+</head>
+
+<body>
+
+<header class="bg" id="home">
+	
+		<div class="centerTitle"> Web Systems and Technologies</div>
+		<div class ="start" id="start1" style="display: none">
+                <a class="button button-one" href="prelim.html">Prelims</a>
+                <a class="button button-two" href="midterm.html">Midterms</a>
+                <a class="button button-three" href="#">Finals</a>
+		</div>
+	
+</header>
+
+<nav id="navbar"> 
+		<a class = "logonav" href=""><img class ="logoweb" src="img/logo.png" alt="logo"></a>
+		<a class = "active" href="#visit">Visit Us</a>
+		<a class = "active" href="#team1">Team</a>
+		<a class = "active" href="#home">Overview</a>
+		<a class = "active" href="#home">Home</a>
+		
+</nav>
+	
+
+	<div id="boxes">
+      <div class="container">
+      	<div class="centerBox">
+      			<h1>Course Overview</h1>
+      			<p>This course will have a comprehensive discussion of the following: </p>
+        </div>
+        <div class="box">
+       
+          <h2><a href="prelim.html#topicwwww"> Internet</a></h2>
+          <p>Interconnected Networks</p>
+        </div>
+        <div class="box">
+         
+          <h2><a href="prelim.html#topicwww">WWW</a></h2>
+          <p>World Wide Web</p>
+        </div>
+        <div class="box" >
+          <h2><a href="prelim.html#topichttp" onclick="showhttp1()">HTTP</a></h2>
+          <p>Hypertext Transfer Protocol</p>
+        </div>
+        <div class ="container">
+        
+        <div class="box">
+          
+          <h2><a href="prelim.html#topichtml" onclick="showhtml1()">HTML</a></h2>
+          <p>Hypertext Markup Language</p>
+      </div>
+
+      <div class="box">
+          
+		  <h2><a href="midterm.html#topiccss" onclick="showcss1()">CSS</a></h2>
+          <p>Cascading Stylesheet</p>
+        </div>
+        <div class="box">
+         
+          <h2><a href="midterm.html#topiccss" onclick="showjs1()">JS</a></h2>
+          <p>JavaScript</p>
+        </div>
+        </div>
+        <div class="botCenterBox">
+      			<p>and there will be more topics about web development and technologies <br>	 throughout the entire course. </p>
+        </div>
+      </div>
+    </div>
+
+	<div class="bg2"></div>
+
+	<div class = "team" id = "team1">
+                <h1>Our Team</h1>
+                <span class = "border"></span>
+            <div class = "ps">
+                <a><span class = "name" id= "name1">Renphil Ian Balantin</span><img id = "p1" src = "./img/Renphil.jpg" alt = ""></a>
+                
+                <a id = "p2"><span class = "name" id="name2">Gian Luigi Cabrera</span>
+                
+                <img src = "./img/Gian.png" alt = ""></a>
+                
+                <a id = "p3"><span class = "name" id= "name3">Andre Filipe Codod</span>
+                <img src = "./img/Andre.png" alt = ""></a>
+                <a id = "p4"><span class = "name" id="name4">Adrian Angelo Galiste</span><img src = "./img/Adrian.jpg" alt = ""></a>
+                <a id = "p5"><span class = "name" id="name5">Joshua Royce Hipol</span>
+                <img src = "./img/Josh.png" alt = ""></a>
+                <a id = "p6"><span class = "name" id="name6">Royette Manaois</span>
+                    <img src = "./img/Royette.jpg" alt = ""></a>
+            </div>
+      </div>
+
+      
+
+	<div class="bg3">
+		<input type="button" name="show" class="buttonStart" value="Start Learning" onclick="showLearning()" />
+	</div>
+
+
+	<footer class = "bg4" id ="visit">
+		<div class ="footcontainer">
+			<p>Visit us at <br> Mary Heights, Bakakeng, Baguio, Benguet <br> Phone: (074) 444 8246 <br> Motto: Sapientia Aedificat <br> ("Wisdom Builds", Latin) </p>
+		</div>
+	</footer>
+
+
+
+	<script src="js/main.js"></script>
+	<script src="js/prelim.js"></script>
+</body>
+
+
+</html>

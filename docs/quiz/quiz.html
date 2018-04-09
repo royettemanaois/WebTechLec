@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Quiz</title>
+	<script src="quiz.js"></script>
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+<div class="wrapper">
+	<div id="qNav"> </div>
+
+	
+	<div id="container">
+		
+		<p id="question"> </p>	
+
+		<button id ="bckBtn" onclick="previousQuestion(0);" > Back </button>
+	
+    	<input id='answer' value="" type='text' placeholder="Answer">
+    	
+    	<button id ="nxtBtn" onclick="nextQuestion(1); submitAnswer(0); ">Next</button>
+
+    	<button id="chkBtn"> Submit </button> 
+
+	</div>
+
+	<div id="result"></div>
+</div>
+</body>
+</html>

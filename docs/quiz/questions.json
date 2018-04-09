@@ -1,0 +1,293 @@
+{
+
+	"Prelim Questions":[
+        
+        //  Indentification (10 items)
+        /* 
+            Answer the following questions.
+        */
+        
+			{
+				"question":"1. It is considered to be the greatest information system.",
+				"ans":"World Wide Web"
+			},
+            {
+                "question":"2. The ability to open new Web pages by clicking text links on a Web browser.",
+                "ans":"Hypermedia"
+            },
+            {
+                "question":"3. A type of Web resource that is produced on the fly.",
+                "ans":"Dynamic Resource"
+            },
+            {
+                "question":"4. A type of Web resource that already exists in a Web server.",
+                "ans":"Static Resource"
+            },
+            {
+                "question":"5. A program that uses HTTP  to serve the files that form Web pages to users, in response to their requests, which are forwarded by their computers' HTTP clients.",
+                "ans":"Web server"
+            },
+            {
+                "question":"6. This application crawls the web and harvests information.",
+                "ans":"Web spiders" //or web crawlers
+            },
+            {
+                "question":"7. They are the typical devices that uses the Web.",
+                "ans":"Clients"
+            },
+            {
+                "question":"8. Data that is chopped into smaller pieces",
+                "ans":"Data Packets"
+            },
+            {
+                "question":"9. Computers that store web pages and websites.",
+                "ans":"Servers"
+            },
+            {
+                "question":"10. He was the one who invented The World Wide Web.",
+                "ans":"Tim Berners-Lee"
+            },
+        
+        //  Multiple Choice
+        /*
+            Identify what version did the description belong to. Choose the best answer among the given choices. Enter only the letter of your answer.
+        */
+        
+			{
+				"question":"11. Methods GET, HEAD, and POST are now supported. Content-Type Header was added. -- a. HTTP 0.9 -- b. HTTP 1.0 -- c. HTTP 1.1 -- d. HTTP 2.0",
+				"ans":"b"
+			},
+			{
+				"question":"12. The Upgrade header was introduced. Also, HTTP pipelining was implemented.",
+				"ans":"c"
+			},
+			{
+				"question":"13. It only supports GET method and its response type is only hypertext. -- a. HTTP 0.9 -- b. HTTP 1.0 -- c. HTTP 1.1 -- d. HTTP 2.0",
+				"ans":"a"
+			},
+            {
+				"question":"14. Aside from the methods GET, HEAD, and POST, the methods PUT, DELETE, TRACE, and OPTIONS are now supported. The Keep-Alive header first used. -- a. HTTP 0.9 -- b. HTTP 1.0 -- c. HTTP 1.1 -- d. HTTP 2.0",
+				"ans":"c"
+			},
+            {
+				"question":"15. This version supports Query Multiplexing and Headers Compression. -- a. HTTP 0.9 -- b. HTTP 1.0 -- c. HTTP 1.1 -- d. HTTP 2.0",
+				"ans":"d"
+			},
+        
+        //  True or False
+        /*
+            Read the given situation. Identify if the given status was true. Input true if the given statement is true and false if otherwise.
+        */
+        
+            {
+				"question":"16. True or False: Continue -- HTTP Status: Informational",
+				"ans":"true"
+			},
+            {
+				"question":"17. True or False: OK -- HTTP Status: Success",
+				"ans":"true"
+			},
+            {
+				"question":"18. True or False: Found -- HTTP Status: Success",
+				"ans":"false"
+			},
+            {
+				"question":"19. True or False: Created -- HTTP Status: Informational",
+				"ans":"false"
+			},
+            {
+				"question":"20. True or False: Processing -- HTTP Status: Redirection",
+				"ans":"false"
+			},
+            {
+				"question":"21. True or False: Internal Server Error -- HTTP Status: Server Error",
+				"ans":"true"
+			},
+            {
+				"question":"22. True or False: Misdirected Request -- HTTP Status: Client Error",
+				"ans":"true"
+			},
+            {
+				"question":"23. True or False: Already Reported -- HTTP Status: Informational",
+				"ans":"false"
+			},
+            {
+				"question":"24. True or False: Use Proxy -- HTTP Status: Redirection",
+				"ans":"true"
+			},
+            {
+				"question":"25. True or False: Forbidden -- HTTP Status: Server Error",
+				"ans":"false"
+			},
+        
+        //  Fill in the blanks.
+        
+            {
+				"question":"26. HTML means Hypertext _____ Language",
+				"ans":"Markup"
+			},
+            {
+				"question":"27. The X in XHTML means _____",
+				"ans":"Extensible"
+			},
+            {
+				"question":"28. WHATWG means Web Hypertext Application _____ Working Group",
+				"ans":"Technology"
+			},
+            {
+				"question":"29. _____ opposed in continuing the XHTML.",
+				"ans":"Ian Hickson"
+			},
+            {
+				"question":"30. HTML _____ is a language that allows you to write in HTML and converts that into another language.",
+				"ans":"Preprocessor"
+			},
+        
+	],
+
+	"Midterm Questions":[
+        
+        //  Identification
+        /*
+            Answer the following questions
+        */
+        
+			{
+				"question":"Generates CSS using a custom language syntax that typically includes features that dont exist in pure CSS.",
+				"ans":"CSS Preprocessors"
+			},
+            {
+				"question":"Provides pre-defined CSS design functionality that can be reused, excluded, or customized.",
+				"ans":"CSS Frameworks"
+			},
+            {
+				"question":"Provide features that developers expect browsers to provide natively.",
+				"ans":"Polyfills"
+			},
+            {
+				"question":"A language that is independent of HTML that allows developers to edit the presentation of attributes, layouts, and other HTML elements in a Web page.",
+				"ans":"CSS"
+			},
+            {
+				"question":"Who developed CSS along with Bert Bros?",
+				"ans":"Hakun Wium Lie"
+			},
+            {
+				"question":"A type of CSS style that is written directly in the HTML file.",
+				"ans":"Inline Styles"
+			},
+            {
+				"question":"It is the source of styles for HTML language",
+				"ans":"HTML Stylesheets"
+			},
+            {
+				"question":"A type of CSS style that is written directly in the HTML file but it is embedded in the head of the document.",
+				"ans":"Embedded Styles"
+			},
+            {
+				"question":"A weight that is applied to a given CSS declaration, determined by the number of each selector type in the matching selector.",
+				"ans":"Specificity"
+			},
+            {
+				"question":"A type of CSS style that is written in a separate document and then it was attached to different web documents.",
+				"ans":"External Style Sheets"
+			},
+        
+        //  Fill in the blanks
+        /*
+            Fill the blanks with appropriate CSS propertiy to achieve the style of the text displayed.
+        */
+            {
+				"question":"<p style='color:green;'>I checked to make sure that he was still alive.</p> -- _____: green;",
+				"ans":"color"
+			},
+            {
+				"question":"<p style='font-size:20px;'>This sentence is 20 px large.</p>? -- _____:20px;",
+				"ans":"font-size"
+			},
+            {
+				"question":"<p style='border-style: dotted'>They got there early, and they got really good seats.</p> -- _____: dotted;",
+				"ans":"border-style"
+			},   
+            {
+				"question":"<p style='text-decoration: line-through'>Abstraction is often one floor above you.</p> -- _____: line-through;",
+				"ans":"text-decoration"
+			},
+            {
+				"question":"<p style='text-shadow: 2px 2px red'>Winter is coming.</p> -- _____: 2px 2px red;",
+				"ans":"text-shadow"
+			},
+        
+        //  Multiple Choice
+        /*
+            Identify what CSS level did the description belong to. Choose the best answer among the given choices. Enter only the letter of your answer.
+        */
+        
+            {
+				"question":"This CSS level added properties for positioning that allowed CSS to be used for page layout. -- a. CSS Level 1 -- b. CSS Level 2 -- c. CSS Level 3",
+				"ans":"b"
+			},
+            {
+				"question":"This level allows you to effectively build presentations from Web documents. -- a. CSS Level 1 -- b. CSS Level 2 -- c. CSS Level 3",
+				"ans":"c"
+			},
+            {
+				"question":"This level of CSS specifications is considered by the CSS WG to be obsolete. -- a. CSS Level 1 -- b. CSS Level 2 -- c. CSS Level 3",
+				"ans":"a"
+			},
+            {
+				"question":"This level is divided into several modules. -- a. CSS Level 1 -- b. CSS Level 2 -- c. CSS Level 3",
+				"ans":"c"
+			},
+            {
+				"question":"The CSS level that lacks dependable web browser support. -- a. CSS Level 1 -- b. CSS Level 2 -- c. CSS Level 3",
+				"ans":"a"
+			},
+        
+        //  True or False
+        /*
+            Read the statements that are shown. If the statement is true, type true. Type false if otherwise.
+        */
+            {
+				"question":"True or False: JavaScript is a program that runs on a browser environment.",
+				"ans":"true"
+			},
+            {
+				"question":"True or False: In the past, JavaScript will execute first on the bottom.",
+				"ans":"false"
+			},
+            {
+				"question":"True or False: To fetch a JS, href is used instead of src",
+				"ans":"false"
+			},
+            {
+				"question":"True or False: A top-level code is executed as the script is loaded.",
+				"ans":"true"
+			},
+            {
+				"question":"True or False: JS code that are inside functions are executed when the function is invoked.",
+				"ans":"true"
+			},
+            {
+				"question":"True or False: Ekma Script is the standardized version of JavaScript.",
+				"ans":"false"
+			},
+            {
+				"question":"True or False: In JavaScript, BOM stands for Browser Object Modifier.",
+				"ans":"false"
+			},
+            {
+				"question":"True or False: DOM is the most important API",
+				"ans":"true"
+			},
+            {
+				"question":"True or False: In JavaScript, DOM stands for Document Object Model.",
+				"ans":"true"
+			},
+            {
+				"question":"True or False: Object and properties are created on the fly.",
+				"ans":"true"
+			},
+	]
+
+}
