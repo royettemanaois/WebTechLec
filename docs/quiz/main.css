@@ -1,3 +1,7 @@
+html{
+background-color:#013243;
+}
+
 .samp{
 
     background-color: white;
@@ -23,51 +27,59 @@
     border-top: 8px solid yellow;
 }
 .wrapper{
-    display: grid;
-    align-self: flex-start;
-    grid-template-columns: 1fr 2fr 1fr 1fr ;
-    grid-template-rows: 400px 1fr;
-    grid-template-areas: 
-        ". qnav container ."
-        ". result result .";
+    display: flex;
+    height: 2480px;
+    justify-content: center;
 }
 
 #qNav{
     grid-area: qnav;
     border: 2px solid;
     margin-top: 15px;
-    width: 103%;
-    height: auto;
-    background-color: #013243;
+    position: fixed;
+    margin-left: -25%;
+    width: 450px;
+    height: 300px;
+    background-color: whitesmoke;
+    
 }
 
 
 #container{
-    grid-area: container;
     display: grid;
-    margin-top: 50px;
-    grid-template-rows: 1fr 50px 50px 1fr;
-    grid-template-columns: 300px 150px 150px 150px 400px;
+    margin-top: 20px;
+    margin-left: 40%;
+    grid-template-rows: 200px 50px 50px;
+    grid-template-columns: 150px 150px 150px;
     grid-template-areas: 
-        "quest quest quest quest quest"
-        ". ans ans ans ."
-        ". bckb nxtb subm .";
-    grid grid-row-gap: 50px;
+        "quest quest quest"
+        "ans ans ans"
+        "bckb nxtb subm";
+}
+#score{
+    font-size: 50px;
+    color: antiquewhite;
+    position: absolute;
+    margin-top: -75px;
+    margin-left: 167px;
+    background-color: rgb(52, 52, 54);
 }
 
 #result{
-    grid-area: result;
     display: none;
-    margin-left: 25%;
     font-family: Tahoma;
+    margin-left: 40%;
     font-size: 15px;
+    padding-top: 100px;
+    margin-top: 0%;
 }
 
 ol{
     background-color: rgb(52, 52, 54);
     color: white;
     margin: 10px;
-    width:  800px;
+    width:  500px;
+padding-right: 20px;
 }
 
 .wrong{
@@ -88,7 +100,6 @@ a{
 #answer{
     grid-area: ans;
     width: 100%;
-    margin-left: -50%;
     border-radius: 4px;
     font-family: Tahoma;
     font-size:15px;
@@ -110,7 +121,6 @@ a{
     color: #333;
     border-radius: 5px;
     box-shadow: 0px 0px 2px rgba(0,0,0,.5), 1px 1px 1px rgba(0,0,0,.3);
-    margin-left: -110%;
     margin-top: 5px;
 }
 #bckBtn:hover{
@@ -130,7 +140,6 @@ a{
     color: #333;
     border-radius: 5px;
     box-shadow: 0px 0px 2px rgba(0,0,0,.5), 1px 1px 1px rgba(0,0,0,.3);
-    margin-left: -130%;
     margin-top: 5px;
 }
 #nxtBtn:hover{
@@ -149,7 +158,6 @@ a{
     color: #333;
     border-radius: 5px;
     box-shadow: 0px 0px 2px rgba(0,0,0,.5), 1px 1px 1px rgba(0,0,0,.3);
-    margin-left: -140%;
     margin-top: 5px;
 }
 #chkBtn:hover{
@@ -177,10 +185,10 @@ a{
     grid-area: quest;
     margin: auto;
     width: 100%;
+    height: 150px;
     border: auto solid;
     padding: 10px;
-    margin-left: 5%;
     font-family: Tahoma;
     font-size: 20px;
+    background-color: whitesmoke;
 }
-
