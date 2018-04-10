@@ -28,7 +28,7 @@
                     <a class="home" href="index.html">HOME</a>
                 </div>
                 <div id="prelim">
-                    <nav id="nav">                         
+                    <nav id="nav">
                         <button onclick="drop1()" class="dropbtn">PRELIM
                             <svg version="1.1" class="down" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="451.847px" height="451.847px" viewBox="0 0 451.847 451.847" style="enable-background:new 0 0 451.847 451.847;" xml:space="preserve"> <g>
                                 <path d="M225.923,354.706c-8.098,0-16.195-3.092-22.369-9.263L9.27,151.157c-12.359-12.359-12.359-32.397,0-44.751
@@ -39,7 +39,7 @@
                         <div id="dropdown1" class="dropdown-content">
                             <div class="container">
                                 <header><a class="nav topic one" href="#topicwww" onclick="showwww1()">WWW</a></header>
-                                <ul class="subtopic1"> 
+                                <ul class="subtopic1">
                                     <li><a href="#topicwww"  onclick="showwww1()">The World Wide Web</a></li>
                                     <li><a href="#howwww"  onclick="showwww2()">How the Web Works</a></li>
                                     <li><a href="#whatwww"  onclick="showwww3()"> What happens when we type a URL in our browsers</a></li>
@@ -50,13 +50,13 @@
                                     <li><a href="#httpver" onclick="showhttp2()">HTTP Versions</a></li>
                                     <li><a href="#httpfund" onclick="showhttp3()">HTTP Fundamentals</a></li>
                                 </ul>
-                                <header><a class="nav topic three" href="#html" onclick="showhtml1()">HTML</a></header>
+                                <header><a class="nav topic three" href="#thehtml" onclick="showhtml1()">HTML</a></header>
                                 <ul class="subtopic3">
                                     <li><a href="#thehtml" onclick="showhtml1()">The Hypertext Markup Language</a></li>
                                     <li><a href="#htmlhist" onclick="showhtml2()">Version History</a></li>
-                                    <li><a href="#html5" onclick="showhtml3()">HTML 5.0</a></li>
+                                    <li><a href="#html5ver" onclick="showhtml3()">HTML 5.0</a></li>
                                     <li><a href="#htmldocstruc" onclick="showhtml4()">HTML document Structure</a></li>
-                                    <li><a href="#htmlprepr" onclick="showhtml5()">HTML Preprocessor</a></li>
+                                    <li><a href="#htmlprep" onclick="showhtml5()">HTML Preprocessor</a></li>
                                 </ul>
                                 <header><a class="nav topic four"> <button onclick="runQuiz('Prelim Questions');" style="background:none; border:none; font-size:1em; color: white;" class="quiz">PRELIM QUIZ</button></a></header>
                             </div>
@@ -74,7 +74,7 @@
                         </button>
                         <div id="dropdown2" class="dropdown-content">
                             <div class="container">
-                                <header><a class="nav topic one" href="midterm.html#topiccss" onclick="showcss1()">CSS</a></header>
+                                <header><a class="nav topic one" href="midterm.html#css-topic1" onclick="showcss1()">CSS</a></header>
                                 <ul class="subtopic1">
                                     <li><a href="midterm.html#css-topic1"  onclick="showcss1()"> Version History</a></li>
                                     <li><a href="midterm.html#css-topic2"  onclick="showcss2()">HTML documents</a></li>
@@ -88,7 +88,7 @@
                                     <li><a href="midterm.html#css-topic10"  onclick="showcss10()">CSS Declarations</a></li>
                                     <li><a href="midterm.html#css-topic11"  onclick="showcss11()">CSS Preprocessors</a></li>
                                 </ul>
-                                <header><a class="nav topic two" href="#topicjs"  onclick="showjs()">JavaScript</a></header>
+                                <header><a class="nav topic two" href="midterm.html#js-topic1"  onclick="showjs()">JavaScript</a></header>
                                 <ul class="subtopic2">
                                     <li><a href="midterm.html#js-topic1" onclick="showjs()">Javascript Language Fundamentals</a></li>
                                     <li><a href="midterm.html#js-topic2" onclick="showjs()">Document Object Model (DOM)</a></li>
@@ -108,7 +108,7 @@
                 <h1 id="topicwww" class="maintopic">World Wide Web</h1>
                 <section id="www1">
                     <h2 id="thewww" class="subtopic">The World Wide Web</h2>
-                    <div class="content"> 
+                    <div class="content">
                         <ul>
                             <li>It is a collection of webpages.</li>
                             <li>It is invented by Sir Tim Berners-Lee who is a british scientist in CERN to spread scientific discovery to other researchers worldwide.</li>
@@ -178,9 +178,10 @@
                             <li>The browser now sends an HTTP request message to the server asking for a copy of the website to the client.</li>
 
                             <li>If the server approves the client’s requests, the server now sends an <q>OK</q> message (200 OK) and it will now start sending data packets of the website’s files.</li>
-                            <li class="hasChild"><div class="notes"><i>
+                            <div class="notes"><i>
                                 Data Packets - data that is chopped into smaller pieces.</i>
-                                </div></li>
+                              </i></div>
+
                             <li>The browsers assemble the received data packets into a complete website and displays it to the client.</li>
                         </ol>
                     </div>
@@ -190,7 +191,7 @@
             <div class="wrap" id="html">
                 <h1 id="topichtml" class="maintopic">Hypertext Markup Language</h1>
                 <section id="html1">
-                    <h2 id="thehtml" class="subtopic">The Hypertext Markup Language</h2>
+                    <h2 id="thehtml" class="subtopic">The Hypertext Markup Language</h2></i>
                     <div class="content">
                         <ul>
                             <li>Language used to mark up document</li>
@@ -278,7 +279,7 @@
                                             <li>Traditional</li>
                                             <li>Frameset</li>
                                         </ul>
-                                    </li>	
+                                    </li>
                                 </ul>
                             </li>
                             <li>Elements (HTML 4.01, XHTML 1.0, HTML 5)</li>
@@ -291,7 +292,7 @@
                             <li>Content</li>
                             <li class="hasChild">
                                 <ul>
-                                    <li>Content Models</li> 
+                                    <li>Content Models</li>
                                     <li>Void Elements (ex br, hr, img)</li>
                                 </ul>
                             </li>
@@ -354,7 +355,7 @@
                             <li>invented by Sir Tim Berners-Lee at CERN 1989</li>
                             <li>jointly developed by W3C and IETF(Internet Engineering Task Force)</li>
                             <li>is stateless</li>
-                        </ul> 
+                        </ul>
                         <h3 class="subcontent">HTTP was based on a client-server architecture</h3>
                         <ul>
                             <li>Servers</li>
@@ -366,7 +367,7 @@
                             </li>
                             <li class="hasChild">
                                 <div class="notes">
-                                    <i> 
+                                    <i>
                                         Gateways - connection across networks
                                         <br>
                                         Tunnels - more on encryption
@@ -599,7 +600,7 @@
                             <li>CONNECT - request the establishment tunnel to the destination origin server</li>
                         </ul>
                         <p>*SAFE METHOD - indicated that the resources can't be modified</p>
-                        <ul>   
+                        <ul>
                             <li>Idempotent - intended effect on the server of multiple identical requests </li>
                         </ul>
                         <p>*Cacheable METHOD - indicates that the response to a method is allowed to stored for future reset</p>
@@ -613,7 +614,7 @@
                         </ul>
 
 
-                        <h3>HTTP status code</h3> 
+                        <h3>HTTP status code</h3>
                         <div class = "statusC" onclick="showInformational()">
                             <h4>1. Informational(1xx)</h4>
                             <ul id="informational">
@@ -622,7 +623,7 @@
                                 <li>102 Processing</li>
                             </ul>
                         </div>
-                        <div class = "statusC" onclick="showSuccess()">   
+                        <div class = "statusC" onclick="showSuccess()">
                             <h4>2.	 Success(2xx)</h4>
                             <ul id="Success">
                                 <li>200 OK</li>
