@@ -1,0 +1,66 @@
+body{
+    background-color: #eeeeee;
+}
+.start img{
+    width: 150px;
+    height: 150px;
+}
+.grid{
+    width:600px;
+    height:auto;
+    background-color:#fff  ;
+    padding: 10px 50px 50px 50px;
+    border-radius: 20px;
+    border: 2px solid #ebebeb;
+    box-shadow: 10px 15px 5px #ebebeb;
+}
+.grid h1{
+    font-family: "Courier New", Courier, monospace;
+    background-color:#778097  ;
+    font-size: 25px;
+    text-align: center;
+    color: #fff;
+    padding: 2px;
+    border-radius: 15px;
+}
+.grid #questions{
+    font-family: tahoma;
+    font-size: 25px;
+    color: Black   ;
+    text-align: center;
+}
+
+.buttons{
+    margin-top: 30px;
+}
+#btn1, #btn2, #btn3, #btn4{
+    background-color: #778097;
+    width: 250px;
+    font-size: 20px;
+    color: #fff;
+    border: 1px solid #1d3e6a;
+    border-radius: 50px;
+    margin: 10px 40px 10px 0px;
+    margin-left: 8px;
+    padding: 10px 10px;
+    text-align: center;
+}
+#progress{
+    color: #lack;
+    font-size: 20px;
+    text-align: center;
+}
+#btn1:hover, #btn2:hover, #btn3:hover, #btn4:hover{
+    cursor: pointer;
+    background-color: #57636e;
+}
+#btn1:focus, #btn2:focus, #btn3:focus, #btn4:focus{
+    outline: 0;
+}
+#qNav{
+    grid-area: qnav;
+    border: 2px solid;
+    width: 100%;
+    height: 600px;
+    background-color: #013243;
+}
